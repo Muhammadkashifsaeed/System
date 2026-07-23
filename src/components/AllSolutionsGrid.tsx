@@ -94,7 +94,6 @@ export default function AllSolutionsGrid() {
           <p className="mx-auto mt-4 max-w-3xl text-lg text-[#475569]">
             Comprehensive engineering and industrial solutions tailored to your needs.
           </p>
-          <div className="section-divider" />
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
