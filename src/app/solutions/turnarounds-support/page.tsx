@@ -71,10 +71,10 @@ export default function TurnaroundsPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-2xl font-bold text-black md:text-3xl">TURNAROUNDS SUPPORT (TAR)</h2>
+              <h2 className="text-2xl font-bold text-primary md:text-3xl">TURNAROUNDS SUPPORT (TAR)</h2>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-black md:text-xl">Resource Support Solutions</h3>
+                <h3 className="text-lg font-bold text-primary md:text-xl">Resource Support Solutions</h3>
                 <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {resourceSupportSolutions.map((item) => (
                     <li key={item}>{item}</li>
@@ -83,7 +83,7 @@ export default function TurnaroundsPage() {
               </div>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-black md:text-xl">Technical Support Solutions</h3>
+                <h3 className="text-lg font-bold text-primary md:text-xl">Technical Support Solutions</h3>
                 <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {technicalSupportSolutions.map((item) => (
                     <li key={item}>{item}</li>
@@ -92,7 +92,7 @@ export default function TurnaroundsPage() {
               </div>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-black md:text-xl">Temporary Equipment Support Solutions</h3>
+                <h3 className="text-lg font-bold text-primary md:text-xl">Temporary Equipment Support Solutions</h3>
                 <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {temporaryEquipmentSupportSolutions.map((item) => (
                     <li key={item}>{item}</li>

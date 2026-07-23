@@ -69,10 +69,10 @@ export default function CommissioningStartupPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-black md:text-4xl">Commissioning and Start-Up Support (CSU)</h2>
+              <h2 className="text-3xl font-bold text-primary md:text-4xl">Commissioning and Start-Up Support (CSU)</h2>
 
               <div className="mt-8">
-                <h3 className="text-xl font-bold text-black md:text-2xl">CSU Strategic Management and Planning</h3>
+                <h3 className="text-xl font-bold text-primary md:text-2xl">CSU Strategic Management and Planning</h3>
                 <ul className="mt-3 space-y-2 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {csuStrategicPoints.map((item) => (
                     <li key={item}>{item}</li>
@@ -81,7 +81,7 @@ export default function CommissioningStartupPage() {
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xl font-bold text-black md:text-2xl">CSU Project Controls</h3>
+                <h3 className="text-xl font-bold text-primary md:text-2xl">CSU Project Controls</h3>
                 <ul className="mt-3 space-y-2 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {csuProjectControlsPoints.map((item) => (
                     <li key={item}>{item}</li>
@@ -90,7 +90,7 @@ export default function CommissioningStartupPage() {
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xl font-bold text-black md:text-2xl">CSU Plan Development and Execution</h3>
+                <h3 className="text-xl font-bold text-primary md:text-2xl">CSU Plan Development and Execution</h3>
                 <ul className="mt-3 space-y-2 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {csuPlanExecutionPoints.map((item) => (
                     <li key={item}>{item}</li>

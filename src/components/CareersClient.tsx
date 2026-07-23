@@ -40,7 +40,7 @@ export default function CareersClient() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <AnimatedSection delay={0}>
-                <h2 className="text-3xl font-bold text-black md:text-4xl">
+                <h2 className="text-3xl font-bold text-primary md:text-4xl">
                   CAREERS
                 </h2>
 

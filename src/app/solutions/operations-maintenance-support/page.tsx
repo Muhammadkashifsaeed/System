@@ -47,7 +47,7 @@ export default function OperationsMaintenancePage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-black md:text-4xl">OPERATIONS AND MAINTENANCE SUPPORT (O&M)</h2>
+              <h2 className="text-3xl font-bold text-primary md:text-4xl">OPERATIONS AND MAINTENANCE SUPPORT (O&M)</h2>
               <ul className="mt-6 space-y-2 text-base leading-[1.8] text-black md:text-lg list-disc list-inside">
                 {bulletPoints.map((item) => (
                   <li key={item}>{item}</li>

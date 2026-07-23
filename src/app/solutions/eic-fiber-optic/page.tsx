@@ -123,7 +123,7 @@ export default function EICFiberOpticPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-black md:text-4xl">ELECTRICAL, INSTRUMENTATION, CONTROLS (EI&C)</h2>
+              <h2 className="text-3xl font-bold text-primary md:text-4xl">ELECTRICAL, INSTRUMENTATION, CONTROLS (EI&C)</h2>
               <p className="mt-6 text-base leading-[1.8] text-black md:text-lg">
                 Integrity Specialists International, Inc. (ISI) management has a combined 80 years of proven expertise providing Electrical, Instrumentation, Controls, and Fiber Optic solutions. Whether the project requirements are manpower solutions or completing the full process of design review, installation, energization, commissioning, and providing support through start-up and stable operations, ISI has the project covered with confidence.
               </p>
@@ -137,7 +137,7 @@ export default function EICFiberOpticPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Substation Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Substation Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {substationPoints.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -149,7 +149,7 @@ export default function EICFiberOpticPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Power, Controls & Communications Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Power, Controls & Communications Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {powerControlsPoints.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -161,7 +161,7 @@ export default function EICFiberOpticPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Instrument Installation & Technical Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Instrument Installation & Technical Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {instrumentPoints.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -179,7 +179,7 @@ export default function EICFiberOpticPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-black md:text-4xl">FIBER OPTIC</h2>
+              <h2 className="text-3xl font-bold text-primary md:text-4xl">FIBER OPTIC</h2>
             </div>
             <SolutionImage src="/images/involved.png" alt="Fiber Optic" />
           </div>
@@ -188,7 +188,7 @@ export default function EICFiberOpticPage() {
 
       <section className="bg-white py-16">
         <div className="container-custom">
-          <h2 className="text-center text-2xl font-bold text-black md:text-3xl">
+          <h2 className="text-center text-2xl font-bold text-primary md:text-3xl">
             The fiber optic solutions that ISI provides include, but are not limited to the following:
           </h2>
         </div>
@@ -198,7 +198,7 @@ export default function EICFiberOpticPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Engineering Support Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Engineering Support Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {engineeringSupportPoints.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -210,7 +210,7 @@ export default function EICFiberOpticPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Installation Preparation Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Installation Preparation Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {installationPreparationPoints.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -222,7 +222,7 @@ export default function EICFiberOpticPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Installation, Termination, and Testing Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Installation, Termination, and Testing Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {installationTerminationPoints.map((item) => (
                   <li key={item} className="flex gap-2">
@@ -234,7 +234,7 @@ export default function EICFiberOpticPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="mb-4 text-lg font-bold text-black">Operation and Maintenance Solutions</h3>
+              <h3 className="mb-4 text-lg font-bold text-primary">Operation and Maintenance Solutions</h3>
               <ul className="space-y-2 text-sm text-black">
                 {operationMaintenancePoints.map((item) => (
                   <li key={item} className="flex gap-2">

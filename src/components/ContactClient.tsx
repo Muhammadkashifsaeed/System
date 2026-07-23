@@ -71,7 +71,7 @@ export default function ContactClient() {
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-black">
+                      <h3 className="text-lg font-semibold text-primary">
                         {office.name}
                       </h3>
                       <p className="mt-2 whitespace-pre-line text-base leading-relaxed text-black">
@@ -86,7 +86,7 @@ export default function ContactClient() {
 
           <AnimatedSection delay={offices.length}>
             <div className="mt-20 text-center">
-              <h3 className="text-2xl font-bold text-black">
+              <h3 className="text-2xl font-bold text-primary">
                 Request More Information
               </h3>
               <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">

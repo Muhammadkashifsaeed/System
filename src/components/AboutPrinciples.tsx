@@ -54,7 +54,7 @@ export default function AboutPrinciples() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-black">
+                <h3 className="text-lg font-bold text-primary">
                   {item.title}
                 </h3>
                 <p className="mt-3 text-sm leading-[1.8] text-black whitespace-pre-line md:text-base">

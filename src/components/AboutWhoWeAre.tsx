@@ -64,7 +64,7 @@ export default function AboutWhoWeAre() {
                     key={item.title}
                     className={idx > 0 ? "mt-6 border-t border-gray-100 pt-5" : ""}
                   >
-                    <h3 className="text-xl font-bold text-black">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-primary">{item.title}</h3>
                     <p className="mt-3 text-sm leading-[1.8] text-black md:text-base">
                       {item.content}
                     </p>
@@ -75,7 +75,7 @@ export default function AboutWhoWeAre() {
 
             <AnimatedSection delay={1}>
               <div className="glass-card p-8">
-                <h3 className="text-xl font-bold text-black">Values</h3>
+                <h3 className="text-xl font-bold text-primary">Values</h3>
                 <ul className="mt-4 space-y-4">
                   {values.map((item) => (
                     <li key={item.title} className="border-b border-gray-50 pb-3 last:border-0 last:pb-0">
@@ -93,7 +93,7 @@ export default function AboutWhoWeAre() {
 
             <AnimatedSection delay={2}>
               <div className="glass-card p-8">
-                <h3 className="text-xl font-bold text-black">{sustainability.title}</h3>
+                <h3 className="text-xl font-bold text-primary">{sustainability.title}</h3>
                 <p className="mt-4 text-sm leading-[1.8] text-black md:text-base">
                   {sustainability.content}
                 </p>
