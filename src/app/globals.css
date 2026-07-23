@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #F8FAFC;
+  --color-foreground: #0F172A;
+  --color-primary: #0F4C81;
+  --color-secondary: #1E6BB8;
+  --color-accent: #3B82F6;
+  --color-dark: #0F172A;
+  --font-sans: var(--font-inter-sans);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-inter-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(59, 130, 246, 0.25);
+    color: var(--color-foreground);
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-28;
+  }
+
+  .container-custom {
+    @apply mx-auto max-w-7xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-gray-100 bg-white/80 backdrop-blur-sm shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 hover:from-secondary hover:to-accent;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-white/25 bg-white/5 px-8 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/50 hover:bg-white/15 hover:scale-[1.02];
+  }
+
+  .btn-outline-dark {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-primary/25 bg-transparent px-8 py-3.5 text-sm font-bold text-primary transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:scale-[1.02];
+  }
+
+  .section-divider {
+    @apply h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto;
+  }
+
+  .section-divider-left {
+    @apply h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full;
+  }
+}
+
+@layer animations {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  .animate-fade-in-scale {
+    animation: fadeInScale 0.5s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
