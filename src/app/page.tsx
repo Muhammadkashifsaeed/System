@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeader from "@/components/SectionHeader";
@@ -50,15 +49,14 @@ export default function Home() {
     <div className="flex flex-col">
       {/* HERO */}
       <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
-        <Image
-          src="/images/port.jpg"
-          alt="Industrial background"
-          fill
-          priority
-          quality={100}
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        <div className="absolute inset-0 video-bg">
+          <iframe
+            src="https://www.youtube.com/embed/cnTFC06WZI0?autoplay=1&mute=1&loop=1&playlist=cnTFC06WZI0&controls=0&showinfo=0&rel=0&modestbranding=1"
+            title="ISI Industrial Video"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
