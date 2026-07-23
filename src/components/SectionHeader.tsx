@@ -45,7 +45,6 @@ export default function SectionHeader({
       <h2 className={`text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl ${isDark ? "text-white" : "text-[#0F172A]"}`}>
         {title}
       </h2>
-      <div className={`mt-6 h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full ${align !== "center" && "mx-0"} ${isDark ? "!bg-gradient-to-r !from-blue-400 !to-cyan-300" : ""}`} />
       {subtitle && (
         <p className={`mt-6 text-lg leading-relaxed md:text-xl ${isDark ? "text-white/75" : "text-[#475569]"}`}>
           {subtitle}
