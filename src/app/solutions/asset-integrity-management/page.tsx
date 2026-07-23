@@ -44,8 +44,8 @@ export default function AssetIntegrityPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl">ASSET INTEGRITY MANAGEMENT</h2>
-              <ul className="mt-6 space-y-3 text-base leading-[1.8] text-gray-700 md:text-lg">
+              <h2 className="text-3xl font-bold text-black md:text-4xl">ASSET INTEGRITY MANAGEMENT</h2>
+              <ul className="mt-6 space-y-3 text-base leading-[1.8] text-black md:text-lg">
                 {bulletPoints.map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="mt-2.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />

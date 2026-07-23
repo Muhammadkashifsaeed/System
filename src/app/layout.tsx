@@ -84,7 +84,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${interSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#0F172A]">
+      <body className="min-h-full flex flex-col bg-[#F8FAFC] text-black">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

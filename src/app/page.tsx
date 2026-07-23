@@ -70,7 +70,7 @@ export default function Home() {
             </AnimatedSection>
 
             <AnimatedSection delay={2}>
-              <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/80 sm:text-lg md:text-xl">
+              <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white sm:text-lg md:text-xl">
                 Proven professional and technical solutions for both domestic & international customers in the industry sectors we serve. We have experience in both onshore and offshore projects and assets lifecycles.
               </p>
             </AnimatedSection>

@@ -90,8 +90,8 @@ export default function AllSolutionsGrid() {
     <section className="bg-[#F8FAFC] section-padding">
       <div className="container-custom">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-[#0F172A] md:text-4xl">All Solutions</h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-[#475569]">
+          <h2 className="text-3xl font-bold text-black md:text-4xl">All Solutions</h2>
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-black">
             Comprehensive engineering and industrial solutions tailored to your needs.
           </p>
         </div>
@@ -114,10 +114,10 @@ export default function AllSolutionsGrid() {
                 />
               </div>
               <div className="mt-5">
-                <h3 className="text-base font-semibold uppercase tracking-wider text-[#0F172A] md:text-lg">
+                <h3 className="text-base font-semibold uppercase tracking-wider text-black md:text-lg">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#475569]">
+                <p className="mt-2 text-sm leading-relaxed text-black">
                   {item.description}
                 </p>
                 <Link

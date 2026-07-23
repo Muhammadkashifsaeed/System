@@ -42,11 +42,11 @@ export default function SectionHeader({
       variants={fadeUp}
       className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}
     >
-      <h2 className={`text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl ${isDark ? "text-white" : "text-[#0F172A]"}`}>
+      <h2 className={`text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl ${isDark ? "text-white" : "text-black"}`}>
         {title}
       </h2>
       {subtitle && (
-        <p className={`mt-6 text-lg leading-relaxed md:text-xl ${isDark ? "text-white/75" : "text-[#475569]"}`}>
+        <p className={`mt-6 text-lg leading-relaxed md:text-xl ${isDark ? "text-white" : "text-black"}`}>
           {subtitle}
         </p>
       )}

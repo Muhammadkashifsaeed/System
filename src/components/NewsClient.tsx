@@ -41,7 +41,7 @@ export default function NewsClient() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg md:text-xl"
+          className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white sm:text-lg md:text-xl"
         >
           We are working hard to bring you the latest news and updates from Integrity Specialists International. Stay tuned!
         </motion.p>

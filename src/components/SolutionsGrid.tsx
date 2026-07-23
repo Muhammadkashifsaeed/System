@@ -24,7 +24,7 @@ export default function SolutionsGrid() {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
               SOLUTIONS
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-white sm:text-xl">
               Engineering Excellence Across Every Industry
             </p>
           </div>

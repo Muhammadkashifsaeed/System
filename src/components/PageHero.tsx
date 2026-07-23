@@ -63,7 +63,7 @@ export default function PageHero({
               initial="hidden"
               animate="visible"
               variants={fadeUp}
-              className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg md:text-xl"
+              className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white sm:text-lg md:text-xl"
             >
               {subtitle}
             </motion.p>

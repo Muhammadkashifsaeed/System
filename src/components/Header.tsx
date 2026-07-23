@@ -27,8 +27,8 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
             onClick={() => setOpen((prev) => !prev)}
             className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ${
               isScrolled
-                ? "text-[#0F172A] hover:text-primary"
-                : "text-white/90 hover:text-white"
+                ? "text-black hover:text-primary"
+                : "text-white hover:text-white"
             }`}
             aria-expanded={open}
           >
@@ -45,7 +45,7 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
               <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl">
                 <Link
                   href="/solutions"
-                  className="flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-[#334155] uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
+                  className="flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                   <span className="line-clamp-1">All Solutions</span>
@@ -58,7 +58,7 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
                         <Link
                           key={dropdownItem.href}
                           href={dropdownItem.href}
-                          className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-[#334155] uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
+                          className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
                           onClick={() => setOpen(false)}
                         >
                           <span className="line-clamp-1">{dropdownItem.label}</span>
@@ -81,8 +81,8 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
           onClick={() => setOpen((prev) => !prev)}
           className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ${
             isScrolled
-              ? "text-[#0F172A] hover:text-primary"
-              : "text-white/90 hover:text-white"
+              ? "text-black hover:text-primary"
+              : "text-white hover:text-white"
           }`}
           aria-expanded={open}
         >
@@ -102,7 +102,7 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
                 <li key={dropdownItem.href}>
                   <Link
                     href={dropdownItem.href}
-                    className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-[#334155] uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
+                    className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
                     onClick={() => setOpen(false)}
                   >
                     {dropdownItem.label}
@@ -123,8 +123,8 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
         href={item.href}
         className={`block rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ${
           isScrolled
-            ? "text-[#0F172A] hover:text-primary"
-              : "text-white/90 hover:text-white"
+            ? "text-black hover:text-primary"
+              : "text-white hover:text-white"
         }`}
       >
         {item.label}
@@ -198,9 +198,9 @@ export default function Header() {
             aria-expanded={menuOpen}
           >
             {menuOpen ? (
-              <X className={`h-6 w-6 ${scrolled ? "text-[#0F172A]" : "text-white"}`} />
+              <X className={`h-6 w-6 ${scrolled ? "text-black" : "text-white"}`} />
             ) : (
-              <Menu className={`h-6 w-6 ${scrolled ? "text-[#0F172A]" : "text-white"}`} />
+              <Menu className={`h-6 w-6 ${scrolled ? "text-black" : "text-white"}`} />
             )}
           </button>
         </div>
@@ -249,7 +249,7 @@ function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }
         <button
           type="button"
           onClick={() => setOpen((prev) => !prev)}
-          className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-[#0F172A] transition-colors hover:bg-gray-50"
+          className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black transition-colors hover:bg-gray-50"
           aria-expanded={open}
         >
           {item.label}
@@ -271,7 +271,7 @@ function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }
                     <Link
                       href={dropdownItem.href}
                       onClick={onClose}
-                      className="block rounded-xl px-4 py-2.5 text-sm font-medium text-[#475569] transition-colors hover:bg-primary/5 hover:text-primary"
+                      className="block rounded-xl px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-primary/5 hover:text-primary"
                     >
                       {dropdownItem.label}
                     </Link>
@@ -289,7 +289,7 @@ function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }
     <Link
       href={item.href}
       onClick={onClose}
-      className="block rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-[#0F172A] transition-colors hover:bg-gray-50 hover:text-primary"
+      className="block rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black transition-colors hover:bg-gray-50 hover:text-primary"
     >
       {item.label}
     </Link>

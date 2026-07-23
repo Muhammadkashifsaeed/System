@@ -39,7 +39,7 @@ export default function Footer() {
           {/* Company Column */}
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-4">
             <h3 className="text-lg font-bold text-white">INTEGRITY SPECIALISTS INTERNATIONAL</h3>
-            <p className="mt-4 text-base leading-relaxed text-white/65">
+            <p className="mt-4 text-base leading-relaxed text-white">
               Integrity Specialists International, Inc. sustainability and growth plan is to accommodate our clients request with reliable solutions that does not compromise safety, quality, budget, or schedule.
             </p>
             <div className="mt-6 flex items-center gap-4">
@@ -47,7 +47,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-white/45">Email</p>
+                <p className="text-sm text-white">Email</p>
                 <a href="mailto:info@integritysolns.com" className="text-sm text-white hover:text-white/80 transition-colors">info@integritysolns.com</a>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function Footer() {
                 <Phone className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-white/45">Phone</p>
+                <p className="text-sm text-white">Phone</p>
                 <a href="tel:+13377397000" className="text-sm text-white hover:text-white/80 transition-colors">+1 (337) 739-7000</a>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-white/45">Address</p>
+                <p className="text-sm text-white">Address</p>
                 <p className="text-sm text-white hover:text-white/80 transition-colors">Lafayette, Louisiana 70503</p>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-2 text-sm font-medium text-white/65 transition-colors hover:text-white"
+                    className="group flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-white"
                   >
                     <span className="h-1 w-1 rounded-full bg-primary transition-all duration-300 group-hover:w-2 group-hover:bg-white" />
                     {item.label}
@@ -97,7 +97,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-2 text-sm font-medium text-white/65 transition-colors hover:text-white"
+                    className="group flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-white"
                   >
                     <span className="h-1 w-1 rounded-full bg-primary transition-all duration-300 group-hover:w-2 group-hover:bg-white" />
                     {item.label}
@@ -110,7 +110,7 @@ export default function Footer() {
           {/* Newsletter */}
           <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
             <h3 className="text-lg font-bold text-white">STAY CONNECTED</h3>
-            <p className="mt-4 text-sm text-white/65">
+            <p className="mt-4 text-sm text-white">
               Subscribe to our newsletter for the latest updates and insights.
             </p>
 
@@ -137,17 +137,17 @@ export default function Footer() {
             </form>
 
             <div className="mt-8">
-              <p className="text-sm text-white/45 mb-3">Contact Information</p>
+              <p className="text-sm text-white mb-3">Contact Information</p>
               <div className="space-y-3">
-                <a href="mailto:info@integritysolns.com" className="flex items-center gap-3 text-sm text-white/65 transition-colors hover:text-white">
+                <a href="mailto:info@integritysolns.com" className="flex items-center gap-3 text-sm text-white transition-colors hover:text-white">
                   <Mail className="h-4 w-4 text-primary" />
                   info@integritysolns.com
                 </a>
-                <a href="tel:+13377397000" className="flex items-center gap-3 text-sm text-white/65 transition-colors hover:text-white">
+                <a href="tel:+13377397000" className="flex items-center gap-3 text-sm text-white transition-colors hover:text-white">
                   <Phone className="h-4 w-4 text-primary" />
                   +1 (337) 739-7000
                 </a>
-                <div className="flex items-start gap-3 text-sm text-white/65">
+                <div className="flex items-start gap-3 text-sm text-white">
                   <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                   <span>Lafayette, Louisiana 70503</span>
                 </div>
@@ -159,11 +159,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-white/45">
+            <p className="text-sm text-white">
               Copyright 2021 by local, domestic, and international law by Integrity Specialists International, Inc. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <Link href="/contact" className="text-sm text-white/45 transition-colors hover:text-white">Contact Us</Link>
+              <Link href="/contact" className="text-sm text-white transition-colors hover:text-white">Contact Us</Link>
             </div>
           </div>
         </div>

@@ -73,11 +73,11 @@ export default function StaffingResourcesPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-2xl font-bold text-[#1F2937] md:text-3xl">STAFFING / RESOURCES</h2>
+              <h2 className="text-2xl font-bold text-black md:text-3xl">STAFFING / RESOURCES</h2>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-[#1F2937] md:text-xl">Engineering (all Disciplines)</h3>
-                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-gray-700 md:text-base list-disc list-inside">
+                <h3 className="text-lg font-bold text-black md:text-xl">Engineering (all Disciplines)</h3>
+                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {engineeringDisciplines.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -85,8 +85,8 @@ export default function StaffingResourcesPage() {
               </div>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-[#1F2937] md:text-xl">Construction (all Disciplines)</h3>
-                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-gray-700 md:text-base list-disc list-inside">
+                <h3 className="text-lg font-bold text-black md:text-xl">Construction (all Disciplines)</h3>
+                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {constructionDisciplines.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -94,8 +94,8 @@ export default function StaffingResourcesPage() {
               </div>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-[#1F2937] md:text-xl">Commissioning and Start-Up (all Disciplines)</h3>
-                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-gray-700 md:text-base list-disc list-inside">
+                <h3 className="text-lg font-bold text-black md:text-xl">Commissioning and Start-Up (all Disciplines)</h3>
+                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {commissioningStartupDisciplines.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -103,8 +103,8 @@ export default function StaffingResourcesPage() {
               </div>
 
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-[#1F2937] md:text-xl">Operations and Maintenance (all Disciplines)</h3>
-                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-gray-700 md:text-base list-disc list-inside">
+                <h3 className="text-lg font-bold text-black md:text-xl">Operations and Maintenance (all Disciplines)</h3>
+                <ul className="mt-3 space-y-1.5 text-sm leading-[1.7] text-black md:text-base list-disc list-inside">
                   {operationsMaintenanceDisciplines.map((item) => (
                     <li key={item}>{item}</li>
                   ))}

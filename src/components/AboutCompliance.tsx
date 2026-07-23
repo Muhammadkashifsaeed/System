@@ -42,7 +42,7 @@ export default function AboutCompliance() {
             title="Clients Served"
           />
 
-          <p className="mx-auto mt-6 max-w-4xl text-center text-base leading-[1.8] text-[#475569] md:text-lg">
+          <p className="mx-auto mt-6 max-w-4xl text-center text-base leading-[1.8] text-black md:text-lg">
             Since established in 2012, Integrity Specialists International, Inc. has
             successfully been a stakeholder providing facility and pipeline solutions to
             organizations either direct contract or subcontracted for various sized

@@ -48,7 +48,7 @@ export default function AboutWhoWeAre() {
           <h2 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Who We Are
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/90 md:text-lg">
+          <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white md:text-lg">
             Integrity Specialists International, Inc. was created by a team of industry professionals that know exactly what it takes to do the job right the first time without compromising any aspect of the owners investment. Our management and staff have extensive industry experience tackling some of the world&apos;s largest, most challenging projects providing engineering, project management, and technical solutions supporting the project and asset lifecycle. We are your invested partner providing the highest expectations of safety, quality, a return on investment with proven planning and execution methods.
           </p>
         </div>
@@ -64,8 +64,8 @@ export default function AboutWhoWeAre() {
                     key={item.title}
                     className={idx > 0 ? "mt-6 border-t border-gray-100 pt-5" : ""}
                   >
-                    <h3 className="text-xl font-bold text-[#0F172A]">{item.title}</h3>
-                    <p className="mt-3 text-sm leading-[1.8] text-[#475569] md:text-base">
+                    <h3 className="text-xl font-bold text-black">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-[1.8] text-black md:text-base">
                       {item.content}
                     </p>
                   </div>
@@ -75,14 +75,14 @@ export default function AboutWhoWeAre() {
 
             <AnimatedSection delay={1}>
               <div className="glass-card p-8">
-                <h3 className="text-xl font-bold text-[#0F172A]">Values</h3>
+                <h3 className="text-xl font-bold text-black">Values</h3>
                 <ul className="mt-4 space-y-4">
                   {values.map((item) => (
                     <li key={item.title} className="border-b border-gray-50 pb-3 last:border-0 last:pb-0">
-                      <p className="text-sm font-semibold text-[#0F172A]">
+                      <p className="text-sm font-semibold text-black">
                         {item.title}
                       </p>
-                      <p className="mt-1 text-sm leading-[1.7] text-[#475569]">
+                      <p className="mt-1 text-sm leading-[1.7] text-black">
                         {item.content}
                       </p>
                     </li>
@@ -93,8 +93,8 @@ export default function AboutWhoWeAre() {
 
             <AnimatedSection delay={2}>
               <div className="glass-card p-8">
-                <h3 className="text-xl font-bold text-[#0F172A]">{sustainability.title}</h3>
-                <p className="mt-4 text-sm leading-[1.8] text-[#475569] md:text-base">
+                <h3 className="text-xl font-bold text-black">{sustainability.title}</h3>
+                <p className="mt-4 text-sm leading-[1.8] text-black md:text-base">
                   {sustainability.content}
                 </p>
               </div>

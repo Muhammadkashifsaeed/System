@@ -52,7 +52,7 @@ export default function CTABanner({
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/75 md:text-xl"
+            className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white md:text-xl"
           >
             {subtitle}
           </motion.p>

@@ -76,8 +76,8 @@ export default function StatsSection() {
               <div className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">
                 <AnimatedCounter end={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="mt-3 text-lg font-semibold text-white/90">{stat.label}</div>
-              <div className="mt-1 text-sm text-white/60">{stat.description}</div>
+              <div className="mt-3 text-lg font-semibold text-white">{stat.label}</div>
+              <div className="mt-1 text-sm text-white">{stat.description}</div>
             </div>
           ))}
         </div>

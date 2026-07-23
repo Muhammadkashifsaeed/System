@@ -40,7 +40,7 @@ export default function AboutPrinciples() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div className="mt-16 text-center">
-          <p className="mx-auto max-w-4xl text-lg leading-[1.8] text-[#475569] md:text-xl">
+          <p className="mx-auto max-w-4xl text-lg leading-[1.8] text-black md:text-xl">
             Integrity Specialists International is committed to an operating philosophy based on openness in communication, integrity in serving our customers, fairness and concern for our employees and responsibility to the communities within which we operate. Our vision is to exceed customer expectations for quality, safety, sustainability, cost, delivery and value. Additionally, we are dedicated to creating a profitable business culture that is based on the following principles:
           </p>
         </div>
@@ -54,10 +54,10 @@ export default function AboutPrinciples() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-[#0F172A]">
+                <h3 className="text-lg font-bold text-black">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-[1.8] text-[#475569] whitespace-pre-line md:text-base">
+                <p className="mt-3 text-sm leading-[1.8] text-black whitespace-pre-line md:text-base">
                   {item.content}
                 </p>
               </div>

@@ -71,10 +71,10 @@ export default function ContactClient() {
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-[#0F172A]">
+                      <h3 className="text-lg font-semibold text-black">
                         {office.name}
                       </h3>
-                      <p className="mt-2 whitespace-pre-line text-base leading-relaxed text-[#475569]">
+                      <p className="mt-2 whitespace-pre-line text-base leading-relaxed text-black">
                         {office.address}
                       </p>
                     </div>
@@ -86,7 +86,7 @@ export default function ContactClient() {
 
           <AnimatedSection delay={offices.length}>
             <div className="mt-20 text-center">
-              <h3 className="text-2xl font-bold text-[#0F172A]">
+              <h3 className="text-2xl font-bold text-black">
                 Request More Information
               </h3>
               <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
@@ -111,7 +111,7 @@ export default function ContactClient() {
 
               <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
                 <Clock className="h-6 w-6 text-primary" />
-                <span className="text-base font-medium text-[#475569]">
+                <span className="text-base font-medium text-black">
                   Mon - Fri: 8:00 AM - 5:00 PM CST
                 </span>
               </div>
@@ -152,7 +152,7 @@ function PageHeroWrapper({ title, subtitle, backgroundImage }: { title: string; 
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg md:text-xl"
+            className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white sm:text-lg md:text-xl"
           >
             {subtitle}
           </motion.p>
