@@ -8,8 +8,9 @@ import BackToTop from "@/components/BackToTop";
 
 const interSans = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-inter-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
