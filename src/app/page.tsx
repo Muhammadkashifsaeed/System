@@ -51,7 +51,7 @@ export default function Home() {
       <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <div className="absolute inset-0 video-bg">
           <iframe
-            src="https://www.youtube.com/embed/cnTFC06WZI0?autoplay=1&mute=1&loop=1&playlist=cnTFC06WZI0&controls=0&showinfo=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/IBF2lciyAec?autoplay=1&mute=1&loop=1&playlist=IBF2lciyAec&controls=0&showinfo=0&rel=0&modestbranding=1"
             title="ISI Industrial Video"
             allow="autoplay; encrypted-media"
             allowFullScreen
