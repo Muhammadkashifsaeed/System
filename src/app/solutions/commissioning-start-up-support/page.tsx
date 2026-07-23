@@ -70,7 +70,6 @@ export default function CommissioningStartupPage() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
               <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl">Commissioning and Start-Up Support (CSU)</h2>
-              <div className="section-divider-left mt-6" />
 
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-[#1F2937] md:text-2xl">CSU Strategic Management and Planning</h3>

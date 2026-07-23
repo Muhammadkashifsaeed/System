@@ -35,7 +35,6 @@ export default function EngineeringSupportPage() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div>
               <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl">ENGINEERING SUPPORT</h2>
-              <div className="section-divider-left mt-6" />
               <ul className="mt-6 space-y-3 text-base leading-[1.8] text-gray-700 md:text-lg list-disc list-inside">
                 <li>Professional Engineering Licensing in Multiple States</li>
                 <li>Development of Specifications</li>

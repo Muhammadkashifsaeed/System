@@ -43,7 +43,6 @@ export default function CareersClient() {
                 <h2 className="text-3xl font-bold text-[#0F172A] md:text-4xl">
                   CAREERS
                 </h2>
-                <div className="section-divider-left mt-6" />
 
                 <p className="mt-8 text-base leading-[1.8] text-[#475569] md:text-lg">
                   Integrity Specialists International, Inc. appreciates talented,
