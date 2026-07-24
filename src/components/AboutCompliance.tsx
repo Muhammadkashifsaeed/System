@@ -19,14 +19,14 @@ export default function AboutCompliance() {
              {secureLogos.map((src, idx) => (
                <div
                  key={src}
-                 className="relative h-16 w-28 sm:h-20 sm:w-32 rounded-xl border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
+                 className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
                >
                  <Image
                    src={src}
                    alt={`Compliance and Membership ${idx + 1}`}
                    fill
                    quality={100}
-                   sizes="(max-width: 640px) 144px, 160px"
+                   sizes="(max-width: 640px) 80px, 100px"
                    className="object-contain"
                  />
                </div>
@@ -53,7 +53,7 @@ export default function AboutCompliance() {
              {solutionLogos.map((src, idx) => (
                <div
                  key={src}
-                 className="relative h-16 w-full rounded-xl border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
+                 className="relative h-16 w-16 sm:h-20 sm:w-20 mx-auto rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
                >
                  <Image
                    src={src}
