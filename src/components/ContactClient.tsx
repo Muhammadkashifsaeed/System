@@ -52,7 +52,7 @@ export default function ContactClient() {
       <PageHeroWrapper
         title="CONTACT"
         subtitle="Get in touch with our team"
-        backgroundImage="/images/gas1.webp"
+        backgroundImage="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg"
       />
 
       <section className="bg-[#F8FAFC] section-padding">
@@ -127,7 +127,7 @@ function PageHeroWrapper({ title, subtitle, backgroundImage }: { title: string; 
   return (
     <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <Image
-          src={backgroundImage}
+          src="https://images.pexels.com/photos/7644016/pexels-photo-7644016.jpeg"
           alt={title}
           fill
           priority

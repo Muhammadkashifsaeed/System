@@ -27,7 +27,7 @@ export default function EngineeringSupportPage() {
     <div className="flex flex-col">
       <PageHero
         title="Engineering Support"
-        backgroundImage="/images/gas3.webp"
+        backgroundImage="https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg"
         overlayIntensity="dark"
       />
       <section className="bg-white section-padding">
@@ -46,7 +46,7 @@ export default function EngineeringSupportPage() {
                 <li>Planning for Commissioning and Start-Up</li>
               </ul>
             </div>
-            <SolutionImage src="/images/test3.webp" alt="Engineering Support" />
+            <SolutionImage src="https://images.pexels.com/photos/37198882/pexels-photo-37198882.jpeg" alt="Engineering Support" />
           </div>
         </div>
       </section>

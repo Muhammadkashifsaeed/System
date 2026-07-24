@@ -21,7 +21,6 @@ export default function Footer() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log("Footer form", formData);
   };
 
   return (

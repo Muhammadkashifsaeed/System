@@ -52,7 +52,6 @@ export default function Home() {
       <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <VideoBackground
           src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
-          poster="/images/gas1.webp"
           className="video-bg"
         >
           <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />

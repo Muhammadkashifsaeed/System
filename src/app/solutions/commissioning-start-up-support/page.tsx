@@ -61,7 +61,7 @@ export default function CommissioningStartupPage() {
     <div className="flex flex-col">
       <PageHero
         title="Commissioning and Start-Up Support (CSU)"
-        backgroundImage="/images/gas7.webp"
+        backgroundImage="https://images.pexels.com/photos/15866139/pexels-photo-15866139.jpeg"
         overlayIntensity="dark"
       />
 
@@ -100,7 +100,7 @@ export default function CommissioningStartupPage() {
             </div>
 
             <div className="flex justify-center">
-              <SolutionImage src="/images/test7.webp" alt="Commissioning and Start-Up Support (CSU)" />
+              <SolutionImage src="https://images.pexels.com/photos/6754758/pexels-photo-6754758.jpeg" alt="Commissioning and Start-Up Support (CSU)" />
             </div>
           </div>
         </div>

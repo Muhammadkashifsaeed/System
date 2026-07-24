@@ -120,10 +120,10 @@ export default function AllSolutionsGrid() {
                 <p className="mt-2 text-sm leading-relaxed text-black">
                   {item.description}
                 </p>
-                <Link
-                  href={item.href}
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-black transition-all duration-300 hover:gap-3"
-                >
+                 <Link
+                   href={item.href}
+                   className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"
+                 >
                   Read More
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -15,7 +15,8 @@ const fadeUp = {
 interface PageHeroProps {
   title: string;
   subtitle?: string;
-  backgroundImage: string;
+  backgroundImage?: string;
+  backgroundVideo?: string;
   overlayIntensity?: "light" | "medium" | "dark";
   priority?: boolean;
 }
@@ -24,6 +25,7 @@ export default function PageHero({
   title,
   subtitle,
   backgroundImage,
+  backgroundVideo,
   overlayIntensity = "medium",
   priority = true,
 }: PageHeroProps) {
@@ -35,15 +37,27 @@ export default function PageHero({
 
   return (
     <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
-      <Image
-        src={backgroundImage}
-        alt={title}
-        fill
-        priority={priority}
-        quality={100}
-        sizes="100vw"
-        className="object-cover object-center"
-      />
+      {backgroundVideo ? (
+        <video
+          src={backgroundVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={backgroundImage}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+      ) : backgroundImage ? (
+        <Image
+          src={backgroundImage}
+          alt={title}
+          fill
+          priority={priority}
+          quality={100}
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      ) : null}
       <div className={`absolute inset-0 ${overlayClasses[overlayIntensity]}`} />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">

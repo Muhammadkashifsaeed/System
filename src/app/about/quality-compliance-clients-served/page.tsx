@@ -40,7 +40,7 @@ export default function QualityCompliancePage() {
       <PageHero
         title="Quality Compliance"
         subtitle="Maintaining the highest standards through ISO certifications and industry memberships"
-        backgroundImage="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1600&q=80"
+        backgroundImage="/images/gas2.webp"
         overlayIntensity="dark"
       />
       <AboutCompliance />

@@ -37,7 +37,7 @@ export default function AssetIntegrityPage() {
     <div className="flex flex-col">
       <PageHero
         title="Asset Integrity Management"
-        backgroundImage="/images/gas9.webp"
+        backgroundImage="https://images.pexels.com/photos/5503874/pexels-photo-5503874.jpeg"
         overlayIntensity="dark"
       />
       <section className="bg-white section-padding">
@@ -48,14 +48,14 @@ export default function AssetIntegrityPage() {
               <ul className="mt-6 space-y-3 text-base leading-[1.8] text-black md:text-lg">
                 {bulletPoints.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2.5 h-2 w-2 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="/images/test9.webp" alt="Asset Integrity Management" />
+              <SolutionImage src="https://images.pexels.com/photos/37226176/pexels-photo-37226176.jpeg" alt="Asset Integrity Management" />
             </div>
           </div>
         </div>
@@ -63,3 +63,4 @@ export default function AssetIntegrityPage() {
     </div>
   );
 }
+

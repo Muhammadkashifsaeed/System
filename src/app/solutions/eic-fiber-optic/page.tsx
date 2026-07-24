@@ -115,7 +115,7 @@ export default function EICFiberOpticPage() {
     <div className="flex flex-col">
       <PageHero
         title="Electrical, Instrumentation, Controls (EI&C) & Fiber Optic"
-        backgroundImage="/images/gas4.webp"
+        backgroundImage="https://images.pexels.com/photos/3852204/pexels-photo-3852204.jpeg"
         overlayIntensity="dark"
       />
 
@@ -128,7 +128,7 @@ export default function EICFiberOpticPage() {
                 Integrity Specialists International, Inc. (ISI) management has a combined 80 years of proven expertise providing Electrical, Instrumentation, Controls, and Fiber Optic solutions. Whether the project requirements are manpower solutions or completing the full process of design review, installation, energization, commissioning, and providing support through start-up and stable operations, ISI has the project covered with confidence.
               </p>
             </div>
-            <SolutionImage src="/images/test4.webp" alt="Electrical, Instrumentation, Controls (EI&C)" />
+            <SolutionImage src="https://images.pexels.com/photos/12207608/pexels-photo-12207608.jpeg" alt="Electrical Instrumentation Controls" />
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {substationPoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -153,7 +153,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {powerControlsPoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -165,7 +165,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {instrumentPoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -181,7 +181,7 @@ export default function EICFiberOpticPage() {
             <div>
               <h2 className="text-3xl font-bold text-black md:text-4xl">FIBER OPTIC</h2>
             </div>
-            <SolutionImage src="/images/involved.webp" alt="Fiber Optic" />
+             <SolutionImage src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" alt="Fiber Optic" />
           </div>
         </div>
       </section>
@@ -202,7 +202,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {engineeringSupportPoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -214,7 +214,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {installationPreparationPoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -226,7 +226,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {installationTerminationPoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -238,7 +238,7 @@ export default function EICFiberOpticPage() {
               <ul className="space-y-2 text-sm text-black">
                 {operationMaintenancePoints.map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-black" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -250,3 +250,4 @@ export default function EICFiberOpticPage() {
     </div>
   );
 }
+

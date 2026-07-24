@@ -16,7 +16,7 @@ export default function NewsClient() {
   return (
     <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
       <Image
-        src="/images/port.webp"
+        src="https://images.pexels.com/photos/15866139/pexels-photo-15866139.jpeg"
         alt="News background"
         fill
         priority

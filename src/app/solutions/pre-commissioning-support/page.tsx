@@ -44,7 +44,7 @@ export default function PreCommissioningPage() {
     <div className="flex flex-col">
       <PageHero
         title="Pre-Commissioning Support"
-        backgroundImage="/images/gas6.webp"
+        backgroundImage="https://images.pexels.com/photos/21812146/pexels-photo-21812146.jpeg"
         overlayIntensity="dark"
       />
 
@@ -59,7 +59,7 @@ export default function PreCommissioningPage() {
                 ))}
               </ul>
             </div>
-            <SolutionImage src="/images/test6.webp" alt="Pre-Commissioning Support" />
+            <SolutionImage src="https://images.pexels.com/photos/15893881/pexels-photo-15893881.jpeg" alt="Pre-Commissioning Support" />
           </div>
         </div>
       </section>

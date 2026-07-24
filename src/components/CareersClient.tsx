@@ -28,7 +28,6 @@ export default function CareersClient() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log("Careers form", formData);
   };
 
   return (
@@ -224,7 +223,7 @@ function PageHeroWrapper() {
   return (
     <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <Image
-          src="/images/port.webp"
+          src="https://images.pexels.com/photos/6803551/pexels-photo-6803551.jpeg"
           alt="Careers background"
           fill
           priority
