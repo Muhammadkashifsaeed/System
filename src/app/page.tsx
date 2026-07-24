@@ -51,7 +51,7 @@ export default function Home() {
       <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <div className="absolute inset-0 video-bg">
           <iframe
-            src="https://www.youtube.com/embed/IBF2lciyAec?autoplay=1&mute=1&loop=1&playlist=IBF2lciyAec&controls=0&showinfo=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/7SVHOipV9HE?autoplay=1&mute=1&loop=1&playlist=7SVHOipV9HE&controls=0&showinfo=0&rel=0&modestbranding=1"
             title="ISI Industrial Video"
             allow="autoplay; encrypted-media"
             allowFullScreen
@@ -63,7 +63,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center py-8 pb-12 text-center sm:py-10 md:pb-16 lg:pb-20">
             <AnimatedSection delay={1}>
               <h1 className="mt-4 text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
-                Integrity Specialists International, Inc. <span className="text-gradient">(ISI)</span>
+                Integrity Specialists International, Inc. <span className="text-white">(ISI)</span>
               </h1>
             </AnimatedSection>
 

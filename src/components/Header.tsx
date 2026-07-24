@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,7 +8,7 @@ import { topNavigation } from "@/lib/constants/navigation";
 import type { NavItem } from "@/lib/constants/navigation";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 
-function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
+function NavLink({ item }: { item: NavItem }) {
   const [open, setOpen] = useState(false);
 
   if (item.hasDropdown && item.dropdownItems) {
@@ -25,11 +25,7 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
           <button
             type="button"
             onClick={() => setOpen((prev) => !prev)}
-            className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ${
-              isScrolled
-                ? "text-black hover:text-primary"
-                : "text-white hover:text-white"
-            }`}
+            className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary`}
             aria-expanded={open}
           >
             {item.label}
@@ -79,11 +75,7 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
         <button
           type="button"
           onClick={() => setOpen((prev) => !prev)}
-          className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ${
-            isScrolled
-              ? "text-black hover:text-primary"
-              : "text-white hover:text-white"
-          }`}
+            className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary`}
           aria-expanded={open}
         >
           {item.label}
@@ -121,11 +113,7 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
     <li>
       <Link
         href={item.href}
-        className={`block rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors ${
-          isScrolled
-            ? "text-black hover:text-primary"
-              : "text-white hover:text-white"
-        }`}
+      className={`block rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary`}
       >
         {item.label}
       </Link>
@@ -134,22 +122,11 @@ function NavLink({ item, isScrolled }: { item: NavItem; isScrolled: boolean }) {
 }
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-        scrolled
-          ? "bg-white/95 shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
-          : "bg-gradient-to-b from-dark/70 via-dark/60 to-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white/95 shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
@@ -170,7 +147,7 @@ export default function Header() {
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-1">
               {topNavigation.map((item) => (
-                <NavLink key={item.href} item={item} isScrolled={scrolled} />
+                <NavLink key={item.href} item={item} />
               ))}
             </ul>
           </nav>
@@ -178,11 +155,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/contact"
-              className={`transition-all duration-300 hover:scale-105 ${
-                scrolled
-                  ? "btn-primary"
-                  : "btn-outline"
-              }`}
+              className="btn-primary transition-all duration-300 hover:scale-105"
             >
               GET IN TOUCH
             </Link>
@@ -191,16 +164,14 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
-            className={`flex h-11 w-11 items-center justify-center rounded-xl transition-colors lg:hidden ${
-              scrolled ? "hover:bg-gray-100" : "hover:bg-white/10"
-            }`}
+            className="flex h-11 w-11 items-center justify-center rounded-xl transition-colors hover:bg-gray-100 lg:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
           >
             {menuOpen ? (
-              <X className={`h-6 w-6 ${scrolled ? "text-black" : "text-white"}`} />
+              <X className="h-6 w-6 text-black" />
             ) : (
-              <Menu className={`h-6 w-6 ${scrolled ? "text-black" : "text-white"}`} />
+              <Menu className="h-6 w-6 text-black" />
             )}
           </button>
         </div>

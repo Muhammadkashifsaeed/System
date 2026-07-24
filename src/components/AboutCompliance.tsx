@@ -26,7 +26,7 @@ export default function AboutCompliance() {
                   alt={`Compliance and Membership ${idx + 1}`}
                   fill
                   quality={100}
-                  sizes="160px"
+                  sizes="(max-width: 640px) 144px, 160px"
                   className="object-contain"
                 />
               </div>
@@ -60,7 +60,7 @@ export default function AboutCompliance() {
                   alt={`Client solution ${idx + 1}`}
                   fill
                   quality={100}
-                  sizes="160px"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
                   className="object-contain"
                 />
               </div>

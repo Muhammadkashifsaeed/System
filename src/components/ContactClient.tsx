@@ -67,11 +67,11 @@ export default function ContactClient() {
               <AnimatedSection key={office.name} delay={idx}>
                 <div className="glass-card p-7">
                   <div className="flex items-start gap-3">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-primary/5 text-primary">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-primary/5 text-black">
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-primary">
+                      <h3 className="text-lg font-semibold text-black">
                         {office.name}
                       </h3>
                       <p className="mt-2 whitespace-pre-line text-base leading-relaxed text-black">
@@ -86,31 +86,31 @@ export default function ContactClient() {
 
           <AnimatedSection delay={offices.length}>
             <div className="mt-20 text-center">
-              <h3 className="text-2xl font-bold text-primary">
+              <h3 className="text-2xl font-bold text-black">
                 Request More Information
               </h3>
               <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
-                <Mail className="h-6 w-6 text-primary" />
+                <Mail className="h-6 w-6 text-black" />
                 <a
                   href="mailto:info@integritysolns.com"
-                  className="text-lg font-medium text-primary underline-offset-4 transition-colors duration-300 hover:text-secondary hover:underline"
+                  className="text-lg font-medium text-black underline-offset-4 transition-colors duration-300 hover:text-secondary hover:underline"
                 >
                   info@integritysolns.com
                 </a>
               </div>
 
               <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
-                <Phone className="h-6 w-6 text-primary" />
+                <Phone className="h-6 w-6 text-black" />
                 <a
                   href="tel:+13377397000"
-                  className="text-lg font-medium text-primary underline-offset-4 transition-colors duration-300 hover:text-secondary hover:underline"
+                  className="text-lg font-medium text-black underline-offset-4 transition-colors duration-300 hover:text-secondary hover:underline"
                 >
                   +1 (337) 739-7000
                 </a>
               </div>
 
               <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
-                <Clock className="h-6 w-6 text-primary" />
+                <Clock className="h-6 w-6 text-black" />
                 <span className="text-base font-medium text-black">
                   Mon - Fri: 8:00 AM - 5:00 PM CST
                 </span>

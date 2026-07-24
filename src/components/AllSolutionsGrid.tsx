@@ -90,7 +90,7 @@ export default function AllSolutionsGrid() {
     <section className="bg-[#F8FAFC] section-padding">
       <div className="container-custom">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-primary md:text-4xl">All Solutions</h2>
+          <h2 className="text-3xl font-bold text-black md:text-4xl">All Solutions</h2>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-black">
             Comprehensive engineering and industrial solutions tailored to your needs.
           </p>
@@ -114,7 +114,7 @@ export default function AllSolutionsGrid() {
                 />
               </div>
               <div className="mt-5">
-                <h3 className="text-base font-semibold uppercase tracking-wider text-primary md:text-lg">
+                <h3 className="text-base font-semibold uppercase tracking-wider text-black md:text-lg">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-black">
@@ -122,7 +122,7 @@ export default function AllSolutionsGrid() {
                 </p>
                 <Link
                   href={item.href}
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-black transition-all duration-300 hover:gap-3"
                 >
                   Read More
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">

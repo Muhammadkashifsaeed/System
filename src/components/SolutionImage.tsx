@@ -16,7 +16,7 @@ export default function SolutionImage({ src, alt }: SolutionImageProps) {
           alt={alt}
           fill
           quality={75}
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 800px"
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="object-cover"
         />
       </div>

@@ -35,7 +35,7 @@ export default function IntegrationSupportPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-primary md:text-4xl">INTEGRATION MANAGEMENT SUPPORT</h2>
+              <h2 className="text-3xl font-bold text-black md:text-4xl">INTEGRATION MANAGEMENT SUPPORT</h2>
               <p className="mt-6 text-base leading-[1.8] text-black md:text-lg">
                 Our Integration Management methods provide recommendations in the early stages of the project assist with providing how the various stakeholders will procure, collaborate, prove functionality, install, integrate and test, and preserve to complete the project scope of work requirements for a flawless custody transfer to Commissioning.
               </p>
