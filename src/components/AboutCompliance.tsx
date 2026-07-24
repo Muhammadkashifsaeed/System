@@ -15,7 +15,7 @@ export default function AboutCompliance() {
             subtitle="Maintaining the highest standards through ISO certifications and industry memberships."
           />
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
              {secureLogos.map((src, idx) => (
                <div
                  key={src}
