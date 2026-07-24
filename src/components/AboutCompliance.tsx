@@ -15,22 +15,22 @@ export default function AboutCompliance() {
             subtitle="Maintaining the highest standards through ISO certifications and industry memberships."
           />
 
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-6">
-            {secureLogos.map((src, idx) => (
-              <div
-                key={src}
-                className="relative h-24 w-36 sm:h-28 sm:w-40"
-              >
-                <Image
-                  src={src}
-                  alt={`Compliance and Membership ${idx + 1}`}
-                  fill
-                  quality={100}
-                  sizes="(max-width: 640px) 144px, 160px"
-                  className="object-contain"
-                />
-              </div>
-            ))}
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+             {secureLogos.map((src, idx) => (
+               <div
+                 key={src}
+                 className="relative h-16 w-28 sm:h-20 sm:w-32 rounded-xl border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
+               >
+                 <Image
+                   src={src}
+                   alt={`Compliance and Membership ${idx + 1}`}
+                   fill
+                   quality={100}
+                   sizes="(max-width: 640px) 144px, 160px"
+                   className="object-contain"
+                 />
+               </div>
+             ))}
           </div>
         </div>
       </section>
@@ -42,29 +42,29 @@ export default function AboutCompliance() {
             title="Clients Served"
           />
 
-          <p className="mx-auto mt-6 max-w-4xl text-center text-base leading-[1.8] text-black md:text-lg">
+          <p className="mx-auto mt-4 max-w-4xl text-center text-sm leading-[1.8] text-black md:text-base">
             Since established in 2012, Integrity Specialists International, Inc. has
             successfully been a stakeholder providing facility and pipeline solutions to
             organizations either direct contract or subcontracted for various sized
             projects, globally.
           </p>
 
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 xl:grid-cols-6">
-            {solutionLogos.map((src, idx) => (
-              <div
-                key={src}
-                className="relative h-24 w-full"
-              >
-                <Image
-                  src={src}
-                  alt={`Client solution ${idx + 1}`}
-                  fill
-                  quality={100}
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
-                  className="object-contain"
-                />
-              </div>
-            ))}
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-6">
+             {solutionLogos.map((src, idx) => (
+               <div
+                 key={src}
+                 className="relative h-16 w-full rounded-xl border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
+               >
+                 <Image
+                   src={src}
+                   alt={`Client solution ${idx + 1}`}
+                   fill
+                   quality={100}
+                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
+                   className="object-contain"
+                 />
+               </div>
+             ))}
           </div>
         </div>
       </section>
