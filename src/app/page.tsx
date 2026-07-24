@@ -51,7 +51,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <VideoBackground
-          src="https://assets.mixkit.co/videos/4319/4319-large.mp4"
+          src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
           poster="/images/gas1.webp"
           className="video-bg"
         >

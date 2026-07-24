@@ -35,7 +35,7 @@ export default function AboutWhoWeAre() {
     <section className="relative overflow-hidden bg-white">
       <div className="relative flex h-[280px] items-center justify-center overflow-hidden sm:h-[320px] md:h-[360px] lg:h-[400px]">
         <VideoBackground
-          src="https://assets.mixkit.co/videos/4319/4319-large.mp4"
+          src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
           poster="/images/gas4.webp"
           className="video-bg"
         >
