@@ -5,6 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 import PowerIndustries from "@/components/PowerIndustries";
 import AboutWhoWeAre from "@/components/AboutWhoWeAre";
 import AboutCompliance from "@/components/AboutCompliance";
+import VideoBackground from "@/components/VideoBackground";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -49,15 +50,13 @@ export default function Home() {
     <div className="flex flex-col">
       {/* HERO */}
       <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
-        <div className="absolute inset-0 video-bg">
-          <iframe
-            src="https://www.youtube.com/embed/7SVHOipV9HE?autoplay=1&mute=1&loop=1&playlist=7SVHOipV9HE&controls=0&showinfo=0&rel=0&modestbranding=1"
-            title="ISI Industrial Video"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
+        <VideoBackground
+          src="https://assets.mixkit.co/videos/4319/4319-large.mp4"
+          poster="/images/gas1.webp"
+          className="video-bg"
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
+        </VideoBackground>
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="flex flex-col items-center justify-center py-8 pb-12 text-center sm:py-10 md:pb-16 lg:pb-20">

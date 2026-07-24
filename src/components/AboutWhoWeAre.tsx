@@ -1,4 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import VideoBackground from "@/components/VideoBackground";
 import { Target, Shield, Leaf, Eye } from "lucide-react";
 
 const goalVision = [
@@ -33,15 +34,13 @@ export default function AboutWhoWeAre() {
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="relative flex h-[280px] items-center justify-center overflow-hidden sm:h-[320px] md:h-[360px] lg:h-[400px]">
-        <div className="absolute inset-0 video-bg">
-          <iframe
-            src="https://www.youtube.com/embed/7SVHOipV9HE?autoplay=1&mute=1&loop=1&playlist=7SVHOipV9HE&controls=0&showinfo=0&rel=0&modestbranding=1"
-            title="ISI Industrial Video"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
+        <VideoBackground
+          src="https://assets.mixkit.co/videos/4319/4319-large.mp4"
+          poster="/images/gas4.webp"
+          className="video-bg"
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
+        </VideoBackground>
         <div className="relative z-10 text-center px-6">
           <h2 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Who We Are
