@@ -9,8 +9,6 @@ import type { NavItem } from "@/lib/constants/navigation";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 
 function NavLink({ item }: { item: NavItem }) {
-  const [open, setOpen] = useState(false);
-
   if (item.hasDropdown && item.dropdownItems) {
     const isSolutions = item.label === "SOLUTIONS";
     const dropdownItems = item.dropdownItems;
@@ -21,28 +19,21 @@ function NavLink({ item }: { item: NavItem }) {
       const col2 = dropdownItems.slice(mid);
 
       return (
-        <li className="relative">
-          <button
-            type="button"
-            onClick={() => setOpen((prev) => !prev)}
-            className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary`}
-            aria-expanded={open}
+        <li className="relative group">
+          <div
+            className="flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary"
           >
             {item.label}
-            <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
-          </button>
+            <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+          </div>
 
           <div
-            className={`absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 transition-all duration-200 ${
-              open ? "opacity-100 visible" : "invisible opacity-0"
-            }`}
-            onMouseLeave={() => setOpen(false)}
+            className="absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
           >
               <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl">
                 <Link
                   href="/solutions"
                   className="flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
-                  onClick={() => setOpen(false)}
                 >
                   <span className="line-clamp-1">All Solutions</span>
                   <ArrowRight className="ml-auto h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
@@ -55,7 +46,6 @@ function NavLink({ item }: { item: NavItem }) {
                           key={dropdownItem.href}
                           href={dropdownItem.href}
                           className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
-                          onClick={() => setOpen(false)}
                         >
                           <span className="line-clamp-1">{dropdownItem.label}</span>
                           <ArrowRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
@@ -72,21 +62,15 @@ function NavLink({ item }: { item: NavItem }) {
 
     return (
       <li className="relative group">
-        <button
-          type="button"
-          onClick={() => setOpen((prev) => !prev)}
-            className={`flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary`}
-          aria-expanded={open}
+        <div
+          className="flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary"
         >
           {item.label}
-          <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
-        </button>
+          <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+        </div>
 
         <div
-          className={`absolute left-0 top-full z-50 w-72 pt-2 transition-all duration-200 ${
-            open ? "opacity-100 visible" : "invisible opacity-0"
-          }`}
-          onMouseLeave={() => setOpen(false)}
+          className="absolute left-0 top-full z-50 w-72 pt-2 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
         >
           <div className="rounded-2xl border border-gray-100 bg-white shadow-2xl">
             <ul className="py-2">
@@ -95,9 +79,8 @@ function NavLink({ item }: { item: NavItem }) {
                   <Link
                     href={dropdownItem.href}
                     className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
-                    onClick={() => setOpen(false)}
                   >
-                    {dropdownItem.label}
+                    <span className="line-clamp-1">{dropdownItem.label}</span>
                     <ArrowRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
                   </Link>
                 </li>
@@ -113,7 +96,7 @@ function NavLink({ item }: { item: NavItem }) {
     <li>
       <Link
         href={item.href}
-      className={`block rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary`}
+        className="block rounded-xl px-3 py-2 text-sm font-semibold uppercase tracking-wider transition-colors text-black hover:text-primary"
       >
         {item.label}
       </Link>
@@ -212,46 +195,32 @@ export default function Header() {
 }
 
 function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }) {
-  const [open, setOpen] = useState(false);
-
   if (item.hasDropdown && item.dropdownItems) {
     return (
       <div>
-        <button
-          type="button"
-          onClick={() => setOpen((prev) => !prev)}
-          className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black transition-colors hover:bg-gray-50"
-          aria-expanded={open}
+        <div
+          className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black bg-gray-50"
+          aria-expanded="true"
         >
           {item.label}
-          <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
-        </button>
+          <ChevronDown className="h-5 w-5 rotate-180" />
+        </div>
 
-        <AnimatePresence>
-          {open && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.2 }}
-              className="overflow-hidden pl-4"
-            >
-              <ul className="flex flex-col gap-1 pb-2">
-                {item.dropdownItems.map((dropdownItem) => (
-                  <li key={dropdownItem.href}>
-                    <Link
-                      href={dropdownItem.href}
-                      onClick={onClose}
-                      className="block rounded-xl px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-primary/5 hover:text-primary"
-                    >
-                      {dropdownItem.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <div className="overflow-hidden pl-4">
+          <ul className="flex flex-col gap-1 pb-2">
+            {item.dropdownItems.map((dropdownItem) => (
+              <li key={dropdownItem.href}>
+                <Link
+                  href={dropdownItem.href}
+                  onClick={onClose}
+                  className="block rounded-xl px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-primary/5 hover:text-primary"
+                >
+                  {dropdownItem.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }
