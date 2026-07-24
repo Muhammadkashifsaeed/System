@@ -54,9 +54,9 @@ export default function AboutWhoWeAre() {
 
       <div className="section-padding">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <AnimatedSection delay={0}>
-              <div className="glass-card p-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
+            <AnimatedSection delay={0} className="h-full">
+              <div className="glass-card p-8 h-full">
                 {goalVision.map((item, idx) => (
                   <div
                     key={item.title}
@@ -76,8 +76,8 @@ export default function AboutWhoWeAre() {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={1}>
-              <div className="glass-card p-8">
+            <AnimatedSection delay={1} className="h-full">
+              <div className="glass-card p-8 h-full">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 icon-animate">
                     <Shield className="h-5 w-5" />
@@ -99,8 +99,8 @@ export default function AboutWhoWeAre() {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={2}>
-              <div className="glass-card p-8">
+            <AnimatedSection delay={2} className="h-full">
+              <div className="glass-card p-8 h-full">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-600 icon-animate">
                     <Leaf className="h-5 w-5" />
