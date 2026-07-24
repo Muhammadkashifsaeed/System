@@ -52,7 +52,7 @@ export default function ContactClient() {
       <PageHeroWrapper
         title="CONTACT"
         subtitle="Get in touch with our team"
-        backgroundImage="/images/gas1.jpg"
+        backgroundImage="/images/gas1.webp"
       />
 
       <section className="bg-[#F8FAFC] section-padding">

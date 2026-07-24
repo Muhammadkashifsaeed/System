@@ -35,7 +35,7 @@ export default function AboutWhoWeAre() {
       <div className="relative flex h-[280px] items-center justify-center overflow-hidden sm:h-[320px] md:h-[360px] lg:h-[400px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/gas4.jpg"
+            src="/images/gas4.webp"
             alt="Industrial background"
             fill
             priority

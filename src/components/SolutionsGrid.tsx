@@ -9,7 +9,7 @@ export default function SolutionsGrid() {
       {/* HERO */}
       <section className="relative flex h-[360px] w-full items-center justify-center overflow-hidden sm:h-[380px] md:h-[420px]">
         <Image
-          src="/images/gas3.jpg"
+          src="/images/gas3.webp"
           alt="Engineering and industrial solutions"
           fill
           priority

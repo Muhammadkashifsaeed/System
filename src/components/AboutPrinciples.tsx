@@ -29,7 +29,7 @@ export default function AboutPrinciples() {
     <section className="relative overflow-hidden bg-white section-padding">
       <div className="absolute inset-0">
         <Image
-          src="/images/most.jpg"
+          src="/images/most.webp"
           alt="Integrity Specialists International background"
           fill
           priority

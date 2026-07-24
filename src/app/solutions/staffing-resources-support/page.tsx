@@ -66,7 +66,7 @@ export default function StaffingResourcesPage() {
     <div className="flex flex-col">
       <PageHero
         title="Staffing / Resources"
-        backgroundImage="/images/gas12.jpg"
+        backgroundImage="/images/gas12.webp"
         overlayIntensity="dark"
       />
       <section className="bg-white section-padding">
@@ -112,7 +112,7 @@ export default function StaffingResourcesPage() {
               </div>
             </div>
 
-            <SolutionImage src="/images/test12.jpg" alt="Staffing / Resources" />
+            <SolutionImage src="/images/test12.webp" alt="Staffing / Resources" />
           </div>
         </div>
       </section>

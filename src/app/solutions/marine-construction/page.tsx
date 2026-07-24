@@ -64,7 +64,7 @@ export default function MarineConstructionPage() {
     <div className="flex flex-col">
       <PageHero
         title="Marine Construction"
-        backgroundImage="/images/gas10.jpg"
+        backgroundImage="/images/gas10.webp"
         overlayIntensity="dark"
       />
       <section className="bg-white section-padding">
@@ -101,7 +101,7 @@ export default function MarineConstructionPage() {
               </div>
             </div>
 
-            <SolutionImage src="/images/test10.jpg" alt="Marine Construction" />
+            <SolutionImage src="/images/test10.webp" alt="Marine Construction" />
           </div>
         </div>
       </section>

@@ -61,7 +61,7 @@ export default function StatsSection() {
     <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-dark py-20 md:py-24">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.07]"
-        style={{ backgroundImage: "url('/images/gas4.jpg')" }}
+        style={{ backgroundImage: "url('/images/gas4.webp')" }}
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.12),transparent_70%)]" aria-hidden="true" />

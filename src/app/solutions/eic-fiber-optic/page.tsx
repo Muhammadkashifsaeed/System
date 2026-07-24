@@ -115,7 +115,7 @@ export default function EICFiberOpticPage() {
     <div className="flex flex-col">
       <PageHero
         title="Electrical, Instrumentation, Controls (EI&C) & Fiber Optic"
-        backgroundImage="/images/gas4.jpg"
+        backgroundImage="/images/gas4.webp"
         overlayIntensity="dark"
       />
 
@@ -128,7 +128,7 @@ export default function EICFiberOpticPage() {
                 Integrity Specialists International, Inc. (ISI) management has a combined 80 years of proven expertise providing Electrical, Instrumentation, Controls, and Fiber Optic solutions. Whether the project requirements are manpower solutions or completing the full process of design review, installation, energization, commissioning, and providing support through start-up and stable operations, ISI has the project covered with confidence.
               </p>
             </div>
-            <SolutionImage src="/images/test4.jpg" alt="Electrical, Instrumentation, Controls (EI&C)" />
+            <SolutionImage src="/images/test4.webp" alt="Electrical, Instrumentation, Controls (EI&C)" />
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function EICFiberOpticPage() {
             <div>
               <h2 className="text-3xl font-bold text-primary md:text-4xl">FIBER OPTIC</h2>
             </div>
-            <SolutionImage src="/images/involved.png" alt="Fiber Optic" />
+            <SolutionImage src="/images/involved.webp" alt="Fiber Optic" />
           </div>
         </div>
       </section>

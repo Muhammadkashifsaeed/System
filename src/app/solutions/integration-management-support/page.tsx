@@ -27,7 +27,7 @@ export default function IntegrationSupportPage() {
     <div className="flex flex-col">
       <PageHero
         title="Integration Management Support"
-        backgroundImage="/images/gas2.jpg"
+        backgroundImage="/images/gas2.webp"
         overlayIntensity="dark"
       />
 
@@ -40,7 +40,7 @@ export default function IntegrationSupportPage() {
                 Our Integration Management methods provide recommendations in the early stages of the project assist with providing how the various stakeholders will procure, collaborate, prove functionality, install, integrate and test, and preserve to complete the project scope of work requirements for a flawless custody transfer to Commissioning.
               </p>
             </div>
-            <SolutionImage src="/images/test2.jpg" alt="Integration Management Support" />
+            <SolutionImage src="/images/test2.webp" alt="Integration Management Support" />
           </div>
         </div>
       </section>

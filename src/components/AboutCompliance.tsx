@@ -1,8 +1,8 @@
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 
-const secureLogos = Array.from({ length: 5 }, (_, i) => `/images/secure${i + 1}.jpg`);
-const solutionLogos = Array.from({ length: 6 }, (_, i) => `/images/solutions${i + 1}.jpg`);
+const secureLogos = Array.from({ length: 5 }, (_, i) => `/images/secure${i + 1}.webp`);
+const solutionLogos = Array.from({ length: 6 }, (_, i) => `/images/solutions${i + 1}.webp`);
 
 export default function AboutCompliance() {
   return (

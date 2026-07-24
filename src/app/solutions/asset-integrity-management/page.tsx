@@ -37,7 +37,7 @@ export default function AssetIntegrityPage() {
     <div className="flex flex-col">
       <PageHero
         title="Asset Integrity Management"
-        backgroundImage="/images/gas9.jpg"
+        backgroundImage="/images/gas9.webp"
         overlayIntensity="dark"
       />
       <section className="bg-white section-padding">
@@ -55,7 +55,7 @@ export default function AssetIntegrityPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="/images/test9.jpg" alt="Asset Integrity Management" />
+              <SolutionImage src="/images/test9.webp" alt="Asset Integrity Management" />
             </div>
           </div>
         </div>

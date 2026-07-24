@@ -52,7 +52,7 @@ export default function ConstructionDecommissioningPage() {
     <div className="flex flex-col">
       <PageHero
         title="Construction / Decommissioning Support"
-        backgroundImage="/images/gas5.jpg"
+        backgroundImage="/images/gas5.webp"
         overlayIntensity="dark"
       />
 
@@ -68,7 +68,7 @@ export default function ConstructionDecommissioningPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="/images/test5.jpg" alt="Construction / Decommissioning Support" />
+              <SolutionImage src="/images/test5.webp" alt="Construction / Decommissioning Support" />
             </div>
           </div>
         </div>

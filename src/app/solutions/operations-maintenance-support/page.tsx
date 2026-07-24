@@ -39,7 +39,7 @@ export default function OperationsMaintenancePage() {
     <div className="flex flex-col">
       <PageHero
         title="Operations & Maintenance Support (O&M)"
-        backgroundImage="/images/gas8.jpg"
+        backgroundImage="/images/gas8.webp"
         overlayIntensity="dark"
       />
 
@@ -54,7 +54,7 @@ export default function OperationsMaintenancePage() {
                 ))}
               </ul>
             </div>
-            <SolutionImage src="/images/test8.jpg" alt="Operations & Maintenance Support (O&M)" />
+            <SolutionImage src="/images/test8.webp" alt="Operations & Maintenance Support (O&M)" />
           </div>
         </div>
       </section>

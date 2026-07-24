@@ -64,7 +64,7 @@ export default function TurnaroundsPage() {
     <div className="flex flex-col">
       <PageHero
         title="Turnarounds Support (TAR)"
-        backgroundImage="/images/gas11.jpg"
+        backgroundImage="/images/gas11.webp"
         overlayIntensity="dark"
       />
       <section className="bg-white section-padding">
@@ -101,7 +101,7 @@ export default function TurnaroundsPage() {
               </div>
             </div>
 
-            <SolutionImage src="/images/test11.jpg" alt="Turnarounds Support (TAR)" />
+            <SolutionImage src="/images/test11.webp" alt="Turnarounds Support (TAR)" />
           </div>
         </div>
       </section>

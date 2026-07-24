@@ -4,19 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 const industries = [
-  { title: "Oil and Gas Facilities", image: "/images/gas1.jpg" },
-  { title: "Pipelines", image: "/images/gas2.jpg" },
-  { title: "Refineries", image: "/images/gas3.jpg" },
-  { title: "Power & Utilities", image: "/images/gas4.jpg" },
-  { title: "Petrochemical", image: "/images/gas5.jpg" },
-  { title: "Marine Construction", image: "/images/gas6.jpg" },
-  { title: "Hydrogen", image: "/images/gas7.jpg" },
-  { title: "Solar", image: "/images/gas8.jpg" },
-  { title: "Geothermal", image: "/images/gas9.jpg" },
-  { title: "Hydro-Electric", image: "/images/gas10.jpg" },
-  { title: "Automotive Manufacturing", image: "/images/gas11.jpg" },
-  { title: "Battery Manufacturing", image: "/images/gas12.jpg" },
-  { title: "Battery Recycling", image: "/images/gas13.jpg" },
+  { title: "Oil and Gas Facilities", image: "/images/gas1.webp" },
+  { title: "Pipelines", image: "/images/gas2.webp" },
+  { title: "Refineries", image: "/images/gas3.webp" },
+  { title: "Power & Utilities", image: "/images/gas4.webp" },
+  { title: "Petrochemical", image: "/images/gas5.webp" },
+  { title: "Marine Construction", image: "/images/gas6.webp" },
+  { title: "Hydrogen", image: "/images/gas7.webp" },
+  { title: "Solar", image: "/images/gas8.webp" },
+  { title: "Geothermal", image: "/images/gas9.webp" },
+  { title: "Hydro-Electric", image: "/images/gas10.webp" },
+  { title: "Automotive Manufacturing", image: "/images/gas11.webp" },
+  { title: "Battery Manufacturing", image: "/images/gas12.webp" },
+  { title: "Battery Recycling", image: "/images/gas13.webp" },
 ];
 
 export default function PowerIndustries() {

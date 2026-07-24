@@ -25,7 +25,7 @@ export default function AboutHSESections() {
             <div className="order-1 lg:order-2 flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/Program.png"
+                  src="/images/Program.webp"
                   alt="HSE Program"
                   fill
                   quality={100}
@@ -44,7 +44,7 @@ export default function AboutHSESections() {
             <div className="flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/safety.png"
+                  src="/images/safety.webp"
                   alt="Quality"
                   fill
                   quality={100}

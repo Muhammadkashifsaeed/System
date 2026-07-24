@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Proven professional and technical solutions for both domestic & international customers in the industry sectors we serve.",
     images: [
       {
-        url: "/images/logo.jpg",
+        url: "/images/logo.webp",
         width: 1200,
         height: 630,
         alt: "Integrity Specialists International",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Integrity Specialists International",
     description: "Engineering & Industrial Solutions Provider",
-    images: ["/images/logo.jpg"],
+    images: ["/images/logo.webp"],
   },
   alternates: {
     canonical: "/",
@@ -93,7 +93,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Integrity Specialists International, Inc.",
               url: "https://www.integritysolns.com",
-              logo: "https://www.integritysolns.com/images/logo.jpg",
+              logo: "https://www.integritysolns.com/images/logo.webp",
               description:
                 "Proven professional and technical solutions for both domestic & international customers in the industry sectors we serve.",
               address: {
