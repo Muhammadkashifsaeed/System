@@ -23,7 +23,7 @@ function PremiumImage({ src, alt, hasTopAccent = true, priority = false }: { src
         </svg>
       </div>
 
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:shadow-[0_20px_50px_-12px_rgba(15,76,129,0.25)]">
         <Image
           src={src}
           alt={alt}
