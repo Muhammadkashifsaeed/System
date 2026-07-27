@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeader from "@/components/SectionHeader";
 
@@ -97,23 +97,6 @@ export default function ContactClient() {
                 >
                   info@integritysolns.com
                 </a>
-              </div>
-
-              <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
-                <Phone className="h-6 w-6 text-black" />
-                <a
-                  href="tel:+13377397000"
-                  className="text-lg font-medium text-black underline-offset-4 transition-colors duration-300 hover:text-secondary hover:underline"
-                >
-                  +1 (337) 739-7000
-                </a>
-              </div>
-
-              <div className="mx-auto mt-6 inline-flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
-                <Clock className="h-6 w-6 text-black" />
-                <span className="text-base font-medium text-black">
-                  Mon - Fri: 8:00 AM - 5:00 PM CST
-                </span>
               </div>
             </div>
           </AnimatedSection>
