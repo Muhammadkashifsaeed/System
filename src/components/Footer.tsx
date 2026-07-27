@@ -116,7 +116,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-5">
-          <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
+          <div className="flex flex-col items-center justify-center gap-3">
             <p className="text-[11px] text-white">
               Copyright 2021 by local, domestic, and international law by Integrity Specialists International, Inc. All rights reserved.
             </p>
