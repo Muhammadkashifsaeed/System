@@ -92,7 +92,7 @@ export default function ContactClient() {
                 <Mail className="h-6 w-6 text-black" />
                 <a
                   href="mailto:info@integritysolns.com"
-                  className="text-lg font-medium text-black underline-offset-4 transition-colors duration-300 hover:text-secondary hover:underline"
+                   className="text-lg font-medium text-black underline-offset-4 transition-colors duration-300 hover:text-primary hover:underline"
                 >
                   info@integritysolns.com
                 </a>

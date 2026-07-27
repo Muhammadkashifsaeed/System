@@ -4,8 +4,6 @@
   --color-background: #F8FAFC;
   --color-foreground: #0F172A;
   --color-primary: #0F4C81;
-  --color-secondary: #1E6BB8;
-  --color-accent: #3B82F6;
   --color-dark: #0F172A;
   --font-sans: var(--font-inter-sans);
 }
@@ -32,7 +30,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -81,11 +79,11 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 hover:from-secondary hover:to-accent;
+    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 hover:from-primary hover:to-primary;
   }
 
   .btn-primary:active {
@@ -101,11 +99,11 @@
   }
 
   .section-divider {
-    @apply h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto;
+    @apply h-1 w-20 bg-gradient-to-r from-primary to-primary rounded-full mx-auto;
   }
 
   .section-divider-left {
-    @apply h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full;
+    @apply h-1 w-20 bg-gradient-to-r from-primary to-primary rounded-full;
   }
 
   .premium-shadow {

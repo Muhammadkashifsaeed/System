@@ -29,7 +29,7 @@ export default function Footer() {
       style={{
         backgroundColor: "#0B1020",
         backgroundImage:
-          "radial-gradient(circle at 15% 85%, rgba(59,130,246,0.12) 0%, transparent 45%), radial-gradient(circle at 85% 20%, rgba(30,107,184,0.1) 0%, transparent 45%), linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
+          "radial-gradient(circle at 15% 85%, rgba(15,76,129,0.2) 0%, transparent 45%), radial-gradient(circle at 85% 20%, rgba(15,76,129,0.12) 0%, transparent 45%), linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
         backgroundSize: "100% 100%, 100% 100%, 48px 48px, 48px 48px",
       }}
     >
@@ -104,7 +104,7 @@ export default function Footer() {
                  </div>
                  <button
                    type="submit"
-                   className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary text-white transition-all duration-300 hover:bg-secondary hover:scale-105"
+                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary text-white transition-all duration-300 hover:bg-primary hover:scale-105"
                    aria-label="Subscribe"
                  >
                    <ArrowRight className="h-4 w-4" />
