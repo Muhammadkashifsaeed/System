@@ -4,6 +4,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeader from "@/components/SectionHeader";
 import PowerIndustries from "@/components/PowerIndustries";
 import AboutWhoWeAre from "@/components/AboutWhoWeAre";
+import AboutHSESections from "@/components/AboutHSESections";
+import AboutPrinciples from "@/components/AboutPrinciples";
 import AboutCompliance from "@/components/AboutCompliance";
 import VideoBackground from "@/components/VideoBackground";
 import { ArrowRight } from "lucide-react";
@@ -110,7 +112,10 @@ export default function Home() {
 
       <AboutWhoWeAre />
 
-      {/* ABOUT COMPLIANCE */}
+      <AboutHSESections />
+
+      <AboutPrinciples />
+
       <AboutCompliance />
     </div>
   );
