@@ -89,14 +89,7 @@ export default function AllSolutionsGrid() {
   return (
     <section className="bg-[#F8FAFC] section-padding">
       <div className="container-custom">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold text-black md:text-4xl">All Solutions</h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-black">
-            Comprehensive engineering and industrial solutions tailored to your needs.
-          </p>
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           {solutions.map((item, idx) => (
             <div
               key={item.title}
