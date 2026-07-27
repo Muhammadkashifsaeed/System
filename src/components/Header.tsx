@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -30,7 +30,7 @@ function NavLink({ item }: { item: NavItem }) {
           <div
             className="absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
           >
-              <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl">
+              <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl premium-shadow">
                 <Link
                   href="/solutions"
                   className="flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
@@ -72,7 +72,7 @@ function NavLink({ item }: { item: NavItem }) {
         <div
           className="absolute left-0 top-full z-50 w-72 pt-2 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
         >
-          <div className="rounded-2xl border border-gray-100 bg-white shadow-2xl">
+          <div className="rounded-2xl border border-gray-100 bg-white shadow-2xl premium-shadow">
             <ul className="py-2">
               {dropdownItems.map((dropdownItem) => (
                 <li key={dropdownItem.href}>
@@ -106,10 +106,23 @@ function NavLink({ item }: { item: NavItem }) {
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-white/95 shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/95 shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
+          : "bg-white/90 shadow-sm border-b border-gray-100/60 backdrop-blur-sm"
+      }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">

@@ -100,7 +100,7 @@ export default function AllSolutionsGrid() {
           {solutions.map((item, idx) => (
             <div
               key={item.title}
-              className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
+              className="group rounded-2xl border border-gray-100 bg-white p-6 premium-shadow transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
             >
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
                 <Image
@@ -110,7 +110,7 @@ export default function AllSolutionsGrid() {
                   priority={idx < 4}
                   quality={idx < 4 ? 100 : 75}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
               <div className="mt-5">

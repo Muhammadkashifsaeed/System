@@ -16,6 +16,7 @@ export default function VideoBackground({
   children,
 }: VideoBackgroundProps) {
   const [hasError, setHasError] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   if (hasError) {
     return (
@@ -27,6 +28,15 @@ export default function VideoBackground({
 
   return (
     <div className={`absolute inset-0 ${className}`}>
+      {poster && !isLoaded && (
+        <div className="absolute inset-0 bg-dark">
+          <img
+            src={poster}
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+      )}
       <video
         key={src}
         autoPlay
@@ -37,6 +47,7 @@ export default function VideoBackground({
         poster={poster}
         className="h-full w-full object-cover"
         onError={() => setHasError(true)}
+        onLoadedData={() => setIsLoaded(true)}
       >
         <source src={src} type="video/mp4" />
       </video>
