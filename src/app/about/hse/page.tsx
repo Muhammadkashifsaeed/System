@@ -43,7 +43,7 @@ export default function AboutHSEPage() {
       <PageHero
         title="Health, Safety & Environment"
         subtitle="Our Obligation to Health, Safety, and Environmental (HSE)"
-        backgroundImage="/images/gas1.webp"
+        backgroundImage="https://images.pexels.com/photos/38070/pexels-photo-38070.jpeg"
         overlayIntensity="dark"
       />
       <AboutHSESections />
