@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import AboutHSESections from "@/components/AboutHSESections";
+import AboutPrinciples from "@/components/AboutPrinciples";
+import AboutCompliance from "@/components/AboutCompliance";
 
 export const metadata: Metadata = {
   title: "Health, Safety and Environmental (HSE) | Integrity Specialists International",
@@ -45,6 +47,8 @@ export default function AboutHSEPage() {
         overlayIntensity="dark"
       />
       <AboutHSESections />
+      <AboutPrinciples />
+      <AboutCompliance />
     </div>
   );
 }
