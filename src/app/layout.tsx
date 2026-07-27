@@ -85,6 +85,8 @@ export default function RootLayout({
       className={`${interSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC] text-black">
+        <link rel="preload" as="image" href="/images/gas4.webp" />
+        <link rel="preload" as="image" href="/images/logo.webp" />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"

@@ -107,7 +107,7 @@ export default function ContactClient() {
 
 function PageHeroWrapper({ title, subtitle }: { title: string; subtitle: string }) {
   return (
-    <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
+    <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden bg-dark sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <Image
           src="https://images.pexels.com/photos/7644016/pexels-photo-7644016.jpeg"
           alt=""

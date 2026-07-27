@@ -36,7 +36,7 @@ export default function PageHero({
   };
 
   return (
-    <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
+    <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden bg-dark sm:h-[360px] md:h-[400px] lg:h-[420px]">
       {backgroundVideo ? (
         <video
           src={backgroundVideo}

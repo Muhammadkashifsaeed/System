@@ -60,7 +60,7 @@ export default function StatsSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-dark py-16 md:py-20">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.07]"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.07] bg-dark"
         style={{ backgroundImage: "url('/images/gas4.webp')" }}
         aria-hidden="true"
       />

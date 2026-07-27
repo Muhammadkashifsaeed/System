@@ -14,7 +14,7 @@ const fadeUp = {
 
 export default function NewsClient() {
   return (
-    <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
+    <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden bg-dark sm:h-[360px] md:h-[400px] lg:h-[420px]">
       <Image
         src="https://images.pexels.com/photos/15866139/pexels-photo-15866139.jpeg"
         alt=""

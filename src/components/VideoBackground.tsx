@@ -28,7 +28,7 @@ export default function VideoBackground({
   }
 
   return (
-    <div className={`absolute inset-0 ${className}`}>
+    <div className={`absolute inset-0 bg-dark ${className}`}>
       {poster && !isLoaded && (
         <div className="absolute inset-0 bg-dark">
           <Image
