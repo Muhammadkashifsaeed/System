@@ -15,12 +15,12 @@ export default function AboutCompliance() {
             subtitle="Maintaining the highest standards through ISO certifications and industry memberships."
           />
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-             {secureLogos.map((src, idx) => (
-               <div
-                 key={src}
-                 className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
-               >
+           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+              {secureLogos.map((src, idx) => (
+                <div
+                  key={src}
+                  className="relative h-14 w-14 sm:h-16 sm:w-16 rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
+                >
                  <Image
                    src={src}
                    alt={`Compliance and Membership ${idx + 1}`}
@@ -49,11 +49,11 @@ export default function AboutCompliance() {
             projects, globally.
           </p>
 
-          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-6">
+          <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-6">
              {solutionLogos.map((src, idx) => (
                <div
                  key={src}
-                 className="relative h-16 w-16 sm:h-20 sm:w-20 mx-auto rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
+                 className="relative h-14 w-14 sm:h-16 sm:w-16 mx-auto rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
                >
                  <Image
                    src={src}
