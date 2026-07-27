@@ -133,7 +133,7 @@ export default function EICFiberOpticPage() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white section-padding">
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="glass-card p-6">
@@ -186,7 +186,7 @@ export default function EICFiberOpticPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16">
+      <section className="bg-white section-padding">
         <div className="container-custom">
           <h2 className="text-center text-2xl font-bold text-black md:text-3xl">
             The fiber optic solutions that ISI provides include, but are not limited to the following:
@@ -194,7 +194,7 @@ export default function EICFiberOpticPage() {
         </div>
       </section>
 
-      <section className="bg-white pb-20">
+      <section className="bg-white section-padding">
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
             <div className="glass-card p-6">

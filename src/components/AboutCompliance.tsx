@@ -15,7 +15,7 @@ export default function AboutCompliance() {
             subtitle="Maintaining the highest standards through ISO certifications and industry memberships."
           />
 
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
              {secureLogos.map((src, idx) => (
                <div
                  key={src}

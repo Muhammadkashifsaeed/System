@@ -34,7 +34,7 @@ export default function CTABanner({
             "radial-gradient(circle at 30% 50%, rgba(59,130,246,0.2) 0%, transparent 50%)",
         }}
       />
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:py-24">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <motion.h2
             custom={0}

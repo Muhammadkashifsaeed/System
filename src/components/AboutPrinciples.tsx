@@ -49,13 +49,13 @@ export default function AboutPrinciples() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
           <p className="mx-auto max-w-4xl text-lg leading-[1.8] text-black md:text-xl">
             Integrity Specialists International is committed to an operating philosophy based on openness in communication, integrity in serving our customers, fairness and concern for our employees and responsibility to the communities within which we operate. Our vision is to exceed customer expectations for quality, safety, sustainability, cost, delivery and value. Additionally, we are dedicated to creating a profitable business culture that is based on the following principles:
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           {principles.map((item, idx) => {
             const IconComponent = item.Icon;
             return (

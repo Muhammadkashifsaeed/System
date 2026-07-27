@@ -96,7 +96,7 @@ export default function AllSolutionsGrid() {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           {solutions.map((item, idx) => (
             <div
               key={item.title}

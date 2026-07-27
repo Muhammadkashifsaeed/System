@@ -58,7 +58,7 @@ export default function Home() {
         </VideoBackground>
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-          <div className="flex flex-col items-center justify-center py-8 pb-12 text-center sm:py-10 md:pb-16 lg:pb-20">
+          <div className="flex flex-col items-center justify-center py-8 pb-12 text-center sm:py-10 md:pb-16 lg:pb-16">
             <AnimatedSection delay={1}>
               <h1 className="mt-4 text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
                 Integrity Specialists International, Inc. <span className="text-white">(ISI)</span>
@@ -102,7 +102,7 @@ export default function Home() {
             linkHref="/solutions"
             linkLabel="View All Solutions"
           />
-          <div className="mt-16">
+          <div className="mt-8">
             <PowerIndustries />
           </div>
         </div>

@@ -62,7 +62,7 @@ export default function ContactClient() {
             subtitle="Offices across the USA, Mexico, Nigeria, and South America"
           />
 
-          <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             {offices.map((office, idx) => (
               <AnimatedSection key={office.name} delay={idx}>
                 <div className="glass-card p-7">
@@ -85,7 +85,7 @@ export default function ContactClient() {
           </div>
 
           <AnimatedSection delay={offices.length}>
-            <div className="mt-20 text-center">
+            <div className="mt-12 text-center">
               <h3 className="text-2xl font-bold text-black">
                 Request More Information
               </h3>
