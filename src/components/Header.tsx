@@ -183,7 +183,7 @@ export default function Header() {
             className="lg:hidden bg-white border-t border-gray-100"
           >
             <nav className="mx-auto max-w-7xl px-6 py-4">
-              <ul className="flex flex-col gap-1 max-h-[calc(100vh-80px)] overflow-y-auto">
+              <ul className="flex flex-col gap-1 max-h-[calc(100vh-80px)] overflow-y-auto pb-4">
                 {topNavigation.map((item) => (
                   <li key={item.href}>
                     <MobileNavLink item={item} onClose={() => setMenuOpen(false)} />

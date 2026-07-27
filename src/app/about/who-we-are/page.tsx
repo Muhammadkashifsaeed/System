@@ -48,11 +48,6 @@ export const metadata: Metadata = {
 export default function WhoWeArePage() {
   return (
     <div className="flex flex-col">
-      <section className="bg-white section-padding">
-        <div className="container-custom text-center">
-          <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-5xl">Who We Are</h1>
-        </div>
-      </section>
       <AboutWhoWeAre />
       <AboutHSESections />
       <AboutPrinciples />
