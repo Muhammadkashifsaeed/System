@@ -50,14 +50,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
-      <section className="bg-white section-padding">
-        <div className="container-custom text-center">
-          <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-5xl">About Integrity Specialists International</h1>
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-black md:text-lg">
-            Integrity Specialists International, Inc. was created by a team of industry professionals that know exactly what it takes to do the job right the first time without compromising any aspect of the owners investment.
-          </p>
-        </div>
-      </section>
       <AboutWhoWeAre />
       <AboutHSESections />
       <AboutPrinciples />
