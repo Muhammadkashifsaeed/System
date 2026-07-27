@@ -61,7 +61,7 @@ export default function AboutPrinciples() {
             return (
               <AnimatedSection key={item.title} delay={idx}>
                 <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
-                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl mb-5 transition-all duration-300 hover:scale-110 icon-animate ${item.iconBg}`}>
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl mb-5 transition-all duration-300 hover:scale-110 ${item.iconBg}`}>
                     <IconComponent className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-bold text-black">

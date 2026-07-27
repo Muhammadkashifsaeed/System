@@ -62,7 +62,7 @@ export default function AboutWhoWeAre() {
                     className={idx > 0 ? "mt-5 border-t border-gray-100 pt-5" : ""}
                   >
                     <div className={`flex items-center gap-3 mb-3 ${idx === 0 ? "" : ""}`}>
-                      <div className={`flex h-9 w-9 items-center justify-center rounded-lg transition-all duration-300 hover:scale-110 icon-animate ${idx === 0 ? "bg-primary/10 text-primary" : "bg-violet-50 text-violet-600"}`}>
+                      <div className={`flex h-9 w-9 items-center justify-center rounded-lg transition-all duration-300 hover:scale-110 ${idx === 0 ? "bg-primary/10 text-primary" : "bg-violet-50 text-violet-600"}`}>
                         {idx === 0 ? <Target className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                       </div>
                       <h4 className="text-lg font-bold text-black">{item.title}</h4>
@@ -78,7 +78,7 @@ export default function AboutWhoWeAre() {
             <AnimatedSection delay={1} className="h-full">
               <div className="glass-card p-8 h-full">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 icon-animate">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                     <Shield className="h-5 w-5" />
                   </div>
                   <h3 className="text-xl font-bold text-black">Values</h3>
@@ -101,7 +101,7 @@ export default function AboutWhoWeAre() {
             <AnimatedSection delay={2} className="h-full">
               <div className="glass-card p-8 h-full">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-600 icon-animate">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-600">
                     <Leaf className="h-5 w-5" />
                   </div>
                   <h3 className="text-xl font-bold text-black">{sustainability.title}</h3>

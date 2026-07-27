@@ -30,26 +30,26 @@ function NavLink({ item }: { item: NavItem }) {
           <div
             className="absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
           >
-              <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl premium-shadow">
-                <Link
-                  href="/solutions"
-                  className="flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
-                >
-                  <span className="line-clamp-1">All Solutions</span>
-                  <ArrowRight className="ml-auto h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
-                </Link>
+               <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl premium-shadow">
+                 <Link
+                   href="/solutions"
+                   className="group flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
+                 >
+                   <span className="line-clamp-1">All Solutions</span>
+                   <ArrowRight className="ml-auto h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
+                 </Link>
                 <div className="mt-1 grid grid-cols-2 gap-1">
                   {[col1, col2].map((col, ci) => (
                     <div key={ci}>
                       {col.map((dropdownItem) => (
-                        <Link
-                          key={dropdownItem.href}
-                          href={dropdownItem.href}
-                          className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
-                        >
-                          <span className="line-clamp-1">{dropdownItem.label}</span>
-                          <ArrowRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
-                        </Link>
+                     <Link
+                       key={dropdownItem.href}
+                       href={dropdownItem.href}
+                       className="group flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
+                     >
+                       <span className="line-clamp-1">{dropdownItem.label}</span>
+                       <ArrowRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />
+                     </Link>
                       ))}
                     </div>
                   ))}
@@ -78,7 +78,7 @@ function NavLink({ item }: { item: NavItem }) {
                 <li key={dropdownItem.href}>
                   <Link
                     href={dropdownItem.href}
-                    className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
+                    className="group flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-black uppercase tracking-wide transition-colors hover:bg-primary/5 hover:text-primary"
                   >
                     <span className="line-clamp-1">{dropdownItem.label}</span>
                     <ArrowRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0 text-primary" />

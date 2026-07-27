@@ -5,7 +5,7 @@ import SolutionImage from "@/components/SolutionImage";
 export const metadata: Metadata = {
   title: "Project Planning | Integrity Specialists International",
   description: "ISI delivers expert project planning services that optimize budget, schedule, and risk for client assets. Our planning experts ensure ROI from pre-FEED through execution.",
-  keywords: ["project planning", "FEED planning", "busdvget optimization", "risk mitigation", "engineering services", "integrity specialists", "pipeline planning", "asset management", "schedule management"],
+  keywords: ["project planning", "FEED planning", "budget optimization", "risk mitigation", "engineering services", "integrity specialists", "pipeline planning", "asset management", "schedule management"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/project-planning",
   },

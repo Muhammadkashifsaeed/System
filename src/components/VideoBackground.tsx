@@ -53,6 +53,7 @@ export default function VideoBackground({
         className="h-full w-full object-cover"
         onError={() => setHasError(true)}
         onLoadedData={() => setIsLoaded(true)}
+        aria-hidden="true"
       >
         <source src={src} type="video/mp4" />
       </video>
