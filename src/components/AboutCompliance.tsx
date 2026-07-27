@@ -15,19 +15,20 @@ export default function AboutCompliance() {
             subtitle="Maintaining the highest standards through ISO certifications and industry memberships."
           />
 
-           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-              {secureLogos.map((src, idx) => (
-                <div
-                  key={src}
-                  className="relative h-14 w-14 sm:h-16 sm:w-16 rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
-                >
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+             {secureLogos.map((src, idx) => (
+               <div
+                 key={src}
+                 className="group relative flex aspect-square w-full items-center justify-center rounded-2xl border border-gray-100 bg-white p-4 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg"
+               >
                  <Image
                    src={src}
                    alt={`Compliance and Membership ${idx + 1}`}
-                   fill
+                   width={160}
+                   height={160}
                    quality={100}
-                   sizes="(max-width: 640px) 80px, 100px"
-                   className="object-contain"
+                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
+                   className="h-full w-full object-contain transition-transform duration-300"
                  />
                </div>
              ))}
@@ -49,19 +50,20 @@ export default function AboutCompliance() {
             projects, globally.
           </p>
 
-          <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-6">
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
              {solutionLogos.map((src, idx) => (
                <div
                  key={src}
-                 className="relative h-14 w-14 sm:h-16 sm:w-16 mx-auto rounded-full border border-gray-100 bg-white p-2 shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-md"
+                 className="group relative flex aspect-square w-full items-center justify-center rounded-2xl border border-gray-100 bg-white p-4 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg"
                >
                  <Image
                    src={src}
                    alt={`Client solution ${idx + 1}`}
-                   fill
+                   width={160}
+                   height={160}
                    quality={100}
                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
-                   className="object-contain"
+                   className="h-full w-full object-contain transition-transform duration-300"
                  />
                </div>
              ))}
