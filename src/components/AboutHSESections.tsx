@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-function PremiumImage({ src, alt, hasTopAccent = true }: { src: string; alt: string; hasTopAccent?: boolean }) {
+function PremiumImage({ src, alt, hasTopAccent = true, priority = false }: { src: string; alt: string; hasTopAccent?: boolean; priority?: boolean }) {
   return (
-    <div className="group relative max-w-2xl">
+    <div className="group relative w-full max-w-2xl">
       <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/5 to-primary/10 blur-xl" aria-hidden="true" />
 
       {hasTopAccent && (
@@ -23,12 +23,12 @@ function PremiumImage({ src, alt, hasTopAccent = true }: { src: string; alt: str
         </svg>
       </div>
 
-      <div className="relative overflow-hidden rounded-[20px] shadow-xl shadow-primary/10 transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:shadow-primary/15">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl">
         <Image
           src={src}
           alt={alt}
           fill
-          priority
+          priority={priority}
           quality={100}
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover"
@@ -63,7 +63,7 @@ export default function AboutHSESections() {
               </div>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
-              <PremiumImage src="/images/Program.webp" alt="HSE Program" />
+              <PremiumImage src="/images/Program.webp" alt="HSE Program" priority />
             </div>
           </div>
         </div>
