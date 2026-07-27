@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 export default function Loading() {
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center px-6">

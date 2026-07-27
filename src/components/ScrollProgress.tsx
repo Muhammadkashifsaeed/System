@@ -41,6 +41,11 @@ export default function ScrollProgress() {
     <div
       className="fixed left-0 top-0 z-[60] h-1 bg-gradient-to-r from-primary via-secondary to-accent"
       style={{ width: `${scroll}%` }}
+      role="progressbar"
+      aria-valuenow={Math.round(scroll)}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-label="Reading progress"
     />
   );
 }

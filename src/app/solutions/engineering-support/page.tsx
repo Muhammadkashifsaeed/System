@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Engineering Support delivers professional licensing, specifications, drawings review, and technical advisory across multiple states to keep your project compliant and on track from concept to completion.",
     url: "https://www.integritysolns.com/solutions/engineering-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Engineering Support | Integrity Specialists International",
     description: "ISI Engineering Support delivers professional licensing, specifications, drawings review, and technical advisory across multiple states to keep your project compliant and on track from concept to completion.",
   },
@@ -53,3 +62,5 @@ export default function EngineeringSupportPage() {
     </div>
   );
 }
+
+

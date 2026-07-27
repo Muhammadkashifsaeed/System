@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI delivers end-to-end Electrical, Instrumentation, Controls, and Fiber Optic solutions from design review through energization and startup. Backed by 80 years of combined industry expertise for major projects.",
     url: "https://www.integritysolns.com/solutions/eic-fiber-optic",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Electrical, Instrumentation, Controls (EI&C) & Fiber Optic | Integrity Specialists International",
     description: "ISI delivers end-to-end Electrical, Instrumentation, Controls, and Fiber Optic solutions from design review through energization and startup. Backed by 80 years of combined industry expertise for major projects.",
   },
@@ -250,4 +259,6 @@ export default function EICFiberOpticPage() {
     </div>
   );
 }
+
+
 

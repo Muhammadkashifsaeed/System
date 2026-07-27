@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs that reduce lifecycle costs and improve uptime.",
     url: "https://www.integritysolns.com/solutions/operations-maintenance-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Operations & Maintenance Support (O&M) | Integrity Specialists International",
     description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs that reduce lifecycle costs and improve uptime.",
   },
@@ -61,3 +70,5 @@ export default function OperationsMaintenancePage() {
     </div>
   );
 }
+
+

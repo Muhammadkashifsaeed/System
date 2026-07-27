@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface VideoBackgroundProps {
   src: string;
@@ -30,10 +31,14 @@ export default function VideoBackground({
     <div className={`absolute inset-0 ${className}`}>
       {poster && !isLoaded && (
         <div className="absolute inset-0 bg-dark">
-          <img
+          <Image
             src={poster}
             alt=""
-            className="h-full w-full object-cover"
+            fill
+            quality={100}
+            sizes="100vw"
+            className="object-cover"
+            aria-hidden="true"
           />
         </div>
       )}

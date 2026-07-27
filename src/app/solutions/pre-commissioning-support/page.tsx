@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills to ensure systems are fully prepared for successful commissioning.",
     url: "https://www.integritysolns.com/solutions/pre-commissioning-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Pre-Commissioning Support | Integrity Specialists International",
     description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills to ensure systems are fully prepared for successful commissioning.",
   },
@@ -66,3 +75,5 @@ export default function PreCommissioningPage() {
     </div>
   );
 }
+
+

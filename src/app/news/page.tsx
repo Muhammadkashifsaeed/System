@@ -22,11 +22,20 @@ export const metadata: Metadata = {
     url: "https://www.integritysolns.com/news",
     siteName: "Integrity Specialists International",
     type: "website",
+    images: [
+      {
+        url: "/images/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Integrity Specialists International",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Coming Soon | Integrity Specialists International",
     description: "News and updates coming soon.",
+    images: ["/images/logo.webp"],
   },
   alternates: {
     canonical: "/news",

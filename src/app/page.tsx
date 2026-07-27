@@ -35,12 +35,21 @@ export const metadata: Metadata = {
     url: "https://www.integritysolns.com",
     siteName: "Integrity Specialists International",
     type: "website",
+    images: [
+      {
+        url: "/images/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Integrity Specialists International",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Integrity Specialists International | Engineering & Industrial Solutions",
     description:
       "Proven professional and technical solutions for both domestic & international customers in the industry sectors we serve.",
+    images: ["/images/logo.webp"],
   },
   alternates: {
     canonical: "/",

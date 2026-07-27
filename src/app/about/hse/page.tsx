@@ -25,12 +25,21 @@ export const metadata: Metadata = {
     url: "https://www.integritysolns.com/about/hse",
     siteName: "Integrity Specialists International",
     type: "website",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/38070/pexels-photo-38070.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "HSE Safety",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Health, Safety and Environmental (HSE) | Integrity Specialists International",
     description:
       "Integrity Specialists International is committed to Health, Safety, and Environmental excellence through proven programs, risk management, and ISO compliance.",
+    images: ["https://images.pexels.com/photos/38070/pexels-photo-38070.jpeg"],
   },
   alternates: {
     canonical: "/about/hse",

@@ -22,12 +22,21 @@ export const metadata: Metadata = {
     url: "https://www.integritysolns.com/about/quality-compliance-clients-served",
     siteName: "Integrity Specialists International",
     type: "website",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/15970027/pexels-photo-15970027.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Quality Compliance",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Quality Compliance & Clients Served | Integrity Specialists International",
     description:
       "Integrity Specialists International maintains ISO 9001:2015 certified quality management, client-focused compliance, and global stakeholder trust since 2012.",
+    images: ["https://images.pexels.com/photos/15970027/pexels-photo-15970027.jpeg"],
   },
   alternates: {
     canonical: "/about/quality-compliance-clients-served",

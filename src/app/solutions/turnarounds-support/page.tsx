@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within critical scheduling windows with disciplined execution and strict controls.",
     url: "https://www.integritysolns.com/solutions/turnarounds-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Turnarounds Support (TAR) | Integrity Specialists International",
     description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within critical scheduling windows with disciplined execution and strict controls.",
   },
@@ -108,3 +117,5 @@ export default function TurnaroundsPage() {
     </div>
   );
 }
+
+

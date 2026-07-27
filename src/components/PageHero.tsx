@@ -50,12 +50,13 @@ export default function PageHero({
       ) : backgroundImage ? (
         <Image
           src={backgroundImage}
-          alt={title}
+          alt=""
           fill
           priority={priority}
           quality={100}
           sizes="100vw"
           className="object-cover object-center"
+          aria-hidden="true"
         />
       ) : null}
       <div className={`absolute inset-0 ${overlayClasses[overlayIntensity]}`} />

@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Commissioning and Start-Up Support covers CSU strategy, project controls, work scope development, energization, loop testing, mechanical checkouts, and site acceptance testing for safe, efficient project handover.",
     url: "https://www.integritysolns.com/solutions/commissioning-start-up-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Commissioning and Start-Up Support (CSU) | Integrity Specialists International",
     description: "ISI Commissioning and Start-Up Support covers CSU strategy, project controls, work scope development, energization, loop testing, mechanical checkouts, and site acceptance testing for safe, efficient project handover.",
   },
@@ -108,3 +117,5 @@ export default function CommissioningStartupPage() {
     </div>
   );
 }
+
+

@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations. We provide the right talent at the right time with strict compliance and rigorous onboarding.",
     url: "https://www.integritysolns.com/solutions/staffing-resources-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Staffing / Resources | Integrity Specialists International",
     description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations. We provide the right talent at the right time with strict compliance and rigorous onboarding.",
   },
@@ -119,3 +128,5 @@ export default function StaffingResourcesPage() {
     </div>
   );
 }
+
+

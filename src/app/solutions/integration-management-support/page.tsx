@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handing off to Commissioning with customer approval as the priority.",
     url: "https://www.integritysolns.com/solutions/integration-management-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Integration Management Support | Integrity Specialists International",
     description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handing off to Commissioning with customer approval as the priority.",
   },
@@ -47,3 +56,5 @@ export default function IntegrationSupportPage() {
     </div>
   );
 }
+
+

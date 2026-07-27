@@ -52,7 +52,6 @@ export default function ContactClient() {
       <PageHeroWrapper
         title="CONTACT"
         subtitle="Get in touch with our team"
-        backgroundImage="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg"
       />
 
       <section className="bg-[#F8FAFC] section-padding">
@@ -106,17 +105,18 @@ export default function ContactClient() {
   );
 }
 
-function PageHeroWrapper({ title, subtitle, backgroundImage }: { title: string; subtitle: string; backgroundImage: string }) {
+function PageHeroWrapper({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
         <Image
           src="https://images.pexels.com/photos/7644016/pexels-photo-7644016.jpeg"
-          alt={title}
+          alt=""
           fill
           priority
           quality={100}
           sizes="100vw"
           className="object-cover object-center"
+          aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/45 via-dark/35 to-dark/50" />
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">

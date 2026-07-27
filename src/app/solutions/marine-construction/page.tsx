@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Marine Construction supports offshore and coastal infrastructure projects with specialized diving, subsea installation, platform modifications, and safe on-schedule material handling for complex marine environments.",
     url: "https://www.integritysolns.com/solutions/marine-construction",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Marine Construction | Integrity Specialists International",
     description: "ISI Marine Construction supports offshore and coastal infrastructure projects with specialized diving, subsea installation, platform modifications, and safe on-schedule material handling for complex marine environments.",
   },
@@ -108,3 +117,5 @@ export default function MarineConstructionPage() {
     </div>
   );
 }
+
+

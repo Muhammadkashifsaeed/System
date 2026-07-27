@@ -14,15 +14,16 @@ const fadeUp = {
 
 export default function NewsClient() {
   return (
-    <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
+    <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden sm:h-[360px] md:h-[400px] lg:h-[420px]">
       <Image
         src="https://images.pexels.com/photos/15866139/pexels-photo-15866139.jpeg"
-        alt="News background"
+        alt=""
         fill
         priority
         quality={100}
         sizes="100vw"
         className="object-cover object-center"
+        aria-hidden="true"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-dark/45 via-dark/35 to-dark/50" />
 
@@ -46,6 +47,6 @@ export default function NewsClient() {
           We are working hard to bring you the latest news and updates from Integrity Specialists International. Stay tuned!
         </motion.p>
       </div>
-    </div>
+    </section>
   );
 }

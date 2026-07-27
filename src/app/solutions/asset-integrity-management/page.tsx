@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Asset Integrity Management safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance and regulatory compliance.",
     url: "https://www.integritysolns.com/solutions/asset-integrity-management",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Asset Integrity Management | Integrity Specialists International",
     description: "ISI Asset Integrity Management safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance and regulatory compliance.",
   },
@@ -63,4 +72,6 @@ export default function AssetIntegrityPage() {
     </div>
   );
 }
+
+
 

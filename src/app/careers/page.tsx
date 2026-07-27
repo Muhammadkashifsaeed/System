@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     url: "https://www.integritysolns.com/careers",
     siteName: "Integrity Specialists International",
     type: "website",
+    images: [
+      {
+        url: "/images/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Integrity Specialists International",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Careers | Integrity Specialists International",
     description:
       "Join Integrity Specialists International and explore career opportunities in engineering, industrial services, construction, energy, manufacturing, and infrastructure.",
+    images: ["/images/logo.webp"],
   },
   alternates: {
     canonical: "/careers",

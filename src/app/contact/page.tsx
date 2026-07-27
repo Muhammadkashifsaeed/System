@@ -24,12 +24,21 @@ export const metadata: Metadata = {
     url: "https://www.integritysolns.com/contact",
     siteName: "Integrity Specialists International",
     type: "website",
+    images: [
+      {
+        url: "/images/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Integrity Specialists International",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact | Integrity Specialists International",
     description:
       "Contact Integrity Specialists International offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, energy, construction, and infrastructure services.",
+    images: ["/images/logo.webp"],
   },
   alternates: {
     canonical: "/contact",

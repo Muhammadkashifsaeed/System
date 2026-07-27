@@ -86,27 +86,31 @@ export default function Footer() {
               Subscribe to our newsletter for the latest updates and insights.
             </p>
 
-            <form onSubmit={handleSubmit} className="mt-4">
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  required
-                  placeholder="Enter your email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className={cn(
-                    "h-10 flex-1 rounded-lg border border-white/10 bg-white/5 px-3 text-xs text-white placeholder:text-white/50 outline-none transition-all duration-300 focus:border-white/30 focus:shadow-[0_0_0_3px_rgba(255,255,255,0.1)]"
-                  )}
-                />
-                <button
-                  type="submit"
-                  className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary text-white transition-all duration-300 hover:bg-secondary hover:scale-105"
-                  aria-label="Subscribe"
-                >
-                  <ArrowRight className="h-4 w-4" />
-                </button>
-              </div>
-            </form>
+             <form onSubmit={handleSubmit} className="mt-4">
+               <div className="flex gap-2">
+                 <div className="flex-1">
+                   <label htmlFor="newsletter-email" className="sr-only">Email</label>
+                   <input
+                     id="newsletter-email"
+                     type="email"
+                     required
+                     placeholder="Enter your email"
+                     value={formData.email}
+                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                     className={cn(
+                       "h-10 w-full rounded-lg border border-white/10 bg-white/5 px-3 text-xs text-white placeholder:text-white/50 outline-none transition-all duration-300 focus:border-white/30 focus:shadow-[0_0_0_3px_rgba(255,255,255,0.1)]"
+                     )}
+                   />
+                 </div>
+                 <button
+                   type="submit"
+                   className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary text-white transition-all duration-300 hover:bg-secondary hover:scale-105"
+                   aria-label="Subscribe"
+                 >
+                   <ArrowRight className="h-4 w-4" />
+                 </button>
+               </div>
+             </form>
           </motion.div>
         </div>
 

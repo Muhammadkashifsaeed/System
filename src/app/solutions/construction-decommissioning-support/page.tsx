@@ -14,9 +14,18 @@ export const metadata: Metadata = {
     description: "ISI Construction and Decommissioning Support delivers construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe and efficient project delivery.",
     url: "https://www.integritysolns.com/solutions/construction-decommissioning-support",
     type: "website",
+    images: [
+        {
+          url: "/images/logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Integrity Specialists International",
+        },
+      ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/logo.webp"],
     title: "Construction / Decommissioning Support | Integrity Specialists International",
     description: "ISI Construction and Decommissioning Support delivers construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe and efficient project delivery.",
   },
@@ -76,3 +85,5 @@ export default function ConstructionDecommissioningPage() {
     </div>
   );
 }
+
+
