@@ -42,13 +42,12 @@ export default function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Integrity Specialists International"
-                width={140}
-                height={40}
+                width={160}
+                height={48}
                 priority
-                className="h-10 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
-            <h3 className="text-sm font-bold tracking-wider text-white">INTEGRITY SPECIALISTS INTERNATIONAL</h3>
             <p className="mt-3 text-xs leading-relaxed text-white">
               Integrity Specialists International, Inc. sustainability and growth plan is to accommodate our clients request with reliable solutions that does not compromise safety, quality, budget, or schedule.
             </p>
