@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
         {
-          url: "/images/logo.webp",
+          url: "/images/menttion.png",
           width: 1200,
           height: 630,
           alt: "Integrity Specialists International",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/logo.webp"],
+    images: ["/images/menttion.png"],
     title: "Construction / Decommissioning Support | Integrity Specialists International",
     description: "ISI Construction and Decommissioning Support delivers construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe and efficient project delivery.",
   },

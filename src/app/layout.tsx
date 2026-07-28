@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Proven professional and technical solutions for both domestic & international customers in the industry sectors we serve.",
     images: [
       {
-        url: "/images/logo.webp",
+        url: "/images/menttion.png",
         width: 1200,
         height: 630,
         alt: "Integrity Specialists International",
@@ -59,10 +59,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Integrity Specialists International",
     description: "Engineering & Industrial Solutions Provider",
-    images: ["/images/logo.webp"],
+    images: ["/images/menttion.png"],
   },
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: "/images/menttion.png",
+    shortcut: "/images/menttion.png",
+    apple: "/images/menttion.png",
   },
 };
 
@@ -86,7 +91,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC] text-black">
         <link rel="preload" as="image" href="/images/gas4.webp" />
-        <link rel="preload" as="image" href="/images/logo.webp" />
+        <link rel="preload" as="image" href="/images/menttion.png" />
+        <link rel="icon" href="/images/menttion.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/menttion.png" />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"
@@ -101,7 +108,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Integrity Specialists International, Inc.",
               url: "https://www.integritysolns.com",
-              logo: "https://www.integritysolns.com/images/logo.webp",
+              logo: "https://www.integritysolns.com/images/menttion.png",
               description:
                 "Proven professional and technical solutions for both domestic & international customers in the industry sectors we serve.",
               address: {

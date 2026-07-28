@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.webp",
+        url: "/images/menttion.png",
         width: 1200,
         height: 630,
         alt: "Integrity Specialists International",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Coming Soon | Integrity Specialists International",
     description: "News and updates coming soon.",
-    images: ["/images/logo.webp"],
+    images: ["/images/menttion.png"],
   },
   alternates: {
     canonical: "/news",

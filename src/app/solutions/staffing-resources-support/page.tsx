@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
         {
-          url: "/images/logo.webp",
+          url: "/images/menttion.png",
           width: 1200,
           height: 630,
           alt: "Integrity Specialists International",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/logo.webp"],
+    images: ["/images/menttion.png"],
     title: "Staffing / Resources | Integrity Specialists International",
     description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations. We provide the right talent at the right time with strict compliance and rigorous onboarding.",
   },

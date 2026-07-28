@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.webp",
+        url: "/images/menttion.png",
         width: 1200,
         height: 630,
         alt: "Integrity Specialists International",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Solutions | Integrity Specialists International",
     description:
       "Explore Integrity Specialists International engineering, industrial, commissioning, electrical, staffing, marine construction, operations, maintenance and project planning solutions.",
-    images: ["/images/logo.webp"],
+    images: ["/images/menttion.png"],
   },
   alternates: {
     canonical: "/solutions",

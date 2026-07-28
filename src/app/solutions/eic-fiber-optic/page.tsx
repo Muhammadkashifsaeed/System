@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
         {
-          url: "/images/logo.webp",
+          url: "/images/menttion.png",
           width: 1200,
           height: 630,
           alt: "Integrity Specialists International",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/logo.webp"],
+    images: ["/images/menttion.png"],
     title: "Electrical, Instrumentation, Controls (EI&C) & Fiber Optic | Integrity Specialists International",
     description: "ISI delivers end-to-end Electrical, Instrumentation, Controls, and Fiber Optic solutions from design review through energization and startup. Backed by 80 years of combined industry expertise for major projects.",
   },

@@ -124,16 +124,16 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 shadow-lg shadow-black/5 backdrop-blur-md"
-          : "bg-white/90 shadow-sm backdrop-blur-sm"
+          ? "bg-white/95 shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
+          : "bg-white/90 shadow-sm border-b border-gray-100/60 backdrop-blur-sm"
       }`}
     >
       <div className="absolute top-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
       <div className="absolute bottom-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           <Link href="/" className="relative flex-shrink-0">
-            <div className="rounded-lg bg-white/95 p-2 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md">
+            <div className="rounded-lg p-2 shadow-sm transition-all duration-300 hover:shadow-md">
               <Image
                 src="/images/menttion.png"
                 alt="Integrity Specialists International"
@@ -141,7 +141,7 @@ export default function Header() {
                 height={36}
                 quality={100}
                 priority
-                className="h-12 w-auto object-contain md:h-14"
+                className="h-16 w-auto object-contain md:h-20"
               />
             </div>
           </Link>
@@ -169,7 +169,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="flex h-11 w-11 items-center justify-center rounded-xl transition-colors hover:bg-gray-100 lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-xl transition-colors hover:bg-white/10 lg:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
           >
@@ -254,7 +254,7 @@ function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }
     <Link
       href={item.href}
       onClick={onClose}
-      className="block rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black transition-colors hover:bg-gray-50 hover:text-primary"
+      className="block rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black transition-colors hover:bg-gray-50 hover:text-black"
     >
       {item.label}
     </Link>
