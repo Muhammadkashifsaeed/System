@@ -132,7 +132,7 @@ export default function EICFiberOpticPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-black md:text-4xl">ELECTRICAL, INSTRUMENTATION, CONTROLS (EI&C)</h2>
+              <h2 className="text-3xl font-bold text-black md:text-4xl">ELECTRICAL, INSTRUMENTATION (EI&C)</h2>
               <p className="mt-6 text-base leading-[1.8] text-black md:text-lg">
                 Integrity Specialists International, Inc. (ISI) management has a combined 80 years of proven expertise providing Electrical, Instrumentation, Controls, and Fiber Optic solutions. Whether the project requirements are manpower solutions or completing the full process of design review, installation, energization, commissioning, and providing support through start-up and stable operations, ISI has the project covered with confidence.
               </p>

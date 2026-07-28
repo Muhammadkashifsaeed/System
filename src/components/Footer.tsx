@@ -91,12 +91,12 @@ export default function Footer() {
 
           {/* Newsletter */}
           <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
-            <h3 className="text-lg font-bold tracking-wider text-white">STAY CONNECTED</h3>
-            <p className="mt-3 text-base text-white">
+            <h3 className="text-lg font-bold tracking-wider text-white pl-4">STAY CONNECTED</h3>
+            <p className="mt-3 text-base text-white pl-4">
               Subscribe to our newsletter for the latest updates and insights.
             </p>
 
-             <form onSubmit={handleSubmit} className="mt-4">
+             <form onSubmit={handleSubmit} className="mt-4 pl-4">
                <div className="flex gap-2">
                  <div className="flex-1">
                    <label htmlFor="newsletter-email" className="sr-only">Email</label>

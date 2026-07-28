@@ -43,7 +43,7 @@ export const topNavigation: NavItem[] = [
         href: "/solutions/engineering-support",
       },
       {
-        label: "ELECTRICAL, INSTRUMENTATION, CONTROLS (EI&C) & FIBER OPTIC",
+        label: "ELECTRICAL, INSTRUMENTATION (EI&C) & FIBER OPTIC",
         href: "/solutions/eic-fiber-optic",
       },
       {
