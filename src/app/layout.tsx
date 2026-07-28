@@ -65,9 +65,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/images/menttion.png",
-    shortcut: "/images/menttion.png",
-    apple: "/images/menttion.png",
+    icon: "/images/logo.svg",
+    shortcut: "/images/logo.svg",
+    apple: "/images/logo.svg",
   },
 };
 
@@ -91,9 +91,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC] text-black">
         <link rel="preload" as="image" href="/images/gas4.webp" />
-        <link rel="preload" as="image" href="/images/menttion.png" />
-        <link rel="icon" href="/images/menttion.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/menttion.png" />
+        <link rel="preload" as="image" href="/images/logo.svg" />
+        <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/images/logo.svg" />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"
