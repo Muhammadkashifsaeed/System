@@ -47,7 +47,7 @@ export const topNavigation: NavItem[] = [
         href: "/solutions/eic-fiber-optic",
       },
       {
-        label: "CONSTRUCTION / DECOMMISSIONING SUPPORT",
+        label: "CONSTRUCTION DECOMMISSIONING SUPPORT",
         href: "/solutions/construction-decommissioning-support",
       },
       {
@@ -72,7 +72,7 @@ export const topNavigation: NavItem[] = [
         href: "/solutions/turnarounds-support",
       },
       {
-        label: "STAFFING / RESOURCES SUPPORT",
+        label: "STAFFING RESOURCES SUPPORT",
         href: "/solutions/staffing-resources-support",
       },
     ],
