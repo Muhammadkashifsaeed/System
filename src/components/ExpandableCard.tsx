@@ -13,7 +13,7 @@ export default function ExpandableCard({ title, content, icon, iconBg }: Expanda
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="h-full">
+    <div>
       <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
         {icon && (
           <div className={`flex h-12 w-12 items-center justify-center rounded-xl mb-5 transition-all duration-300 hover:scale-110 hover:rotate-12 ${iconBg || "bg-primary/10 text-primary"}`}>
@@ -21,7 +21,7 @@ export default function ExpandableCard({ title, content, icon, iconBg }: Expanda
           </div>
         )}
         <h3 className="text-lg font-bold text-black">{title}</h3>
-        <p className="mt-3 text-sm leading-[1.8] text-black md:text-base line-clamp-2">
+        <p className="mt-3 text-sm leading-[1.8] text-black md:text-base">
           {content}
         </p>
         <button

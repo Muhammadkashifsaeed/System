@@ -58,24 +58,35 @@ export default function AboutWhoWeAre() {
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
             <AnimatedSection delay={0} className="h-full">
-              <ExpandableCard
-                title={goalVision[0].title}
-                content={goalVision[0].content}
-                icon={<Target className="h-4 w-4" />}
-                iconBg="bg-primary/10 text-primary"
-              />
+              <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
+                <div className="grid grid-cols-1 gap-6">
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <Target className="h-4 w-4" />
+                      </div>
+                      <h4 className="text-lg font-bold text-black">Goal</h4>
+                    </div>
+                    <p className="text-sm leading-[1.8] text-black md:text-base">
+                      {goalVision[0].content}
+                    </p>
+                  </div>
+                  <div className="border-t border-gray-100 pt-4">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-violet-50 text-violet-600">
+                        <Eye className="h-4 w-4" />
+                      </div>
+                      <h4 className="text-lg font-bold text-black">Vision</h4>
+                    </div>
+                    <p className="text-sm leading-[1.8] text-black md:text-base">
+                      {goalVision[1].content}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </AnimatedSection>
 
             <AnimatedSection delay={1} className="h-full">
-              <ExpandableCard
-                title={goalVision[1].title}
-                content={goalVision[1].content}
-                icon={<Eye className="h-4 w-4" />}
-                iconBg="bg-violet-50 text-violet-600"
-              />
-            </AnimatedSection>
-
-            <AnimatedSection delay={2} className="h-full">
               <ExpandableCard
                 title="Values"
                 content={values.join("\n")}
@@ -83,10 +94,8 @@ export default function AboutWhoWeAre() {
                 iconBg="bg-emerald-50 text-emerald-600"
               />
             </AnimatedSection>
-          </div>
 
-          <div className="mt-8 grid grid-cols-1 xl:grid-cols-2 md:items-stretch">
-            <AnimatedSection delay={3} className="h-full">
+            <AnimatedSection delay={2} className="h-full">
               <ExpandableCard
                 title={sustainability.title}
                 content={sustainability.content}
