@@ -107,10 +107,14 @@ function NavLink({ item }: { item: NavItem }) {
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+      setScrollProgress(Math.min(100, Math.max(0, progress)));
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -120,10 +124,12 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-amber-50/95 shadow-lg shadow-black/5 border-b border-amber-100/60 backdrop-blur-md"
-          : "bg-amber-50/90 shadow-sm border-b border-amber-100/40 backdrop-blur-sm"
+          ? "bg-white/95 shadow-lg shadow-black/5 backdrop-blur-md"
+          : "bg-white/90 shadow-sm backdrop-blur-sm"
       }`}
     >
+      <div className="absolute top-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
+      <div className="absolute bottom-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="relative flex-shrink-0">
@@ -135,7 +141,7 @@ export default function Header() {
                 height={36}
                 quality={100}
                 priority
-                className="h-10 w-auto object-contain md:h-12"
+                className="h-12 w-auto object-contain md:h-14"
               />
             </div>
           </Link>
