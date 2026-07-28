@@ -129,7 +129,6 @@ export default function Header() {
       }`}
     >
       <div className="absolute top-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
-      <div className="absolute bottom-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-24 items-center justify-between">
           <Link href="/" className="relative flex-shrink-0">
