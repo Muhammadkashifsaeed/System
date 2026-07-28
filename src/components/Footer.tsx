@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 import { footerNavigation, topNavigation } from "@/lib/constants/navigation";
@@ -37,6 +38,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 py-14 lg:grid-cols-12 lg:gap-8">
           {/* Company Column */}
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
+            <div className="mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="Integrity Specialists International"
+                width={140}
+                height={40}
+                priority
+                className="h-10 w-auto object-contain"
+              />
+            </div>
             <h3 className="text-sm font-bold tracking-wider text-white">INTEGRITY SPECIALISTS INTERNATIONAL</h3>
             <p className="mt-3 text-xs leading-relaxed text-white">
               Integrity Specialists International, Inc. sustainability and growth plan is to accommodate our clients request with reliable solutions that does not compromise safety, quality, budget, or schedule.
