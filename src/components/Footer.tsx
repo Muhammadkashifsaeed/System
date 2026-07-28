@@ -38,14 +38,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 py-14 lg:grid-cols-12 lg:gap-8">
           {/* Company Column */}
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
-            <div className="mb-4">
+            <div className="mb-5">
               <Image
                 src="/images/menttion.png"
                 alt="Integrity Specialists International"
-                width={200}
-                height={60}
+                width={240}
+                height={72}
                 priority
-                className="h-16 w-auto object-contain"
+                className="h-20 w-auto object-contain"
               />
             </div>
             <p className="mt-3 text-xs leading-relaxed text-white">
