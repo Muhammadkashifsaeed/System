@@ -25,14 +25,14 @@ export default function AboutHSESections() {
               </div>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="group relative max-w-2xl">
-                <div className="absolute -inset-1 rounded-[28px] border border-primary/10 bg-white/40 backdrop-blur-sm" aria-hidden="true" />
-                <div className="absolute -top-5 -right-5 h-24 w-24" aria-hidden="true">
+              <div className="relative w-full max-w-2xl">
+                <div className="absolute -inset-1 rounded-[28px] border border-primary/10 bg-white/40 pointer-events-none" aria-hidden="true" />
+                <div className="absolute -top-5 -right-5 h-24 w-24 pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 100 100" fill="none" className="h-full w-full text-primary">
                     <circle cx="50" cy="50" r="44" stroke="currentColor" strokeWidth="1.5" opacity="0.18" />
                   </svg>
                 </div>
-                <div className="absolute top-2 right-2 h-16 w-16 opacity-[0.05]" aria-hidden="true">
+                <div className="absolute top-2 right-2 h-16 w-16 opacity-[0.05] pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 100 100" className="h-full w-full text-primary">
                     {Array.from({ length: 16 }).map((_, i) => {
                       const x = (i % 4) * 25 + 12.5;
@@ -41,13 +41,13 @@ export default function AboutHSESections() {
                     })}
                   </svg>
                 </div>
-                <div className="absolute -bottom-4 -left-4 h-20 w-20" aria-hidden="true">
+                <div className="absolute -bottom-4 -left-4 h-20 w-20 pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 80 80" fill="none" className="h-full w-full text-primary">
                     <path d="M10 70 L40 40 L70 70 Z" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
                   </svg>
                 </div>
-                <div className="absolute -bottom-3 left-6 right-6 h-5 rounded-[20px] bg-primary/5 blur-md" aria-hidden="true" />
-                <div className="absolute -bottom-2 left-10 opacity-[0.05]" aria-hidden="true">
+                <div className="absolute -bottom-3 left-6 right-6 h-5 rounded-[20px] bg-primary/5 blur-md pointer-events-none" aria-hidden="true" />
+                <div className="absolute -bottom-2 left-10 opacity-[0.05] pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 80 80" className="h-16 w-16 text-primary">
                     {Array.from({ length: 9 }).map((_, i) => {
                       const x = (i % 3) * 30 + 15;
@@ -77,14 +77,14 @@ export default function AboutHSESections() {
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div className="flex justify-center">
-              <div className="group relative max-w-2xl">
-                <div className="absolute -inset-1 rounded-[28px] border border-primary/10 bg-white/40 backdrop-blur-sm" aria-hidden="true" />
-                <div className="absolute -top-5 -right-5 h-24 w-24" aria-hidden="true">
+              <div className="relative w-full max-w-2xl">
+                <div className="absolute -inset-1 rounded-[28px] border border-primary/10 bg-white/40 pointer-events-none" aria-hidden="true" />
+                <div className="absolute -top-5 -right-5 h-24 w-24 pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 100 100" fill="none" className="h-full w-full text-primary">
                     <circle cx="50" cy="50" r="44" stroke="currentColor" strokeWidth="1.5" opacity="0.18" />
                   </svg>
                 </div>
-                <div className="absolute top-2 right-2 h-16 w-16 opacity-[0.05]" aria-hidden="true">
+                <div className="absolute top-2 right-2 h-16 w-16 opacity-[0.05] pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 100 100" className="h-full w-full text-primary">
                     {Array.from({ length: 16 }).map((_, i) => {
                       const x = (i % 4) * 25 + 12.5;
@@ -93,13 +93,13 @@ export default function AboutHSESections() {
                     })}
                   </svg>
                 </div>
-                <div className="absolute -bottom-4 -left-4 h-20 w-20" aria-hidden="true">
+                <div className="absolute -bottom-4 -left-4 h-20 w-20 pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 80 80" fill="none" className="h-full w-full text-primary">
                     <path d="M10 70 L40 40 L70 70 Z" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
                   </svg>
                 </div>
-                <div className="absolute -bottom-3 left-6 right-6 h-5 rounded-[20px] bg-primary/5 blur-md" aria-hidden="true" />
-                <div className="absolute -bottom-2 left-10 opacity-[0.05]" aria-hidden="true">
+                <div className="absolute -bottom-3 left-6 right-6 h-5 rounded-[20px] bg-primary/5 blur-md pointer-events-none" aria-hidden="true" />
+                <div className="absolute -bottom-2 left-10 opacity-[0.05] pointer-events-none" aria-hidden="true">
                   <svg viewBox="0 0 80 80" className="h-16 w-16 text-primary">
                     {Array.from({ length: 9 }).map((_, i) => {
                       const x = (i % 3) * 30 + 15;
