@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* HERO */}
-      <section className="relative flex h-[320px] w-full items-center justify-center overflow-hidden bg-dark sm:h-[360px] md:h-[400px] lg:h-[420px]">
+      <section className="relative flex h-[400px] w-full items-center justify-center overflow-hidden bg-dark sm:h-[500px] md:h-[600px] lg:h-[700px]">
         <VideoBackground
           src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
           className="video-bg"
