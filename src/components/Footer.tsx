@@ -48,20 +48,20 @@ export default function Footer() {
                 className="h-24 w-auto object-contain"
               />
             </div>
-            <p className="mt-3 text-xs leading-relaxed text-white">
+            <p className="mt-3 text-base leading-relaxed text-white">
               Integrity Specialists International, Inc. sustainability and growth plan is to accommodate our clients request with reliable solutions that does not compromise safety, quality, budget, or schedule.
             </p>
           </motion.div>
 
           {/* Quick Links */}
           <motion.div custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-2">
-            <h3 className="text-sm font-bold tracking-wider text-white">QUICK LINKS</h3>
+            <h3 className="text-lg font-bold tracking-wider text-white">QUICK LINKS</h3>
             <ul className="mt-4 space-y-2">
               {footerNavigation.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-2 text-xs font-medium text-white transition-colors hover:text-white"
+                    className="group flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-white"
                   >
                      <span className="h-[3px] w-[3px] rounded-full bg-white transition-all duration-300 group-hover:w-1.5" />
                     {item.label}
@@ -73,13 +73,13 @@ export default function Footer() {
 
           {/* Solutions */}
           <motion.div custom={2} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-4">
-            <h3 className="text-sm font-bold text-white">SOLUTIONS</h3>
+            <h3 className="text-lg font-bold text-white">SOLUTIONS</h3>
             <ul className="mt-3 grid grid-cols-1 gap-1">
                {topNavigation.find((n) => n.label === "SOLUTIONS")?.dropdownItems?.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-1.5 text-[11px] font-medium text-white transition-colors hover:text-white whitespace-nowrap"
+                     className="group flex items-center gap-1.5 text-sm font-medium text-white transition-colors hover:text-white whitespace-nowrap"
                   >
                      <span className="h-[3px] w-[3px] rounded-full bg-white transition-all duration-300 group-hover:w-1.5 flex-shrink-0" />
                     {item.label}
@@ -91,8 +91,8 @@ export default function Footer() {
 
           {/* Newsletter */}
           <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
-            <h3 className="text-sm font-bold tracking-wider text-white">STAY CONNECTED</h3>
-            <p className="mt-3 text-xs text-white">
+            <h3 className="text-lg font-bold tracking-wider text-white">STAY CONNECTED</h3>
+            <p className="mt-3 text-base text-white">
               Subscribe to our newsletter for the latest updates and insights.
             </p>
 
@@ -107,9 +107,9 @@ export default function Footer() {
                      placeholder="Enter your email"
                      value={formData.email}
                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                     className={cn(
-                       "h-10 w-full rounded-lg border border-white/10 bg-white/5 px-3 text-xs text-white placeholder:text-white/50 outline-none transition-all duration-300 focus:border-white/30 focus:shadow-[0_0_0_3px_rgba(255,255,255,0.1)]"
-                     )}
+                        className={cn(
+                           "h-10 w-full rounded-lg border border-white/10 bg-white/5 px-3 text-base text-white placeholder:text-white/50 outline-none transition-all duration-300 focus:border-white/30 focus:shadow-[0_0_0_3px_rgba(255,255,255,0.1)]"
+                        )}
                    />
                  </div>
                  <button
@@ -117,7 +117,7 @@ export default function Footer() {
                     className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary text-white transition-all duration-300 hover:bg-primary hover:scale-105"
                    aria-label="Subscribe"
                  >
-                   <ArrowRight className="h-4 w-4" />
+                    <ArrowRight className="h-6 w-6" />
                  </button>
                </div>
              </form>
@@ -127,11 +127,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-5">
           <div className="flex flex-col items-center justify-center gap-3">
-            <p className="text-[11px] text-white">
+            <p className="text-sm text-white">
               Copyright 2021 by local, domestic, and international law by Integrity Specialists International, Inc. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
-              <Link href="/contact" className="text-xs text-white transition-colors hover:text-white/80">Contact Us</Link>
+              <Link href="/contact" className="text-base text-white transition-colors hover:text-white/80">Contact Us</Link>
             </div>
           </div>
         </div>
