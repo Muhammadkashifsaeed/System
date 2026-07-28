@@ -42,10 +42,10 @@ export default function Footer() {
               <Image
                 src="/images/menttion.png"
                 alt="Integrity Specialists International"
-                width={160}
-                height={48}
+                width={200}
+                height={60}
                 priority
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="mt-3 text-xs leading-relaxed text-white">
