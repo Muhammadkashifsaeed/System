@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AnimatedSection from "@/components/AnimatedSection";
+import ExpandableCard from "@/components/ExpandableCard";
 import { Users, UserCheck, Trees, Award } from "lucide-react";
 
 const principles = [
@@ -55,22 +56,17 @@ export default function AboutPrinciples() {
             </p>
           </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {principles.map((item, idx) => {
             const IconComponent = item.Icon;
             return (
               <AnimatedSection key={item.title} delay={idx}>
-                <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
-                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl mb-5 transition-all duration-300 hover:scale-110 hover:rotate-12 ${item.iconBg}`}>
-                    <IconComponent className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-lg font-bold text-black">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-[1.8] text-black whitespace-pre-line md:text-base">
-                    {item.content}
-                  </p>
-                </div>
+                <ExpandableCard
+                  title={item.title}
+                  content={item.content}
+                  icon={<IconComponent className="h-6 w-6" />}
+                  iconBg={item.iconBg}
+                />
               </AnimatedSection>
             );
           })}

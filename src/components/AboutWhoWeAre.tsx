@@ -1,5 +1,8 @@
+"use client";
+
 import AnimatedSection from "@/components/AnimatedSection";
 import VideoBackground from "@/components/VideoBackground";
+import ExpandableCard from "@/components/ExpandableCard";
 import { Target, Shield, Leaf, Eye } from "lucide-react";
 
 const goalVision = [
@@ -16,12 +19,12 @@ const goalVision = [
 ];
 
 const values = [
-  { title: "Safety and Environmental Stewardship", content: "Protecting people and the environment is a priority to ISI. We are committed and are responsible to protect the health and safety of people and the environment." },
-  { title: "People", content: "Our most valued asset" },
-  { title: "Diversity", content: "We value diversity in culture, background, and experience. We provide our employees with the proper training, tools, and methods to make every task successful." },
-  { title: "Integrity", content: "Our expectations are set high for our company to build trust and doing right the first time without compromising safety or quality." },
-  { title: "Success", content: "Achieve goals and exceed expectations." },
-  { title: "Excellence", content: "Be the leader and lead by example with added-value." },
+  "Safety and Environmental Stewardship: Protecting people and the environment is a priority to ISI. We are committed and are responsible to protect the health and safety of people and the environment.",
+  "People: Our most valued asset.",
+  "Diversity: We value diversity in culture, background, and experience. We provide our employees with the proper training, tools, and methods to make every task successful.",
+  "Integrity: Our expectations are set high for our company to build trust and doing right the first time without compromising safety or quality.",
+  "Success: Achieve goals and exceed expectations.",
+  "Excellence: Be the leader and lead by example with added-value.",
 ];
 
 const sustainability = {
@@ -55,61 +58,41 @@ export default function AboutWhoWeAre() {
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
             <AnimatedSection delay={0} className="h-full">
-              <div className="glass-card p-8 h-full">
-                {goalVision.map((item, idx) => (
-                  <div
-                    key={item.title}
-                    className={idx > 0 ? "mt-5 border-t border-gray-100 pt-5" : ""}
-                  >
-                    <div className={`flex items-center gap-3 mb-3 ${idx === 0 ? "" : ""}`}>
-                      <div className={`flex h-9 w-9 items-center justify-center rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 ${idx === 0 ? "bg-primary/10 text-primary" : "bg-violet-50 text-violet-600"}`}>
-                        {idx === 0 ? <Target className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                      </div>
-                      <h4 className="text-lg font-bold text-black">{item.title}</h4>
-                    </div>
-                    <p className="mt-2 text-sm leading-[1.8] text-black md:text-base">
-                      {item.content}
-                    </p>
-                  </div>
-                ))}
-              </div>
+              <ExpandableCard
+                title={goalVision[0].title}
+                content={goalVision[0].content}
+                icon={<Target className="h-4 w-4" />}
+                iconBg="bg-primary/10 text-primary"
+              />
             </AnimatedSection>
 
             <AnimatedSection delay={1} className="h-full">
-              <div className="glass-card p-8 h-full">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 transition-all duration-300 hover:scale-110 hover:rotate-6">
-                    <Shield className="h-5 w-5" />
-                  </div>
-                  <h3 className="text-xl font-bold text-black">Values</h3>
-                </div>
-                <ul className="space-y-4">
-                  {values.map((item) => (
-                    <li key={item.title} className="border-b border-gray-50 pb-3 last:border-0 last:pb-0">
-                      <p className="text-sm font-semibold text-black">
-                        {item.title}
-                      </p>
-                      <p className="mt-1 text-sm leading-[1.7] text-black">
-                        {item.content}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ExpandableCard
+                title={goalVision[1].title}
+                content={goalVision[1].content}
+                icon={<Eye className="h-4 w-4" />}
+                iconBg="bg-violet-50 text-violet-600"
+              />
             </AnimatedSection>
 
             <AnimatedSection delay={2} className="h-full">
-              <div className="glass-card p-8 h-full">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-600 transition-all duration-300 hover:scale-110 hover:rotate-6">
-                    <Leaf className="h-5 w-5" />
-                  </div>
-                  <h3 className="text-xl font-bold text-black">{sustainability.title}</h3>
-                </div>
-                <p className="mt-4 text-sm leading-[1.8] text-black md:text-base">
-                  {sustainability.content}
-                </p>
-              </div>
+              <ExpandableCard
+                title="Values"
+                content={values.join("\n")}
+                icon={<Shield className="h-5 w-5" />}
+                iconBg="bg-emerald-50 text-emerald-600"
+              />
+            </AnimatedSection>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 xl:grid-cols-2 md:items-stretch">
+            <AnimatedSection delay={3} className="h-full">
+              <ExpandableCard
+                title={sustainability.title}
+                content={sustainability.content}
+                icon={<Leaf className="h-5 w-5" />}
+                iconBg="bg-amber-50 text-amber-600"
+              />
             </AnimatedSection>
           </div>
         </div>
