@@ -40,7 +40,7 @@ export default function Footer() {
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
             <div className="mb-4">
               <Image
-                src="/images/logo.png"
+                src="/images/menttion.png"
                 alt="Integrity Specialists International"
                 width={160}
                 height={48}

@@ -129,7 +129,7 @@ export default function Header() {
           <Link href="/" className="relative flex-shrink-0">
             <div className="rounded-lg bg-white/95 p-2 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md">
               <Image
-                src="/images/logo.png"
+                src="/images/menttion.png"
                 alt="Integrity Specialists International"
                 width={120}
                 height={36}
