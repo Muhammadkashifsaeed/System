@@ -78,7 +78,7 @@ function PremiumCorporateImage({ src, alt, priority = false }: { src: string; al
 
       <div className="absolute -bottom-3 left-3 right-3 h-6 rounded-[24px] bg-primary/5 blur-md transition-all duration-500 ease-out group-hover:bg-primary/10 group-hover:blur-lg" aria-hidden="true" />
 
-      <div className="relative overflow-hidden rounded-[28px] shadow-xl ring-1 ring-black/5 transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:shadow-2xl">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[28px] shadow-xl ring-1 ring-black/5 transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:shadow-2xl">
         <Image
           src={src}
           alt={alt}
