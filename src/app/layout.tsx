@@ -64,11 +64,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  icons: {
-    icon: "/images/logo.svg",
-    shortcut: "/images/logo.svg",
-    apple: "/images/logo.svg",
-  },
 };
 
 export const viewport = {
@@ -91,9 +86,10 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC] text-black">
         <link rel="preload" as="image" href="/images/gas4.webp" />
-        <link rel="preload" as="image" href="/images/logo.svg" />
-        <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/images/logo.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"
