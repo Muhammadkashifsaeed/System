@@ -1,60 +1,5 @@
 import Image from "next/image";
 
-function PremiumCorporateImage({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
-  return (
-    <div className="group relative mx-auto max-w-2xl">
-      <div className="absolute -inset-5 rounded-[32px] bg-gradient-to-br from-white via-gray-50 to-white" aria-hidden="true" />
-      <div className="absolute -inset-1 rounded-[28px] border border-primary/10 bg-white/40 backdrop-blur-sm" aria-hidden="true" />
-
-      <div className="absolute -top-5 -right-5 h-24 w-24 transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5" aria-hidden="true">
-        <svg viewBox="0 0 100 100" fill="none" className="h-full w-full text-primary">
-          <circle cx="50" cy="50" r="44" stroke="currentColor" strokeWidth="1.5" opacity="0.18" />
-        </svg>
-      </div>
-
-      <div className="absolute top-2 right-2 h-16 w-16 opacity-[0.05]" aria-hidden="true">
-        <svg viewBox="0 0 100 100" className="h-full w-full text-primary">
-          {Array.from({ length: 16 }).map((_, i) => {
-            const x = (i % 4) * 25 + 12.5;
-            const y = Math.floor(i / 4) * 25 + 12.5;
-            return <circle key={i} cx={x} cy={y} r="1.5" fill="currentColor" />;
-          })}
-        </svg>
-      </div>
-
-      <div className="absolute -bottom-4 -left-4 h-20 w-20 transition-transform duration-500 ease-out group-hover:translate-x-[-6px] group-hover:translate-y-[6px]" aria-hidden="true">
-        <svg viewBox="0 0 80 80" fill="none" className="h-full w-full text-primary">
-          <path d="M10 70 L40 40 L70 70 Z" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
-        </svg>
-      </div>
-
-      <div className="absolute -bottom-3 left-6 right-6 h-5 rounded-[20px] bg-primary/5 blur-md transition-all duration-500 ease-out group-hover:bg-primary/10 group-hover:blur-lg group-hover:h-6" aria-hidden="true" />
-
-      <div className="absolute -bottom-2 left-10 opacity-[0.05]" aria-hidden="true">
-        <svg viewBox="0 0 80 80" className="h-16 w-16 text-primary">
-          {Array.from({ length: 9 }).map((_, i) => {
-            const x = (i % 3) * 30 + 15;
-            const y = Math.floor(i / 3) * 30 + 15;
-            return <circle key={i} cx={x} cy={y} r="1.5" fill="currentColor" />;
-          })}
-        </svg>
-      </div>
-
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[28px] shadow-xl ring-1 ring-black/5 transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:ring-primary/10">
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          priority={priority}
-          quality={100}
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          className="object-cover"
-        />
-      </div>
-    </div>
-  );
-}
-
 export default function AboutHSESections() {
   return (
     <>
@@ -80,7 +25,17 @@ export default function AboutHSESections() {
               </div>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
-              <PremiumCorporateImage src="/images/Program.webp" alt="HSE Program" priority />
+              <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
+                <Image
+                  src="/images/Program.webp"
+                  alt="HSE Program"
+                  fill
+                  priority
+                  quality={100}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -90,7 +45,16 @@ export default function AboutHSESections() {
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
             <div className="flex justify-center">
-              <PremiumCorporateImage src="/images/safety.webp" alt="Quality" />
+              <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
+                <Image
+                  src="/images/safety.webp"
+                  alt="Quality"
+                  fill
+                  quality={100}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div>
               <div className="mt-6">
