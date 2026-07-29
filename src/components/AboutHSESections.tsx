@@ -31,7 +31,7 @@ export default function AboutHSESections() {
                   alt="Goals"
                   fill
                   priority
-                  quality={100}
+                  quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
@@ -50,7 +50,7 @@ export default function AboutHSESections() {
                   src="/images/Quality management.png"
                   alt="Quality Management"
                   fill
-                  quality={100}
+                  quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
@@ -77,7 +77,7 @@ export default function AboutHSESections() {
                   src="/images/Quality management.png"
                   alt="Quality Management"
                   fill
-                  quality={100}
+                  quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
