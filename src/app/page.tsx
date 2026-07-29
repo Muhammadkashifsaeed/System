@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      <AboutWhoWeAre />
+      <AboutWhoWeAre variant="home" />
 
       <AboutHSESections />
 

@@ -51,7 +51,7 @@ export default function ProjectPlanningPage() {
                 Our Planning for Custody Transfer (PCT) methods are specifically engineered with the project end in mind to assist and provide value to optimize the budget, schedule, mitigate risk, and most importantly the overall performance of the asset for Owner / Operator acceptance. This includes the upmost safe functionality of the asset. With our diversified managers, engineers, technical advisors, and subject matter experts involved during early pre-FEED or FEED stages of a project, we provide the right value-added required to mitigate unforeseen impacts and a quicker Return on Investment (ROI) with our proven planning, execution, and closeout methods.
               </p>
             </div>
-            <SolutionImage src="https://images.pexels.com/photos/6285147/pexels-photo-6285147.jpeg" alt="Project Planning" />
+            <SolutionImage src="/images/pexels-01.jpg" alt="Project Planning" />
           </div>
         </div>
       </section>

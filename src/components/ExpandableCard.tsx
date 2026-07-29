@@ -21,7 +21,7 @@ export default function ExpandableCard({ title, content, icon, iconBg }: Expanda
       )}
       <h3 className="text-lg font-bold text-black">{title}</h3>
       <div>
-        <p className={`text-sm leading-[1.8] text-black md:text-base ${!open ? "line-clamp-2" : ""}`}>
+        <p className={`text-sm leading-[1.8] text-black md:text-base ${!open ? "line-clamp-4" : ""}`}>
           {content}
         </p>
         <button
