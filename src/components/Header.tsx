@@ -130,7 +130,7 @@ export default function Header() {
     >
       <div className="absolute top-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-24 items-center justify-between">
+         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="relative flex-shrink-0">
             <div className="rounded-lg p-2 shadow-sm transition-all duration-300 hover:shadow-md">
               <Image
@@ -140,7 +140,7 @@ export default function Header() {
                 height={36}
                 quality={100}
                 priority
-                className="h-16 w-auto object-contain md:h-20"
+                className="h-14 w-auto object-contain md:h-16"
               />
             </div>
           </Link>
