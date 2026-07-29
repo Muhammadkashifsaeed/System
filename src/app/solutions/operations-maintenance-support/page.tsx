@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Operations & Maintenance Support (O&M) | Integrity Specialists International",
-  description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs that reduce lifecycle costs and improve uptime.",
+  description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs.",
   keywords: ["operations maintenance", "O&M", "asset reliability", "scheduled maintenance", "troubleshooting", "spare parts management", "integrity specialists", "lifecycle cost", "uptime"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/operations-maintenance-support",
   },
   openGraph: {
     title: "Operations & Maintenance Support (O&M) | Integrity Specialists International",
-    description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs that reduce lifecycle costs and improve uptime.",
+    description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs.",
     url: "https://www.integritysolns.com/solutions/operations-maintenance-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Operations & Maintenance Support (O&M) | Integrity Specialists International",
-    description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs that reduce lifecycle costs and improve uptime.",
+    description: "ISI O&M services maximize asset reliability through scheduled maintenance, troubleshooting, spare parts management, and continuous improvement programs.",
   },
 };
 
@@ -63,7 +63,7 @@ export default function OperationsMaintenancePage() {
                 ))}
               </ul>
             </div>
-            <SolutionImage src="https://images.pexels.com/photos/30556821/pexels-photo-30556821.jpeg" alt="Operations & Maintenance Support (O&M)" />
+            <SolutionImage src="/images/Artboard 8.png" alt="Operations & Maintenance Support (O&M)" />
           </div>
         </div>
       </section>

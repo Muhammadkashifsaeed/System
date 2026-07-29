@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Project Planning | Integrity Specialists International",
-  description: "ISI delivers expert project planning services that optimize budget, schedule, and risk for client assets. Our planning experts ensure ROI from pre-FEED through execution.",
+  description: "ISI delivers expert project planning that optimizes budget, schedule, and risk for client assets from pre-FEED through execution.",
   keywords: ["project planning", "FEED planning", "budget optimization", "risk mitigation", "engineering services", "integrity specialists", "pipeline planning", "asset management", "schedule management"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/project-planning",
   },
   openGraph: {
     title: "Project Planning | Integrity Specialists International",
-    description: "ISI delivers expert project planning services that optimize budget, schedule, and risk for client assets. Our planning experts ensure ROI from pre-FEED through execution.",
+    description: "ISI delivers expert project planning that optimizes budget, schedule, and risk for client assets from pre-FEED through execution.",
     url: "https://www.integritysolns.com/solutions/project-planning",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Project Planning | Integrity Specialists International",
-    description: "ISI delivers expert project planning services that optimize budget, schedule, and risk for client assets. Our planning experts ensure ROI from pre-FEED through execution.",
+    description: "ISI delivers expert project planning that optimizes budget, schedule, and risk for client assets from pre-FEED through execution.",
   },
 };
 

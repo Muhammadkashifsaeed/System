@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Commissioning and Start-Up Support (CSU) | Integrity Specialists International",
-  description: "ISI Commissioning and Start-Up Support covers CSU strategy, project controls, work scope development, energization, loop testing, mechanical checkouts, and site acceptance testing for safe, efficient project handover.",
+  description: "ISI delivers commissioning and start-up support including CSU strategy, work scope development, loop testing, mechanical checkouts, and site acceptance testing.",
   keywords: ["commissioning", "start-up support", "CSU", "energization", "loop testing", "mechanical checkouts", "site acceptance testing", "integrity specialists", "project handover", "FAT SAT"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/commissioning-start-up-support",
   },
   openGraph: {
     title: "Commissioning and Start-Up Support (CSU) | Integrity Specialists International",
-    description: "ISI Commissioning and Start-Up Support covers CSU strategy, project controls, work scope development, energization, loop testing, mechanical checkouts, and site acceptance testing for safe, efficient project handover.",
+    description: "ISI delivers commissioning and start-up support including CSU strategy, work scope development, loop testing, mechanical checkouts, and site acceptance testing.",
     url: "https://www.integritysolns.com/solutions/commissioning-start-up-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Commissioning and Start-Up Support (CSU) | Integrity Specialists International",
-    description: "ISI Commissioning and Start-Up Support covers CSU strategy, project controls, work scope development, energization, loop testing, mechanical checkouts, and site acceptance testing for safe, efficient project handover.",
+    description: "ISI delivers commissioning and start-up support including CSU strategy, work scope development, loop testing, mechanical checkouts, and site acceptance testing.",
   },
 };
 
@@ -109,7 +109,7 @@ export default function CommissioningStartupPage() {
             </div>
 
             <div className="flex justify-center">
-              <SolutionImage src="https://images.pexels.com/photos/6754758/pexels-photo-6754758.jpeg" alt="Commissioning and Start-Up Support (CSU)" />
+              <SolutionImage src="/images/Artboard 7.png" alt="Commissioning and Start-Up Support (CSU)" />
             </div>
           </div>
         </div>

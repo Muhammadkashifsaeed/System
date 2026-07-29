@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Engineering Support | Integrity Specialists International",
-  description: "ISI Engineering Support delivers professional licensing, specifications, drawings review, and technical advisory across multiple states to keep your project compliant and on track from concept to completion.",
+  description: "ISI Engineering Support provides professional licensing, specifications development, drawings review, and technical advisory to keep projects compliant and on track.",
   keywords: ["engineering support", "professional engineering", "technical advisory", "drawings reviews", "specifications development", "integrity specialists", "FEED engineering", "project engineering", "compliance"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/engineering-support",
   },
   openGraph: {
     title: "Engineering Support | Integrity Specialists International",
-    description: "ISI Engineering Support delivers professional licensing, specifications, drawings review, and technical advisory across multiple states to keep your project compliant and on track from concept to completion.",
+    description: "ISI Engineering Support provides professional licensing, specifications development, drawings review, and technical advisory to keep projects compliant and on track.",
     url: "https://www.integritysolns.com/solutions/engineering-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Engineering Support | Integrity Specialists International",
-    description: "ISI Engineering Support delivers professional licensing, specifications, drawings review, and technical advisory across multiple states to keep your project compliant and on track from concept to completion.",
+    description: "ISI Engineering Support provides professional licensing, specifications development, drawings review, and technical advisory to keep projects compliant and on track.",
   },
 };
 
@@ -55,7 +55,7 @@ export default function EngineeringSupportPage() {
                 <li>Planning for Commissioning and Start-Up</li>
               </ul>
             </div>
-            <SolutionImage src="https://images.pexels.com/photos/37198882/pexels-photo-37198882.jpeg" alt="Engineering Support" />
+            <SolutionImage src="/images/Artboard 3.png" alt="Engineering Support" />
           </div>
         </div>
       </section>

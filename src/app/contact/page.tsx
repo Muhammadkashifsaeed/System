@@ -4,7 +4,7 @@ import ContactClient from "@/components/ContactClient";
 export const metadata: Metadata = {
   title: "Contact | Integrity Specialists International",
   description:
-    "Contact Integrity Specialists International offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, energy, construction, and infrastructure services.",
+    "Contact ISI offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, and energy services.",
   keywords: [
     "Integrity Specialists Contact",
     "Engineering Company",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact | Integrity Specialists International",
     description:
-      "Contact Integrity Specialists International offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, energy, construction, and infrastructure services.",
+      "Contact ISI offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, and energy services.",
     url: "https://www.integritysolns.com/contact",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact | Integrity Specialists International",
     description:
-      "Contact Integrity Specialists International offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, energy, construction, and infrastructure services.",
+      "Contact ISI offices across the USA, Mexico, Nigeria, and South America for engineering, industrial, and energy services.",
     images: ["/images/menttion.png"],
   },
   alternates: {

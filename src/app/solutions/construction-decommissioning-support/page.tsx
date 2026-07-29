@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Construction / Decommissioning Support | Integrity Specialists International",
-  description: "ISI Construction and Decommissioning Support delivers construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe and efficient project delivery.",
+  description: "ISI provides construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe project delivery.",
   keywords: ["construction support", "decommissioning", "construction management", "vendor management", "field inspections", "engineering support", "integrity specialists", "as-built", "project delivery"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/construction-decommissioning-support",
   },
   openGraph: {
     title: "Construction / Decommissioning Support | Integrity Specialists International",
-    description: "ISI Construction and Decommissioning Support delivers construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe and efficient project delivery.",
+    description: "ISI provides construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe project delivery.",
     url: "https://www.integritysolns.com/solutions/construction-decommissioning-support",
     type: "website",
     images: [
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
       ],
   },
   twitter: {
-    card: "summary_large_image",
+card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Construction / Decommissioning Support | Integrity Specialists International",
-    description: "ISI Construction and Decommissioning Support delivers construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe and efficient project delivery.",
+    description: "ISI provides construction planning, vendor management, field inspections, decommissioning execution, and as-built documentation for safe project delivery.",
   },
 };
 
@@ -77,7 +77,7 @@ export default function ConstructionDecommissioningPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="https://images.pexels.com/photos/1009926/pexels-photo-1009926.jpeg" alt="Construction / Decommissioning Support" />
+              <SolutionImage src="/images/Artboard 5.png" alt="Construction / Decommissioning Support" />
             </div>
           </div>
         </div>

@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Integration Management Support | Integrity Specialists International",
-  description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handing off to Commissioning with customer approval as the priority.",
+  description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handoff to commissioning.",
   keywords: ["integration management", "project integration", "custody transfer", "stakeholder management", "commissioning support", "engineering services", "integrity specialists", "project delivery", "scope management"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/integration-management-support",
   },
   openGraph: {
     title: "Integration Management Support | Integrity Specialists International",
-    description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handing off to Commissioning with customer approval as the priority.",
+    description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handoff to commissioning.",
     url: "https://www.integritysolns.com/solutions/integration-management-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Integration Management Support | Integrity Specialists International",
-    description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handing off to Commissioning with customer approval as the priority.",
+    description: "ISI Integration Management ensures smooth project delivery across stakeholders — procurement, installation, testing, and handoff to commissioning.",
   },
 };
 
@@ -49,7 +49,7 @@ export default function IntegrationSupportPage() {
                 Our Integration Management methods provide recommendations in the early stages of the project assist with providing how the various stakeholders will procure, collaborate, prove functionality, install, integrate and test, and preserve to complete the project scope of work requirements for a flawless custody transfer to Commissioning.
               </p>
             </div>
-            <SolutionImage src="https://images.pexels.com/photos/36564992/pexels-photo-36564992.jpeg" alt="Integration Management Support" />
+            <SolutionImage src="/images/Artboard 2.png" alt="Integration Management Support" />
           </div>
         </div>
       </section>

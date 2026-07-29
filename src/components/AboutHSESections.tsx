@@ -6,7 +6,7 @@ export default function AboutHSESections() {
       <section className="bg-white section-padding">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
-            <div className="order-2 lg:order-1">
+            <div>
               <div className="mt-6">
                 <h3 className="text-xl font-bold text-black md:text-2xl lg:text-3xl">
                   HEALTH, SAFETY, and ENVIRONMENTAL (HSE)
@@ -24,11 +24,11 @@ export default function AboutHSESections() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex justify-center">
+            <div className="flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/Program.webp"
-                  alt="HSE Program"
+                  src="/images/Goals.png"
+                  alt="Goals"
                   fill
                   priority
                   quality={100}
@@ -44,11 +44,11 @@ export default function AboutHSESections() {
       <section className="bg-[#F8FAFC] section-padding">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
-            <div className="flex justify-center">
+            <div className="hidden lg:flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/safety.webp"
-                  alt="Quality"
+                  src="/images/Quality management.png"
+                  alt="Quality Management"
                   fill
                   quality={100}
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -69,6 +69,18 @@ export default function AboutHSESections() {
                     At Integrity Specialists International, Inc., the Quality Management System (QMS) starts with our management team commitment knowing and following our policies and processes and employing only the best fit for site specific, most-qualified resources to ensure every project is completed to the highest safety and quality standards. Our value-added processes and procedures ensure not only the highest safety and quality standards are met but also the client satisfactory of our solutions provided to a project. Our quality driven resources and planning and execution processes, procedures, and methods are proven to provide a quicker return on investment (RoI). ISI is dedicated and compliant with ISO 9001:2015 which is our obligation to perform the best of quality and doing the job right the first time.
                   </p>
                 </div>
+              </div>
+            </div>
+            <div className="lg:hidden flex justify-center">
+              <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
+                <Image
+                  src="/images/Quality management.png"
+                  alt="Quality Management"
+                  fill
+                  quality={100}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

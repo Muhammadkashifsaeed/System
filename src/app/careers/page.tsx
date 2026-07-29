@@ -4,7 +4,7 @@ import CareersClient from "@/components/CareersClient";
 export const metadata: Metadata = {
   title: "Careers | Integrity Specialists International",
   description:
-    "Join Integrity Specialists International and explore career opportunities in engineering, industrial services, construction, energy, manufacturing, and infrastructure.",
+    "Join ISI's team of industry professionals. We offer careers in engineering, project management, and technical solutions across global energy sectors.",
   keywords: [
     "Integrity Specialists Careers",
     "Engineering Jobs",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Careers | Integrity Specialists International",
     description:
-      "Join Integrity Specialists International and explore career opportunities in engineering, industrial services, construction, energy, manufacturing, and infrastructure.",
+      "Join ISI's team of industry professionals. We offer careers in engineering, project management, and technical solutions across global energy sectors.",
     url: "https://www.integritysolns.com/careers",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Careers | Integrity Specialists International",
     description:
-      "Join Integrity Specialists International and explore career opportunities in engineering, industrial services, construction, energy, manufacturing, and infrastructure.",
+      "Join ISI's team of industry professionals. We offer careers in engineering, project management, and technical solutions across global energy sectors.",
     images: ["/images/menttion.png"],
   },
   alternates: {

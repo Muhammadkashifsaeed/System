@@ -93,10 +93,10 @@ export default function AboutWhoWeAre({ variant = "about" }: AboutWhoWeAreProps)
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/45 via-dark/35 to-dark/50" />
-        <div className="relative z-10 text-center px-6">
-          <h2 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+          <div className="relative z-10 text-center px-6">
+          <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Who We Are
-          </h2>
+          </h1>
         </div>
       </div>
 

@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Asset Integrity Management | Integrity Specialists International",
-  description: "ISI Asset Integrity Management safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance and regulatory compliance.",
+  description: "ISI safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance.",
   keywords: ["asset integrity", "risk-based inspection", "corrosion management", "reliability-centered maintenance", "life extension", "integrity management", "integrity specialists", "regulatory compliance", "asset protection"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/asset-integrity-management",
   },
   openGraph: {
     title: "Asset Integrity Management | Integrity Specialists International",
-    description: "ISI Asset Integrity Management safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance and regulatory compliance.",
+    description: "ISI safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance.",
     url: "https://www.integritysolns.com/solutions/asset-integrity-management",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Asset Integrity Management | Integrity Specialists International",
-    description: "ISI Asset Integrity Management safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance and regulatory compliance.",
+    description: "ISI safeguards critical assets through risk-based inspection, corrosion management, reliability-centered maintenance, and life-extension studies for long-term performance.",
   },
 };
 
@@ -64,7 +64,7 @@ export default function AssetIntegrityPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="https://images.pexels.com/photos/37226176/pexels-photo-37226176.jpeg" alt="Asset Integrity Management" />
+              <SolutionImage src="/images/Artboard 9.png" alt="Asset Integrity Management" />
             </div>
           </div>
         </div>

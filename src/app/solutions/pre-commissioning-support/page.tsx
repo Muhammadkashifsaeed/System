@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Pre-Commissioning Support | Integrity Specialists International",
-  description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills to ensure systems are fully prepared for successful commissioning.",
+  description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills for readiness.",
   keywords: ["pre-commissioning", "integrity testing", "pipe flushing", "system drying", "inerting", "leak detection", "calibration", "commissioning support", "turnaround support", "engineering services"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/pre-commissioning-support",
   },
   openGraph: {
     title: "Pre-Commissioning Support | Integrity Specialists International",
-    description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills to ensure systems are fully prepared for successful commissioning.",
+    description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills for readiness.",
     url: "https://www.integritysolns.com/solutions/pre-commissioning-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Pre-Commissioning Support | Integrity Specialists International",
-    description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills to ensure systems are fully prepared for successful commissioning.",
+    description: "ISI Pre-Commissioning Support covers integrity testing, pipe flushing, system drying and inerting, leak detection, calibration, and first-fills for readiness.",
   },
 };
 
@@ -68,7 +68,7 @@ export default function PreCommissioningPage() {
                 ))}
               </ul>
             </div>
-            <SolutionImage src="https://images.pexels.com/photos/15893881/pexels-photo-15893881.jpeg" alt="Pre-Commissioning Support" />
+            <SolutionImage src="/images/Artboard 6.png" alt="Pre-Commissioning Support" />
           </div>
         </div>
       </section>

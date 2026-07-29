@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Staffing / Resources | Integrity Specialists International",
-  description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations. We provide the right talent at the right time with strict compliance and rigorous onboarding.",
+  description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations with rigorous onboarding.",
   keywords: ["staffing", "resources", "engineering staffing", "construction staffing", "commissioning staffing", "operations staffing", "talent acquisition", "integrity specialists", "project staffing", "workforce solutions"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/staffing-resources-support",
   },
   openGraph: {
     title: "Staffing / Resources | Integrity Specialists International",
-    description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations. We provide the right talent at the right time with strict compliance and rigorous onboarding.",
+    description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations with rigorous onboarding.",
     url: "https://www.integritysolns.com/solutions/staffing-resources-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Staffing / Resources | Integrity Specialists International",
-    description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations. We provide the right talent at the right time with strict compliance and rigorous onboarding.",
+    description: "ISI Staffing and Resources supply qualified professionals across engineering, construction, commissioning, and operations with rigorous onboarding.",
   },
 };
 
@@ -121,7 +121,7 @@ export default function StaffingResourcesPage() {
               </div>
             </div>
 
-            <SolutionImage src="https://images.pexels.com/photos/34670929/pexels-photo-34670929.jpeg" alt="Staffing / Resources" />
+            <SolutionImage src="/images/Artboard 12.png" alt="Staffing / Resources" />
           </div>
         </div>
       </section>

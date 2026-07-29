@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     default: "Coming Soon | Integrity Specialists International",
     template: "%s | Integrity Specialists International",
   },
-  description: "News and updates coming soon from Integrity Specialists International.",
+  description: "Latest news and updates from Integrity Specialists International. Stay informed about our projects, safety initiatives, and industry insights.",
   keywords: [
     "Integrity Specialists News",
     "Engineering News",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Coming Soon | Integrity Specialists International",
-    description: "News and updates coming soon.",
+    description: "Latest news and updates from Integrity Specialists International. Stay informed about our projects, safety initiatives, and industry insights.",
     url: "https://www.integritysolns.com/news",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Coming Soon | Integrity Specialists International",
-    description: "News and updates coming soon.",
+    description: "Latest news and updates from Integrity Specialists International. Stay informed about our projects, safety initiatives, and industry insights.",
     images: ["/images/menttion.png"],
   },
   alternates: {

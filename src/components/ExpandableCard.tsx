@@ -20,13 +20,15 @@ export default function ExpandableCard({ title, content, icon, iconBg }: Expanda
         </div>
       )}
       <h3 className="text-lg font-bold text-black">{title}</h3>
-      <div>
+      <div id={`expandable-content-${title.toLowerCase().replace(/\s+/g, "-")}`}>
         <p className={`text-sm leading-[1.8] text-black md:text-base ${!open ? "line-clamp-4" : ""}`}>
           {content}
         </p>
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls={`expandable-content-${title.toLowerCase().replace(/\s+/g, "-")}`}
           className="mt-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
         >
           {open ? "Read Less" : "Read More"}

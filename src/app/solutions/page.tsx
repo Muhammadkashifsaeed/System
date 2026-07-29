@@ -4,7 +4,7 @@ import AllSolutionsGrid from "@/components/AllSolutionsGrid";
 export const metadata: Metadata = {
   title: "Solutions | Integrity Specialists International",
   description:
-    "Explore Integrity Specialists International engineering, industrial, commissioning, electrical, staffing, marine construction, operations, maintenance and project planning solutions.",
+    "ISI delivers integrated solutions including project planning, engineering, commissioning, operations, maintenance, and asset integrity management.",
   keywords: [
     "Engineering Solutions",
     "Industrial Services",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Solutions | Integrity Specialists International",
     description:
-      "Explore Integrity Specialists International engineering, industrial, commissioning, electrical, staffing, marine construction, operations, maintenance and project planning solutions.",
+      "ISI delivers integrated solutions including project planning, engineering, commissioning, operations, maintenance, and asset integrity management.",
     url: "https://www.integritysolns.com/solutions",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Solutions | Integrity Specialists International",
     description:
-      "Explore Integrity Specialists International engineering, industrial, commissioning, electrical, staffing, marine construction, operations, maintenance and project planning solutions.",
+      "ISI delivers integrated solutions including project planning, engineering, commissioning, operations, maintenance, and asset integrity management.",
     images: ["/images/menttion.png"],
   },
   alternates: {

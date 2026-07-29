@@ -7,7 +7,7 @@ import AboutCompliance from "@/components/AboutCompliance";
 export const metadata: Metadata = {
   title: "Health, Safety and Environmental (HSE) | Integrity Specialists International",
   description:
-    "Integrity Specialists International is committed to Health, Safety, and Environmental excellence through proven programs, risk management, and ISO compliance.",
+    "ISI maintains excellence in health, safety, and environmental stewardship with robust, reliable, and environmentally responsible practices.",
   keywords: [
     "HSE",
     "Health and Safety",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health, Safety and Environmental (HSE) | Integrity Specialists International",
     description:
-      "Integrity Specialists International is committed to Health, Safety, and Environmental excellence through proven programs, risk management, and ISO compliance.",
+      "ISI maintains excellence in health, safety, and environmental stewardship with robust, reliable, and environmentally responsible practices.",
     url: "https://www.integritysolns.com/about/hse",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Health, Safety and Environmental (HSE) | Integrity Specialists International",
     description:
-      "Integrity Specialists International is committed to Health, Safety, and Environmental excellence through proven programs, risk management, and ISO compliance.",
+      "ISI maintains excellence in health, safety, and environmental stewardship with robust, reliable, and environmentally responsible practices.",
     images: ["https://images.pexels.com/photos/38070/pexels-photo-38070.jpeg"],
   },
   alternates: {

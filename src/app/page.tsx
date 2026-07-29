@@ -13,7 +13,7 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Integrity Specialists International | Engineering & Industrial Solutions",
   description:
-    "Integrity Specialists International provides professional engineering, industrial, commissioning, electrical, staffing, marine construction, operations, maintenance and project planning solutions.",
+    "ISI delivers engineering, industrial, commissioning, electrical, staffing, marine construction, operations, maintenance, and project planning solutions with a focus on safety, quality, and ROI.",
   keywords: [
     "Integrity Specialists International",
     "Engineering Solutions",

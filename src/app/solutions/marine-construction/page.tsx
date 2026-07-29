@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Marine Construction | Integrity Specialists International",
-  description: "ISI Marine Construction supports offshore and coastal infrastructure projects with specialized diving, subsea installation, platform modifications, and safe on-schedule material handling for complex marine environments.",
+  description: "ISI Marine Construction supports offshore and coastal projects with diving, subsea installation, platform modifications, and material handling.",
   keywords: ["marine construction", "offshore construction", "subsea installation", "platform modifications", "diving support", "coastal infrastructure", "integrity specialists", "material handling", "marine engineering"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/marine-construction",
   },
   openGraph: {
     title: "Marine Construction | Integrity Specialists International",
-    description: "ISI Marine Construction supports offshore and coastal infrastructure projects with specialized diving, subsea installation, platform modifications, and safe on-schedule material handling for complex marine environments.",
+    description: "ISI Marine Construction supports offshore and coastal projects with diving, subsea installation, platform modifications, and material handling.",
     url: "https://www.integritysolns.com/solutions/marine-construction",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Marine Construction | Integrity Specialists International",
-    description: "ISI Marine Construction supports offshore and coastal infrastructure projects with specialized diving, subsea installation, platform modifications, and safe on-schedule material handling for complex marine environments.",
+    description: "ISI Marine Construction supports offshore and coastal projects with diving, subsea installation, platform modifications, and material handling.",
   },
 };
 
@@ -110,7 +110,7 @@ export default function MarineConstructionPage() {
               </div>
             </div>
 
-            <SolutionImage src="https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg" alt="Marine Construction" />
+            <SolutionImage src="/images/Artboard 10.png" alt="Marine Construction" />
           </div>
         </div>
       </section>

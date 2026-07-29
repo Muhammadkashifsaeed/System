@@ -27,7 +27,7 @@ export default function GoalVisionBox() {
         </div>
         <h4 className="text-lg font-bold text-black">Goal & Vision</h4>
       </div>
-      <div className={`${!open ? "line-clamp-4" : ""}`}>
+      <div id="goal-vision-content" className={`${!open ? "line-clamp-4" : ""}`}>
         <p className="text-sm leading-[1.8] text-black md:text-base">
           {goalVision[0].content}
         </p>
@@ -46,6 +46,8 @@ export default function GoalVisionBox() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls="goal-vision-content"
         className="mt-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
       >
         {open ? "Read Less" : "Read More"}

@@ -218,16 +218,15 @@ export default function Header() {
   );
 }
 
-function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }) {
+ function MobileNavLink({ item, onClose }: { item: NavItem; onClose: () => void }) {
   if (item.hasDropdown && item.dropdownItems) {
     return (
       <div>
         <div
           className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-semibold uppercase tracking-wider text-black bg-gray-50"
-          aria-expanded="true"
         >
           {item.label}
-          <ChevronDown className="h-5 w-5 rotate-180" />
+          <ChevronDown className="h-5 w-5 rotate-180" aria-hidden="true" />
         </div>
 
         <div className="overflow-hidden pl-4">

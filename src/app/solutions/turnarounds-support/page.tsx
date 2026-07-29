@@ -4,14 +4,14 @@ import SolutionImage from "@/components/SolutionImage";
 
 export const metadata: Metadata = {
   title: "Turnarounds Support (TAR) | Integrity Specialists International",
-  description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within critical scheduling windows with disciplined execution and strict controls.",
+  description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within scheduling windows.",
   keywords: ["turnaround support", "TAR", "shutdown planning", "scaffolding", "mechanical work", "inspection", "trade labor", "integrity specialists", "plant turnaround", "maintenance shutdown"],
   alternates: {
     canonical: "https://www.integritysolns.com/solutions/turnarounds-support",
   },
   openGraph: {
     title: "Turnarounds Support (TAR) | Integrity Specialists International",
-    description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within critical scheduling windows with disciplined execution and strict controls.",
+    description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within scheduling windows.",
     url: "https://www.integritysolns.com/solutions/turnarounds-support",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/images/menttion.png"],
     title: "Turnarounds Support (TAR) | Integrity Specialists International",
-    description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within critical scheduling windows with disciplined execution and strict controls.",
+    description: "ISI Turnaround Support provides planning, scaffolding, mechanical work, inspection, and trade labor to complete TAR events safely within scheduling windows.",
   },
 };
 
@@ -110,7 +110,7 @@ export default function TurnaroundsPage() {
               </div>
             </div>
 
-              <SolutionImage src="https://images.pexels.com/photos/10407691/pexels-photo-10407691.jpeg" alt="Turnarounds Support (TAR)" />
+              <SolutionImage src="/images/Artboard 11.png" alt="Turnarounds Support (TAR)" />
           </div>
         </div>
       </section>

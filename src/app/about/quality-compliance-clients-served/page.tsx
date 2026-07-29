@@ -5,7 +5,7 @@ import AboutCompliance from "@/components/AboutCompliance";
 export const metadata: Metadata = {
   title: "Quality Compliance & Clients Served | Integrity Specialists International",
   description:
-    "Integrity Specialists International maintains ISO 9001:2015 certified quality management, client-focused compliance, and global stakeholder trust since 2012.",
+    "ISI provides quality compliance and serves clients across domestic and international energy, industrial, and infrastructure sectors.",
   keywords: [
     "Quality Compliance",
     "Clients Served",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Quality Compliance & Clients Served | Integrity Specialists International",
     description:
-      "Integrity Specialists International maintains ISO 9001:2015 certified quality management, client-focused compliance, and global stakeholder trust since 2012.",
+      "ISI provides quality compliance and serves clients across domestic and international energy, industrial, and infrastructure sectors.",
     url: "https://www.integritysolns.com/about/quality-compliance-clients-served",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Quality Compliance & Clients Served | Integrity Specialists International",
     description:
-      "Integrity Specialists International maintains ISO 9001:2015 certified quality management, client-focused compliance, and global stakeholder trust since 2012.",
+      "ISI provides quality compliance and serves clients across domestic and international energy, industrial, and infrastructure sectors.",
     images: ["https://images.pexels.com/photos/15970027/pexels-photo-15970027.jpeg"],
   },
   alternates: {

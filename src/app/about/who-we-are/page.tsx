@@ -7,7 +7,7 @@ import AboutCompliance from "@/components/AboutCompliance";
 export const metadata: Metadata = {
   title: "Who We Are | Integrity Specialists International",
   description:
-    "Integrity Specialists International was created by industry professionals committed to delivering engineering, project management, and technical solutions with safety and quality.",
+    "ISI is a team of industry professionals providing engineering, project management, and technical solutions with proven planning and execution methods.",
   keywords: [
     "Who We Are",
     "Integrity Specialists",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Who We Are | Integrity Specialists International",
     description:
-      "Integrity Specialists International was created by industry professionals committed to delivering engineering, project management, and technical solutions with safety and quality.",
+      "ISI is a team of industry professionals providing engineering, project management, and technical solutions with proven planning and execution methods.",
     url: "https://www.integritysolns.com/about/who-we-are",
     siteName: "Integrity Specialists International",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Who We Are | Integrity Specialists International",
     description:
-      "Integrity Specialists International was created by industry professionals committed to delivering engineering, project management, and technical solutions with safety and quality.",
+      "ISI is a team of industry professionals providing engineering, project management, and technical solutions with proven planning and execution methods.",
     images: ["/images/menttion.png"],
   },
   alternates: {
