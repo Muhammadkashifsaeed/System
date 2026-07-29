@@ -121,13 +121,13 @@ export default function Header() {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
-          : "bg-white/90 shadow-sm border-b border-gray-100/60 backdrop-blur-sm"
-      }`}
-    >
+     <header
+       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+         scrolled
+           ? "bg-white shadow-lg shadow-black/5 border-b border-gray-100/80 backdrop-blur-md"
+           : "bg-white shadow-sm border-b border-gray-100/60 backdrop-blur-sm"
+       }`}
+     >
       <div className="absolute top-0 left-0 h-[3px] bg-primary transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }} aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
          <div className="flex h-20 items-center justify-between">
@@ -140,7 +140,7 @@ export default function Header() {
                 height={36}
                 quality={100}
                 priority
-                className="h-14 w-auto object-contain md:h-16"
+                className="h-12 w-auto object-contain md:h-14"
               />
             </div>
           </Link>
