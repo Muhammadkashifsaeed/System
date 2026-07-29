@@ -156,10 +156,10 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/contact"
-              className="btn-primary transition-all duration-300 hover:scale-105"
+              className="btn-primary group inline-flex items-center gap-2 transition-all duration-300 hover:scale-105"
             >
               GET IN TOUCH
-              <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <svg className="h-4 w-4 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
