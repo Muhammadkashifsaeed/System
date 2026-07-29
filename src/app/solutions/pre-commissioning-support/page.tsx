@@ -68,7 +68,7 @@ export default function PreCommissioningPage() {
                 ))}
               </ul>
             </div>
-            <SolutionImage src="/images/Artboard 6.png" alt="Pre-Commissioning Support" />
+            <SolutionImage src="/images/Artboard 5.png" alt="Pre-Commissioning Support" />
           </div>
         </div>
       </section>

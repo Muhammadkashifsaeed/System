@@ -64,7 +64,7 @@ export default function AssetIntegrityPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="/images/Artboard 9.png" alt="Asset Integrity Management" />
+              <SolutionImage src="/images/Artboard 10.png" alt="Asset Integrity Management" />
             </div>
           </div>
         </div>

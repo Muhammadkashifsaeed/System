@@ -110,7 +110,7 @@ export default function MarineConstructionPage() {
               </div>
             </div>
 
-            <SolutionImage src="/images/Artboard 10.png" alt="Marine Construction" />
+            <SolutionImage src="/images/Artboard 9.png" alt="Marine Construction" />
           </div>
         </div>
       </section>

@@ -77,7 +77,7 @@ export default function ConstructionDecommissioningPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <SolutionImage src="/images/Artboard 5.png" alt="Construction / Decommissioning Support" />
+              <SolutionImage src="/images/Artboard 6.png" alt="Construction / Decommissioning Support" />
             </div>
           </div>
         </div>
