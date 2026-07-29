@@ -186,17 +186,6 @@ export default function EICFiberOpticPage() {
 
       <section className="bg-white section-padding">
         <div className="container-custom">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-start">
-            <div>
-              <h2 className="text-3xl font-bold text-black md:text-4xl">FIBER OPTIC</h2>
-            </div>
-             <SolutionImage src="/images/Artboard 4.png" alt="Fiber Optic" />
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white section-padding">
-        <div className="container-custom">
           <h2 className="text-center text-2xl font-bold text-black md:text-3xl">
             The fiber optic solutions that ISI provides include, but are not limited to the following:
           </h2>
