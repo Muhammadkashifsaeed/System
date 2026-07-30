@@ -21,13 +21,13 @@ export default function AboutCompliance() {
                 {[...secureLogos, ...secureLogos].map((src, idx) => (
                   <div
                     key={src + idx}
-                    className="flex aspect-square w-40 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
+                    className="flex aspect-square w-48 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-white p-6 shadow-sm"
                   >
                     <Image
                       src={src}
                       alt={`Certification and membership logo ${idx + 1}`}
-                      width={160}
-                      height={160}
+                      width={192}
+                      height={192}
                       quality={100}
                       className="h-full w-full object-contain"
                     />
@@ -59,13 +59,13 @@ export default function AboutCompliance() {
                 {[...solutionLogos, ...solutionLogos].map((src, idx) => (
                   <div
                     key={src + idx}
-                    className="flex aspect-square w-40 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
+                    className="flex aspect-square w-48 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-white p-6 shadow-sm"
                   >
                     <Image
                       src={src}
                       alt={`Client logo ${idx + 1}`}
-                      width={160}
-                      height={160}
+                      width={192}
+                      height={192}
                       quality={100}
                       className="h-full w-full object-contain"
                     />
