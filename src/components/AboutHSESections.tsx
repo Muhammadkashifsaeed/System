@@ -27,10 +27,9 @@ export default function AboutHSESections() {
             <div className="flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/Goals.png"
-                  alt="Goals"
+                  src="/images/PROGRAMS 2.png"
+                  alt="PROGRAMS 2"
                   fill
-                  priority
                   quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -47,7 +46,7 @@ export default function AboutHSESections() {
             <div className="hidden lg:flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/Quality management.png"
+                  src="/images/PROGRAMS 3.png"
                   alt="Quality Management"
                   fill
                   quality={75}
@@ -74,7 +73,7 @@ export default function AboutHSESections() {
             <div className="lg:hidden flex justify-center">
               <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/images/Quality management.png"
+                  src="/images/PROGRAMS 3.png"
                   alt="Quality Management"
                   fill
                   quality={75}
