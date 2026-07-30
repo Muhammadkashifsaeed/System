@@ -92,10 +92,10 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
-                  href="/about"
+                  href="/solutions"
                   className="btn-outline"
                 >
-                  LEARN MORE
+                  Industries Served
                 </Link>
               </div>
             </AnimatedSection>

@@ -21,29 +21,29 @@ const industries = [
 
 export default function PowerIndustries() {
   return (
-    <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
       {industries.map((item) => (
         <Link
           key={item.title}
           href="/solutions"
           className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
         >
-          <div className="relative h-32 w-full overflow-hidden sm:h-36">
+          <div className="relative h-36 w-full overflow-hidden sm:h-40 md:h-48">
             <Image
               src={item.image}
               alt={item.title}
               fill
               quality={100}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              sizes="(max-width: 640px) 33vw, (max-width: 1024px) 50vw, 25vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-transparent" />
           </div>
           <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4">
-            <h3 className="text-xs font-semibold text-white sm:text-sm md:text-base">
-              {item.title}
-            </h3>
-          </div>
+             <h3 className="text-sm font-semibold text-white sm:text-base md:text-lg">
+               {item.title}
+             </h3>
+           </div>
         </Link>
       ))}
     </section>

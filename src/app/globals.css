@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
- @theme inline {
+  @theme inline {
   --color-background: #F8FAFC;
   --color-foreground: #0F172A;
   --color-primary: #0F4C81;
   --color-secondary: #334155;
   --color-accent: #0EA5E9;
   --color-dark: #0F172A;
+  --color-yellow: #F59E0B;
   --font-sans: var(--font-inter-sans);
 }
 
@@ -85,7 +86,7 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 hover:from-primary hover:to-primary;
+    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30 hover:from-yellow hover:to-yellow;
   }
 
   .btn-primary:active {
