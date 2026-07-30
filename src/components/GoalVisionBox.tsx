@@ -20,7 +20,7 @@ export default function GoalVisionBox() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
+     <div className="h-full rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary">
       <div className="flex items-center gap-3 mb-4">
         <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
           <Target className="h-4 w-4" />

@@ -26,11 +26,11 @@ interface AboutWhoWeAreProps {
   variant?: "home" | "about";
 }
 
-export default function AboutWhoWeAre({ variant = "about" }: AboutWhoWeAreProps) {
+ export default function AboutWhoWeAre({ variant = "about" }: AboutWhoWeAreProps) {
   if (variant === "home") {
     return (
       <section className="relative overflow-hidden bg-white">
-        <div className="relative flex min-h-[340px] items-center justify-center overflow-hidden bg-dark sm:min-h-[380px] md:min-h-[420px] lg:min-h-[460px]">
+        <div className="relative min-h-[340px] bg-dark sm:min-h-[380px] md:min-h-[420px] lg:min-h-[460px]">
           <VideoBackground
             src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
             poster="/images/gas4.webp"
@@ -45,12 +45,8 @@ export default function AboutWhoWeAre({ variant = "about" }: AboutWhoWeAreProps)
             <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-white/90 md:text-lg">
               Integrity Specialists International, Inc. was created by a team of industry professionals that know exactly what it takes to do the job right the first time without compromising any aspect of the owners investment. Our management and staff have extensive industry experience tackling some of the world&apos;s largest, most challenging projects providing engineering, project management, and technical solutions supporting the project and asset lifecycle. We are your invested partner providing the highest expectations of safety, quality, a return on investment with proven planning and execution methods.
             </p>
-          </div>
-        </div>
 
-        <div className="section-padding">
-          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
+            <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 text-left md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
               <AnimatedSection delay={0} className="h-full">
                 <GoalVisionBox />
               </AnimatedSection>

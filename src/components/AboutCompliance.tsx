@@ -1,43 +1,46 @@
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 
-const secureLogos = Array.from({ length: 5 }, (_, i) => `/images/secure${i + 1}.webp`);
-const solutionLogos = Array.from({ length: 6 }, (_, i) => `/images/solutions${i + 1}.webp`);
+const secureLogos = Array.from({ length: 18 }, (_, i) => `/images/secure${i + 1}.webp`);
+const solutionLogos = Array.from({ length: 20 }, (_, i) => `/images/solutions${i + 1}.webp`);
 
 export default function AboutCompliance() {
   return (
     <>
       {/* COMPLIANCE & MEMBERSHIP */}
-      <section className="bg-white section-padding">
+      <section className="bg-white section-padding overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <SectionHeader
             title="Compliance & Membership"
             subtitle="Maintaining the highest standards through ISO certifications and industry memberships."
           />
 
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-             {secureLogos.map((src, idx) => (
-                <div
-                  key={src}
-                  className="flex aspect-square w-full items-center justify-center rounded-2xl border border-gray-100 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
-                >
-                   <Image
-                     src={src}
-                     alt={`Certification and membership logo ${idx + 1}`}
-                     width={160}
-                     height={160}
-                     quality={100}
-                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
-                     className="h-full w-full object-contain"
-                   />
-                </div>
-              ))}
-           </div>
+          <div className="relative mt-8">
+            <div className="flex overflow-hidden">
+              <div className="flex gap-6 animate-marquee whitespace-nowrap">
+                {[...secureLogos, ...secureLogos].map((src, idx) => (
+                  <div
+                    key={src + idx}
+                    className="flex aspect-square w-32 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"
+                  >
+                    <Image
+                      src={src}
+                      alt={`Certification and membership logo ${idx + 1}`}
+                      width={160}
+                      height={160}
+                      quality={100}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CLIENTS SERVED */}
-      <section className="bg-[#F8FAFC] section-padding">
+      <section className="bg-[#F8FAFC] section-padding overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <SectionHeader
             title="Clients Served"
@@ -50,24 +53,27 @@ export default function AboutCompliance() {
             projects, globally.
           </p>
 
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-             {solutionLogos.map((src, idx) => (
-                <div
-                  key={src}
-                  className="flex aspect-square w-full items-center justify-center rounded-2xl border border-gray-100 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
-                >
-                   <Image
-                     src={src}
-                     alt={`Client logo ${idx + 1}`}
-                     width={160}
-                     height={160}
-                     quality={100}
-                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16.667vw"
-                     className="h-full w-full object-contain"
-                   />
-                </div>
-              ))}
-           </div>
+          <div className="relative mt-10">
+            <div className="flex overflow-hidden">
+              <div className="flex gap-6 animate-marquee-reverse whitespace-nowrap">
+                {[...solutionLogos, ...solutionLogos].map((src, idx) => (
+                  <div
+                    key={src + idx}
+                    className="flex aspect-square w-32 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"
+                  >
+                    <Image
+                      src={src}
+                      alt={`Client logo ${idx + 1}`}
+                      width={160}
+                      height={160}
+                      quality={100}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

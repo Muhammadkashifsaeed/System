@@ -13,7 +13,7 @@ export default function ExpandableCard({ title, content, icon, iconBg }: Expanda
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="h-full rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20">
+    <div className="h-full rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary">
       {icon && (
         <div className={`flex h-12 w-12 items-center justify-center rounded-xl mb-5 transition-all duration-300 hover:scale-110 hover:rotate-12 ${iconBg || "bg-primary/10 text-primary"}`}>
           {icon}
