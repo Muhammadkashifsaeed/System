@@ -28,53 +28,6 @@ interface AboutWhoWeAreProps {
 
  export default function AboutWhoWeAre({ variant = "about" }: AboutWhoWeAreProps) {
   if (variant === "home") {
-    return (
-      <section className="relative overflow-hidden bg-white">
-        <div className="relative min-h-[340px] bg-dark sm:min-h-[380px] md:min-h-[420px] lg:min-h-[460px]">
-          <VideoBackground
-            src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
-            poster="/images/gas4.webp"
-            className="video-bg"
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
-          </VideoBackground>
-          <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 text-center sm:px-8 lg:px-12">
-            <h2 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-              Who We Are
-            </h2>
-            <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-white/90 md:text-lg">
-              Integrity Specialists International, Inc. was created by a team of industry professionals that know exactly what it takes to do the job right the first time without compromising any aspect of the owners investment. Our management and staff have extensive industry experience tackling some of the world&apos;s largest, most challenging projects providing engineering, project management, and technical solutions supporting the project and asset lifecycle. We are your invested partner providing the highest expectations of safety, quality, a return on investment with proven planning and execution methods.
-            </p>
-
-            <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 text-left md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
-              <AnimatedSection delay={0} className="h-full">
-                <GoalVisionBox />
-              </AnimatedSection>
-
-              <AnimatedSection delay={1} className="h-full">
-                <ExpandableCard
-                  title="Values"
-                  content={values.join("\n")}
-                  icon={<Shield className="h-5 w-5" />}
-                  iconBg="bg-emerald-50 text-emerald-600"
-                />
-              </AnimatedSection>
-
-              <AnimatedSection delay={2} className="h-full">
-                <ExpandableCard
-                  title={sustainability.title}
-                  content={sustainability.content}
-                  icon={<Leaf className="h-5 w-5" />}
-                  iconBg="bg-amber-50 text-amber-600"
-                />
-              </AnimatedSection>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="relative flex h-[240px] items-center justify-center overflow-hidden bg-dark sm:h-[280px] md:h-[320px] lg:h-[360px]">
@@ -89,7 +42,7 @@ interface AboutWhoWeAreProps {
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/45 via-dark/35 to-dark/50" />
-          <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-6">
           <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Who We Are
           </h1>
@@ -114,6 +67,53 @@ interface AboutWhoWeAreProps {
       <div className="section-padding">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
+            <AnimatedSection delay={0} className="h-full">
+              <GoalVisionBox />
+            </AnimatedSection>
+
+            <AnimatedSection delay={1} className="h-full">
+              <ExpandableCard
+                title="Values"
+                content={values.join("\n")}
+                icon={<Shield className="h-5 w-5" />}
+                iconBg="bg-emerald-50 text-emerald-600"
+              />
+            </AnimatedSection>
+
+            <AnimatedSection delay={2} className="h-full">
+              <ExpandableCard
+                title={sustainability.title}
+                content={sustainability.content}
+                icon={<Leaf className="h-5 w-5" />}
+                iconBg="bg-amber-50 text-amber-600"
+              />
+            </AnimatedSection>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+  return (
+    <section className="relative overflow-hidden bg-white">
+      <div className="relative min-h-[340px] bg-dark sm:min-h-[380px] md:min-h-[420px] lg:min-h-[460px]">
+        <VideoBackground
+          src="https://videos.pexels.com/video-files/37151630/15738797_1920_1080_30fps.mp4"
+          poster="/images/gas4.webp"
+          className="video-bg"
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/50" />
+        </VideoBackground>
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 text-center sm:px-8 lg:px-12">
+          <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+            Who We Are
+          </h1>
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-white/90 md:text-lg">
+            Integrity Specialists International, Inc. was created by a team of industry professionals that know exactly what it takes to do the job right the first time without compromising any aspect of the owners investment. Our management and staff have extensive industry experience tackling some of the world&apos;s largest, most challenging projects providing engineering, project management, and technical solutions supporting the project and asset lifecycle. We are your invested partner providing the highest expectations of safety, quality, a return on investment with proven planning and execution methods.
+          </p>
+
+          <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 text-left md:grid-cols-2 xl:grid-cols-3 md:items-stretch">
             <AnimatedSection delay={0} className="h-full">
               <GoalVisionBox />
             </AnimatedSection>
