@@ -1,0 +1,15 @@
+{
+  "name": "Integrity Specialists International",
+  "short_name": "ISI",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0F4C81",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
