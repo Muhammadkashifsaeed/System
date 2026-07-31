@@ -55,7 +55,7 @@ export default function AboutHSEPage() {
         backgroundImage="https://images.pexels.com/photos/38070/pexels-photo-38070.jpeg"
         overlayIntensity="dark"
       />
-      <AboutHSESections />
+      <AboutHSESections variant="hse_page" />
       <AboutPrinciples />
       <AboutCompliance />
     </div>

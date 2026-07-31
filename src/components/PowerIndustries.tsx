@@ -39,8 +39,8 @@ export default function PowerIndustries() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-transparent" />
           </div>
-          <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4">
-             <h3 className="text-sm font-semibold text-white sm:text-base md:text-lg">
+          <div className="absolute inset-x-0 bottom-0 p-2 sm:p-4 flex items-end justify-center h-full">
+             <h3 className="text-xs font-semibold text-white sm:text-sm md:text-lg text-center leading-tight break-words mb-1 sm:mb-0 w-full px-1">
                {item.title}
              </h3>
            </div>
