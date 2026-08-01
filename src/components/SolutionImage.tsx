@@ -10,7 +10,7 @@ interface SolutionImageProps {
 export default function SolutionImage({ src, alt }: SolutionImageProps) {
   return (
     <div className="w-full max-w-2xl xl:max-w-[800px] mx-auto">
-      <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden premium-shadow border border-gray-100">
+      <div className="relative aspect-[3/4] sm:aspect-[4/3] w-full rounded-2xl overflow-hidden premium-shadow border border-gray-100">
         <Image
           src={src}
           alt={alt}

@@ -89,14 +89,14 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Newsletter */}
-          <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
-            <h3 className="text-lg font-bold tracking-wider text-white pl-4">STAY CONNECTED</h3>
-            <p className="mt-3 text-base text-white pl-4">
-              Subscribe to our newsletter for the latest updates and insights.
-            </p>
+           {/* Newsletter */}
+           <motion.div custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
+             <h3 className="text-lg font-bold tracking-wider text-white px-6 sm:px-8 lg:px-12">STAY CONNECTED</h3>
+             <p className="mt-3 text-base text-white px-6 sm:px-8 lg:px-12">
+               Subscribe to our newsletter for the latest updates and insights.
+             </p>
 
-             <form onSubmit={handleSubmit} className="mt-4 pl-4">
+              <form onSubmit={handleSubmit} className="mt-4 px-6 sm:px-8 lg:px-12">
                <div className="flex gap-2">
                  <div className="flex-1">
                    <label htmlFor="newsletter-email" className="sr-only">Email</label>
@@ -126,7 +126,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-5">
-          <div className="flex flex-col items-center justify-center gap-3">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
             <p className="text-sm text-white">
               Copyright 2021 by local, domestic, and international law by Integrity Specialists International, Inc. All rights reserved.
             </p>

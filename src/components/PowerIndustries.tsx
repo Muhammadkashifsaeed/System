@@ -34,7 +34,7 @@ export default function PowerIndustries() {
               alt={item.title}
               fill
               quality={100}
-              sizes="(max-width: 640px) 33vw, (max-width: 1024px) 50vw, 25vw"
+              sizes="(max-width: 640px) 33vw, (max-width: 1024px) 33vw, 25vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-transparent" />

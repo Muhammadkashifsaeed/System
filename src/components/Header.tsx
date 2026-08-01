@@ -27,9 +27,9 @@ function NavLink({ item }: { item: NavItem }) {
             <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
           </div>
 
-          <div
-            className="absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
-          >
+           <div
+             className="absolute left-1/2 top-full z-50 w-[min(95vw,640px)] -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200"
+           >
                <div className="rounded-2xl border border-gray-100 bg-white p-2 shadow-2xl premium-shadow">
                  <Link
                    href="/solutions"
