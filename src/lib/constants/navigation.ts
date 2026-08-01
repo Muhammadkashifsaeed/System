@@ -12,7 +12,6 @@ export interface NavItem {
 
 export const topNavigation: NavItem[] = [
   { label: "HOME", href: "/" },
-  { label: "INDUSTRIES", href: "/industries-served" },
   {
     label: "ABOUT",
     href: "/about",
@@ -29,6 +28,7 @@ export const topNavigation: NavItem[] = [
       },
     ],
   },
+  { label: "INDUSTRIES", href: "/industries-served" },
   {
     label: "SOLUTIONS",
     href: "/solutions",
