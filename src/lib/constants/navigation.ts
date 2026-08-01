@@ -12,6 +12,7 @@ export interface NavItem {
 
 export const topNavigation: NavItem[] = [
   { label: "HOME", href: "/" },
+  { label: "INDUSTRIES SERVED", href: "/industries-served" },
   {
     label: "ABOUT",
     href: "/about",
