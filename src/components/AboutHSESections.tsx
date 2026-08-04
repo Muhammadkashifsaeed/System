@@ -14,14 +14,14 @@ export default function AboutHSESections({ variant = "home" }: AboutHSESectionsP
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="order-2 lg:order-2 flex justify-center">
-              <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
+              <div className="group relative aspect-[4/3] w-full max-w-2xl transition-all duration-500 hover:-translate-y-2">
                 <Image
                   src={hseImage}
                   alt="HSE Program"
                   fill
                   quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-contain scale-105 transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
@@ -47,18 +47,18 @@ export default function AboutHSESections({ variant = "home" }: AboutHSESectionsP
         </div>
       </section>
 
-      <section className="bg-[#F8FAFC] section-padding">
+      <section className="bg-white section-padding">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 flex justify-center">
-              <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl shadow-2xl">
+              <div className="group relative aspect-[4/3] w-full max-w-2xl transition-all duration-500 hover:-translate-y-2">
                 <Image
                   src={qualityImage}
                   alt="Quality Management"
                   fill
                   quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-contain scale-105 transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
