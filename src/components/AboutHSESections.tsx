@@ -5,7 +5,7 @@ interface AboutHSESectionsProps {
 }
 
 export default function AboutHSESections({ variant = "home" }: AboutHSESectionsProps) {
-  const hseImage = variant === "home" ? "/images/PROGRAMS 2.png" : variant === "hse_page" ? "/images/hse_page_safety_ai.png" : "/images/hse_ai_generated.png";
+  const hseImage = variant === "home" ? "/images/PROGRAMS2.png" : variant === "hse_page" ? "/images/hse_page_safety_ai.png" : "/images/hse_ai_generated.png";
   const qualityImage = variant === "home" ? "/images/PROGRAMS 3.png" : variant === "hse_page" ? "/images/hse_page_quality_ai.png" : "/images/quality_ai_generated.png";
 
   return (
