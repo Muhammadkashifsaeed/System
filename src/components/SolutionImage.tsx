@@ -9,15 +9,15 @@ interface SolutionImageProps {
 
 export default function SolutionImage({ src, alt }: SolutionImageProps) {
   return (
-    <div className="w-full max-w-2xl xl:max-w-[800px] mx-auto">
-      <div className="relative aspect-[3/4] sm:aspect-[4/3] w-full rounded-2xl overflow-hidden premium-shadow border border-gray-100">
+    <div className="w-full max-w-7xl xl:max-w-[1200px] mx-auto">
+      <div className="group relative aspect-[4/3] w-full transition-all duration-500 hover:-translate-y-2">
         <Image
           src={src}
           alt={alt}
           fill
           quality={75}
-          sizes="(max-width: 1024px) 100vw, 800px"
-          className="object-cover"
+          sizes="(max-width: 1280px) 100vw, 1200px"
+          className="object-contain scale-[1.30] transition-transform duration-700 group-hover:scale-[1.35]"
         />
       </div>
     </div>
