@@ -1,8 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface AboutHSESectionsProps {
   variant?: "home" | "about" | "hse_page";
 }
+
+const slideInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
+const slideInRight = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
 
 export default function AboutHSESections({ variant = "home" }: AboutHSESectionsProps) {
   const hseImage = variant === "home" ? "/images/PROGRAMS2.png" : variant === "hse_page" ? "/images/hse_page_safety_ai.png" : "/images/hse_ai_generated.png";
@@ -10,22 +31,34 @@ export default function AboutHSESections({ variant = "home" }: AboutHSESectionsP
 
   return (
     <>
-      <section className="bg-white section-padding">
+      <section className="bg-white section-padding overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="order-2 lg:order-2 flex justify-center">
-              <div className="group relative aspect-[4/3] w-full max-w-2xl transition-all duration-500 hover:-translate-y-2">
+            <motion.div 
+              className="order-2 lg:order-2 flex justify-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={slideInRight}
+            >
+              <div className="group relative aspect-[4/3] w-full max-w-3xl transition-all duration-500 hover:-translate-y-2">
                 <Image
                   src={hseImage}
                   alt="HSE Program"
                   fill
                   quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-contain scale-105 transition-transform duration-700 group-hover:scale-110"
+                  className="object-contain scale-[1.10] transition-transform duration-700 group-hover:scale-[1.15]"
                 />
               </div>
-            </div>
-            <div className="order-1 lg:order-1">
+            </motion.div>
+            <motion.div 
+              className="order-1 lg:order-1"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={slideInLeft}
+            >
               <div className="mt-4 lg:mt-6">
                 <h3 className="text-2xl font-extrabold text-gray-900 md:text-3xl lg:text-4xl">
                   HEALTH, SAFETY, and ENVIRONMENTAL (HSE)
@@ -42,27 +75,39 @@ export default function AboutHSESections({ variant = "home" }: AboutHSESectionsP
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white section-padding">
+      <section className="bg-white section-padding overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 flex justify-center">
-              <div className="group relative aspect-[4/3] w-full max-w-2xl transition-all duration-500 hover:-translate-y-2">
+            <motion.div 
+              className="order-2 lg:order-1 flex justify-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={slideInLeft}
+            >
+              <div className="group relative aspect-[4/3] w-full max-w-3xl transition-all duration-500 hover:-translate-y-2">
                 <Image
                   src={qualityImage}
                   alt="Quality Management"
                   fill
                   quality={75}
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-contain scale-105 transition-transform duration-700 group-hover:scale-110"
+                  className="object-contain scale-[1.10] transition-transform duration-700 group-hover:scale-[1.15]"
                 />
               </div>
-            </div>
-            <div className="order-1 lg:order-2">
+            </motion.div>
+            <motion.div 
+              className="order-1 lg:order-2"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={slideInRight}
+            >
               <div className="mt-4 lg:mt-6">
                 <h3 className="text-2xl font-extrabold text-gray-900 md:text-3xl lg:text-4xl">
                   QUALITY
@@ -76,11 +121,10 @@ export default function AboutHSESections({ variant = "home" }: AboutHSESectionsP
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
     </>
   );
 }
-
