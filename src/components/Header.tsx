@@ -132,9 +132,9 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
          <div className="flex h-20 items-center justify-between">
           <Link href="/" className="relative flex-shrink-0">
-            <div className="rounded-lg p-2 shadow-sm transition-all duration-300 hover:shadow-md">
+            <div className="bg-white rounded-lg p-2">
               <Image
-                src="/images/menttion.png"
+                src="/images/logo.svg"
                 alt="Integrity Specialists International"
                 width={120}
                 height={36}

@@ -40,12 +40,12 @@ export default function Footer() {
           <motion.div custom={0} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="lg:col-span-3">
             <div className="mb-5">
               <Image
-                src="/images/menttion.png"
+                src="/images/malik.svg"
                 alt="Integrity Specialists International"
-                width={280}
-                height={84}
+                width={240}
+                height={72}
                 priority
-                className="h-24 w-auto object-contain"
+                className="h-20 w-auto object-contain"
               />
             </div>
             <p className="mt-3 text-base leading-relaxed text-white">
