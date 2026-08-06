@@ -134,7 +134,7 @@ export default function Header() {
           <Link href="/" className="relative flex-shrink-0">
             <div className="bg-white rounded-lg p-2">
               <Image
-                src="/images/logo.svg"
+                src="/images/surpriesee.png"
                 alt="Integrity Specialists International"
                 width={120}
                 height={36}
